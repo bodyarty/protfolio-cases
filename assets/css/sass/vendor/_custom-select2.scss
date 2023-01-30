@@ -1,0 +1,127 @@
+// ------------------------------------------------------------------------- //
+// SELECT2 PLUGIN CUSTOMIZATIONS.
+//
+// PLUGIN IS USED ONLY FOR STATIC HTML : NO WORRIES
+//
+// TABLE OF CONTENTS
+// XX IMPORTS
+// 01 TRIGGER
+// 02 DROPDOWN
+// 03 CUSTOMIZATION
+// 04 SELECT MASTER
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// XX IMPORTS
+// ------------------------------------------------------------------------- //
+@import 'sass/vendor/select2/select2.min.css';
+
+// ------------------------------------------------------------------------- //
+// 01 TRIGGER
+// ------------------------------------------------------------------------- //
+.select2-container {
+	@include z-index(select2, 5);
+
+	&.select2-container-disabled {
+		.selection {
+			.select2-selection {
+				@include form-control-typo-disabled();
+
+				.select2-selection__rendered {
+					color: $disabled-color;
+				}
+			}
+		}
+	}
+
+	.selection {
+		width: 100%;
+
+		.select2-selection {
+			@include dropdown-trigger();
+			float: none;
+			z-index: 2;
+
+			.select2-selection__rendered {
+				@include dropdown-trigger-value();
+				padding: 0;
+			}
+
+			.select2-selection__arrow {
+				@include dropdown-trigger-arrow();
+
+				b {display: none;}
+			}
+		}
+	}
+
+	&.select2-container--open {
+		.select2-selection {
+			border: 1px solid $form-control-bd-color-focus;
+
+			.select2-selection__arrow {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 02 DROPDOWN
+// ------------------------------------------------------------------------- //
+.select2-dropdown {
+	@include dropdown();
+
+	.select2-results__options {
+		padding: 0;
+		height: auto;
+		max-height: none !important;
+
+		.select2-results__option {
+			@include dropdown-option();
+		}
+
+		.select2-results__option--highlighted[aria-selected] {
+			@include dropdown-option-hover();
+		}
+
+		.select2-results__option[aria-selected='true'] {
+			@include dropdown-option-active();
+		}
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 03 CUSTOMIZATIONS
+// ------------------------------------------------------------------------- //
+
+// .select is a custom wrapper for select2 plugin
+.select .select2-container {
+	@include z-index(select2);
+	width: 100% !important;
+}
+
+
+// ------------------------------------------------------------------------- //
+// 04 SELECT MASTER
+// ------------------------------------------------------------------------- //
+.select-master {
+	.select2-container {
+		@include z-index(subheader, 1);
+
+		.selection {
+
+			.select2-selection {
+				@include select-master-dropdown-trigger();
+
+				.select2-selection__rendered {
+					@include select-master-trigger-value();
+				}
+
+				.select2-selection__arrow {
+					@include select-master-trigger-arrow();
+				}
+			}
+		}
+	}
+}

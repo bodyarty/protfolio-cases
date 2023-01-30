@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Ordering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.ordering.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="current">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="current">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader sliding subheader-compressed">
+	<div class="subheader-container">
+		
+		<!-- SUBHEADER SECTION - BEGINS -->
+		<div class="subheader-section">
+			
+			<!-- SUBHEADER ROW - BEGINS -->
+			<div class="subheader-row subheader-row-fading">
+				<ul class="breadcrumbs">
+					<li><a href="dashboard.html">Online Ordering</a></li>
+					<li class="active">Switchboard</li>
+				</ul>
+			</div>
+			<!-- SUBHEADER ROW - ENDS -->
+			
+			<div class="subheader-row subheader-row-mobile">
+				<h1 class="page-title">Switchboard</h1>
+
+				<ul class="tabs">
+					<li class="">
+						<a class="tab-title" href="switchboard-search-ports.html">
+							<span>Ports</span>
+						</a>
+					</li>
+					<li class="active">
+						<a class="tab-title letter-case-reset" href="switchboard-search-connections.html">
+							<span>VCs AWATING APPROVAL</span>
+						</a>
+					</li>
+					<li>
+						<a class="tab-title letter-case-reset" href="javascript:;">
+							<span>VIRTUAL CONNECTIONS (VCs)</span>
+						</a>
+					</li>
+				</ul>
+				
+				<div class="btn-group">
+					<!-- <a href="javascript:;" class="btn btn-secondary">Order Virtual Connection</a> -->
+					<a href="switchboard-create-ports.html" class="btn btn-master">Order Port</a>
+					<a href="switchboard-first-time.html" class="action icon-help-lg action-master mobile-shifted">Help</a>
+				</div>
+			</div>
+		</div>
+		<!-- SUBHEADER SECTION - ENDS -->
+		
+	</div>
+</div>
+
+<!-- CONTENT MAIN - BEGINS -->
+<div class="content-main">
+	<div class="content-container">
+		
+		<!-- SECTION BAR - BEGINS -->
+		<div class="section-bar">
+			<div class="actions">
+				<div class="action icon-refresh action-middle">
+					Refresh
+				</div>
+			</div>
+		</div>
+		<!-- SECTION - ENDS -->
+
+		<!-- CONTENT - BEGINS -->
+		<div class="search-results table-box table-decor-on">
+
+			<!-- TABLE - BEGINS -->
+			<div class="table-wrapper table-vc-incoming">
+				<table class="table">
+					<thead>
+						<tr>
+
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">VC Number</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+
+
+
+
+
+
+
+
+
+
+
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Customer Reference</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Source</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Connection</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Destination</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">SP Number</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Created Date</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Order Status</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="cell-actions">
+
+							</th>
+
+
+
+
+
+
+
+
+
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+
+
+							<td><a href="javascript:;" class="link-accent">VC-159</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status completed">Fulfilled</div></td>
+							<td class="cell-actions">
+								<div class="btn-group btn-group-right">
+									<button class="btn btn-secondary btn-small">Reject</button>
+									<button class="btn btn-small">Approve</button>
+								</div>
+							</td>
+
+
+
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-160</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status open">Draft</div></td>
+							<td class="cell-actions">
+								<div class="btn-group btn-group-right">
+									<button class="btn btn-secondary btn-small">Cancel</button>
+								</div>
+							</td>
+
+
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-195</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status cancelled">Cancelled</div></td>
+							<td class="cell-actions">
+								<div class="btn-group btn-group-right">
+									<button class="btn btn-secondary btn-small">Delete</button>
+								</div>
+							</td>
+
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-222</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status in-progress">Approval Requested</div></td>
+							<td class="cell-actions"></td>
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-64654654646464645654</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status cancelled-critical">Cancelled (Critical)</div></td>
+							<td class="cell-actions"></td>
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-11</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status in-progress">Approval Requested</div></td>
+							<td class="cell-actions"></td>
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-12</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status in-progress">Approval Requested</div></td>
+							<td class="cell-actions"></td>
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-896</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status in-progress">Approval Requested</div></td>
+							<td class="cell-actions"></td>
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-352</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>KTref</td>
+							<td>ATL1</td>
+							<td>From: IlyaCompany</td>
+							<td>ATL1</td>
+							<td><a href="javascript:;">SP-1773</a></td>
+							<td>07-05-2019</td>
+							<td><div class="status in-progress">Approval Requested</div></td>
+							<td class="cell-actions"></td>
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+
+
+							<td><a href="javascript:;" class="link-accent">VC-333</td>
+
+
+
+
+
+
+
+
+
+
+
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="cell-actions"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- TABLE - BEGINS -->
+
+			<!-- TABLE - BEGINS -->
+			<div class="table-wrapper-mobile">
+				<!-- FROZEN PART - BEGINS -->
+				<div class="frozen">
+					<table class="table">
+						<thead>
+							<tr>
+
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">VC Number</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+
+
+
+
+
+
+
+
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+
+								<td><a href="javascript:;" class="link-accent">VC-159</td>
+
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-160</td>
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-195</td>
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-222</td>
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-64654654646464645654</td>
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-11</td>
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-12</td>
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-896</td>
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-352</td>
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+
+								<td><a href="javascript:;" class="link-accent">VC-333</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- FROZEN PART - ENDS -->
+				
+				<!-- SCROLLABLE PART - BEGINS -->
+				<div class="scrollable">
+					<table class="table">
+						<thead>
+							<tr>
+
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Customer Reference</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Source</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Connection</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Destination</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">SP Number</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Created Date</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Order Status</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="cell-actions">
+
+								</th>
+
+
+
+
+
+
+
+
+
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status completed">Fulfilled</div></td>
+								<td class="cell-actions">
+									<div class="btn-group btn-group-right">
+										<button class="btn btn-secondary btn-small">Reject</button>
+										<button class="btn btn-small">Approve</button>
+									</div>
+								</td>
+
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status open">Draft</div></td>
+								<td class="cell-actions">
+									<div class="btn-group btn-group-right">
+										<button class="btn btn-secondary btn-small">Cancel</button>
+									</div>
+								</td>
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status cancelled">Cancelled</div></td>
+								<td class="cell-actions">
+									<div class="btn-group btn-group-right">
+										<button class="btn btn-secondary btn-small">Delete</button>
+									</div>
+								</td>
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status in-progress">Approval Requested</div></td>
+								<td class="cell-actions"></td>
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status cancelled-critical">Cancelled (Critical)</div></td>
+								<td class="cell-actions"></td>
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status in-progress">Approval Requested</div></td>
+								<td class="cell-actions"></td>
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status in-progress">Approval Requested</div></td>
+								<td class="cell-actions"></td>
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status in-progress">Approval Requested</div></td>
+								<td class="cell-actions"></td>
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+								<td>KTref</td>
+								<td>ATL1</td>
+								<td>From: IlyaCompany</td>
+								<td>ATL1</td>
+								<td><a href="javascript:;">SP-1773</a></td>
+								<td>07-05-2019</td>
+								<td><div class="status in-progress">Approval Requested</div></td>
+								<td class="cell-actions"></td>
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="cell-actions"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- SCROLLABLE PART - ENDS -->
+				
+				
+			</div>
+			<!-- TABLE - BEGINS -->
+
+		</div>
+		<!-- CONTENT - ENDS -->
+
+
+			<!-- PAGINATION - BEGINS -->
+			<div class="pagination-wrapper">
+
+				<div class="select items-per-page">
+					<select class="js-select-custom">
+
+						<option value="item1">View 10 items</option><option value="item2">View 25 items</option><option value="item3">View 50 items</option>
+					</select>
+				</div>
+
+
+
+
+				<div class="pagination">
+					<span class="prev"></span>
+					<input type="text" class="current" value="1">
+					<span class="total">of 99</span>
+					<span class="next disabled"></span>
+				</div>
+
+			</div>
+		<!-- PAGINATION - ENDS -->
+
+	</div>
+	
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+
+</body>
+</html>

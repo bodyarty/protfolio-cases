@@ -1,0 +1,56 @@
+// ------------------------------------------------------------------------- //
+// CUSTOM TABLE COLUMNS RESIZER - SHARED
+// ANGULAR 1
+//
+// PLAGIN IS USED FOR PROD : BE CAREFUL!!!
+//
+// TABLE OF CONTENTS
+// 01 TABLE COLUMN RESIZER FOR ANGULAR 1
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 01 TABLE COLUMN RESIZER FOR ANGULAR 1
+// ------------------------------------------------------------------------- // 
+.JCLRgrips {
+	position: relative;
+	height: 0;
+}
+
+.JCLRgrip {
+	position: absolute;
+
+	.JColResizer {
+		position: absolute;
+		top: 0;
+		right: -#{$td-padding-hor - 1px};
+		display: none;
+		justify-content: center;
+		width: $td-padding-hor * 2;
+		height: 100%;
+		cursor: col-resize;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			width: 1px;
+			height: $td-height;
+			background: $hairline-color-light;
+			transform: translateY(-50%);
+		}
+	}
+
+	&.JCLRdisabledGrip {
+		.JColResizer {
+			display: none;
+			cursor: default;
+		}
+	}
+}
+
+.JCLRLastGrip {
+	position: absolute;
+	width: 1px;
+}

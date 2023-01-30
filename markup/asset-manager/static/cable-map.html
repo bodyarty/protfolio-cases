@@ -1,0 +1,5201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asset Manager</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.asset-manager.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader sliding">
+	<div class="subheader-container">
+		<h1 class="page-title">Asset Manager</h1>
+
+		<ul class="tabs">
+			<li>
+				<a class="tab-title" href="dashboard.html">
+					<span>Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a class="tab-title" href="equipment.html">
+					<span>Equipment</span>
+				</a>
+			</li>
+			<li>
+				<a class="tab-title" href="rack-locations.html">
+					Rack Locations
+				</a>
+			</li>
+			<li class="active">
+				<a class="tab-title" href="cable-map.html">
+					Cable Map
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT MAIN - BEGINS -->
+<div class="content-main">
+
+	<!-- FILTER - BEGINS -->
+	<div class="filter-master">
+		<div class="filter-master-container">
+			<div class="filter-view">
+
+				<div class="filter-view-container">
+
+					<div class="filter-view-search  filter-view-search-accent">
+
+						<div class="search-items">
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Date</span>
+
+									<span class="filter-action icon-calendar"></span>
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value1, Value2, Value3</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+
+							<div class="search-item search-field">
+								<div class="search">
+									<input type="search" placeholder="Search">
+								</div>
+							</div>
+						</div>
+
+						<div class="search-actions">
+							<span class="action icon-delete"></span>
+						</div>
+					</div>
+
+					<div class="filter-view-actions">
+						<a href="javascript:;" class="link-icon icon-filter icon-left js-filter-edit-trigger">Advanced Search</a>
+						<!-- <a href="javascript:;" class="action icon-filter js-filter-edit-trigger"></a> -->
+					</div>
+				</div>
+
+				<!-- BUTTONS - BEGINS -->
+				<!-- BUTTONS - ENDS -->
+			</div>
+
+			<div class="filter-edit" style="display: none;">
+				<div class="form-grid">
+					<div class="row">
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom" disabled>
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+					</div>
+					<div class="row row-actions">
+						<div class="field xl-3 md-4 sm-6 xs-12">
+							<a href="javascript:;" class="link-icon icon-left icon-arrow-top js-filter-edit-close">Hide All Filters</a>
+						</div>
+						<div class="field field-actions xl-3 md-4 sm-6 xs-12">
+							<div class="btn-group">
+								<a href="javascript:;" class="btn-link js-filter-edit-close">Clear All</a>
+								<a href="javascript:;" class="btn js-filter-edit-close">Apply</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- FILTER - ENDS -->
+
+	<!-- FILTER RESULTS - BEGINS -->
+	<!-- FILTER RESULTS - ENDS -->
+
+
+	<div class="content-container">
+
+		<!-- CONTENT - BEGINS -->
+		<div class="table-box table-decor-on search-results">
+
+			<!-- PLUGS - BEGINS -->
+
+			<div class="dummy "style="display:none">No Data Available</div>
+
+
+			<div class="loading "style="display:none"></div>
+
+			<!-- PLUGS - ENDS -->
+
+			<!--
+					for dev: sorting 
+					1. on hover 'th-name' add class 'desc' to 'sort-action'
+					2. on click by 'sort-action' - keep class 'desc'
+					3. on toggle click by 'sort-action' toggle classes 'desc' / 'asc'
+				-->
+
+			<!-- TABLE - BEGINS -->
+			<div class="table-wrapper">
+				<table class="table">
+					<thead>
+						<tr>
+
+							<th class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox0" name="checkbox0">
+									<label for="checkbox0"></label>
+								</div>
+
+
+
+
+
+
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Equipment Type</span>
+								</span>
+							</th>
+
+
+
+
+
+
+
+
+
+
+
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Asset Tag</span>
+									<span class="sort-action"></span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Customer Hostname</span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">SmartRack Device</span>
+								</span>
+							</th>
+							<th class="th-sortable">
+								<span class="th-content">
+									<span class="th-name">Hostname</span>
+								</span>
+							</th>
+
+
+
+
+
+
+
+
+
+
+						</tr>
+					</thead>
+					<tbody class="js-open-slide-box">
+						<tr class="tr-highlight tr-label-show">
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox1" name="checkbox1">
+									<label for="checkbox1"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="user-view.html" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox2" name="checkbox2">
+									<label for="checkbox2"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox3" name="checkbox3">
+									<label for="checkbox3"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+
+
+
+						</tr>
+						<tr class="tr-highlight tr-label-show">
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox4" name="checkbox4">
+									<label for="checkbox4"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox5" name="checkbox5">
+									<label for="checkbox5"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox6" name="checkbox6">
+									<label for="checkbox6"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox7" name="checkbox7">
+									<label for="checkbox7"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox8" name="checkbox8">
+									<label for="checkbox8"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox9" name="checkbox9">
+									<label for="checkbox9"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+
+						</tr>
+						<tr>
+
+
+
+
+
+
+
+
+
+
+
+							<td class="cell-checkbox">
+
+
+
+								<div class="check-wrap single">
+									<input type="checkbox" id="checkbox10" name="checkbox10">
+									<label for="checkbox10"></label>
+								</div>
+
+
+
+
+
+
+							</td>
+							<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+
+
+							<td>701483</td>
+							<td>001d</td>
+							<td>false</td>
+							<td>001d</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- TABLE - ENDS -->
+
+
+			<!-- TABLE FOR MOBILE - BEGINS -->
+			<div class="table-wrapper-mobile">
+
+				<!-- FROZEN PART - BEGINS -->
+				<div class="frozen">
+					<table class="table">
+						<thead>
+							<tr>
+
+								<th class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox0" name="checkbox0">
+										<label for="checkbox0"></label>
+									</div>
+
+
+
+
+
+
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Equipment Type</span>
+									</span>
+								</th>
+
+
+
+
+
+
+
+
+
+
+							</tr>
+						</thead>
+						<tbody class="js-open-slide-box">
+							<tr class="tr-highlight tr-label-show">
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox1" name="checkbox1">
+										<label for="checkbox1"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="user-view.html" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox2" name="checkbox2">
+										<label for="checkbox2"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox3" name="checkbox3">
+										<label for="checkbox3"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+
+							</tr>
+							<tr class="tr-highlight tr-label-show">
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox4" name="checkbox4">
+										<label for="checkbox4"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox5" name="checkbox5">
+										<label for="checkbox5"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox6" name="checkbox6">
+										<label for="checkbox6"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox7" name="checkbox7">
+										<label for="checkbox7"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox8" name="checkbox8">
+										<label for="checkbox8"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox9" name="checkbox9">
+										<label for="checkbox9"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+
+								<td class="cell-checkbox">
+
+
+
+									<div class="check-wrap single">
+										<input type="checkbox" id="checkbox10" name="checkbox10">
+										<label for="checkbox10"></label>
+									</div>
+
+
+
+
+
+
+								</td>
+								<td><a href="javascript:;" class="link-accent">Appliance</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- FROZEN PART - ENDS -->
+
+				<!-- SCROLLABLE PART - BEGINS -->
+				<div class="scrollable">
+					<table class="table">
+						<thead>
+							<tr>
+
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Asset Tag</span>
+										<span class="sort-action"></span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Customer Hostname</span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">SmartRack Device</span>
+									</span>
+								</th>
+								<th class="th-sortable">
+									<span class="th-content">
+										<span class="th-name">Hostname</span>
+									</span>
+								</th>
+
+
+
+
+
+
+
+
+
+
+							</tr>
+						</thead>
+						<tbody class="js-open-slide-box">
+							<tr class="tr-highlight tr-label-show">
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+
+
+
+							</tr>
+							<tr class="tr-highlight tr-label-show">
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+
+							</tr>
+							<tr>
+
+
+
+
+
+
+
+
+
+
+
+								<td>701483</td>
+								<td>001d</td>
+								<td>false</td>
+								<td>001d</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<!-- SCROLLABLE PART - ENDS -->
+			</div>
+			<!-- TABLE FOR MOBILE - ENDS -->
+
+		</div>
+		<!-- CONTENT - ENDS -->
+
+		<!-- SLIDE BOX CONTAINER - BEGINS -->
+
+		<div class="slide-box-container">
+
+				<!-- SLIDE BOX - BEGINS -->
+				<div class="slide-box slide-on js-slide-1">
+					<div class="slide-box-header">
+						<h2 class="slide-box-title">Server</h2>
+						<ul class="device-details">
+							<li class="device-detail">Dell RS2020 / Windows 7 Enterprice / web server</li>
+							<li class="device-detail">4 x SSD 250GB 15K, 4 x SATA 400GB 7.2K</li>
+							<li class="device-detail">4 x quad core pentium, 8Gb RAM</li>
+						</ul>
+						<div class="slide-box-actions">
+							<span class="action icon-close"></span>
+						</div>
+					</div>
+					<div class="slide-box-body">
+						<div class="list-mapping-header">
+							<div class="actions">
+								<span class="link-icon icon-left link-icon-secondary icon-jump">Jump to Equipment Record</span>
+								<span class="link-icon icon-left link-icon-secondary icon-delete-sweep">Clear All Mapping</span>
+							</div>
+						</div>
+						<div class="body-header">
+							<ul class="tabs tabs-mute">
+								<li class="active">
+									<a class="tab-title" href="javascript:;">
+										<span>Front</span>
+									</a>
+								</li>
+								<li>
+									<a class="tab-title" href="javascript:;">
+										<span>Rare</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="list-mapping-wrapper">
+							
+							<!-- LIST MAPPING - BEGINS -->
+							<ul class="list-mapping">
+								<li>
+									<div class="item-mapping warning">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon micron"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 4</h5>
+										</div>
+
+
+										<div class="mapping-group">
+											<div class="mapping ">
+												<h6 class="device-title eq-server">Server</h6>
+												<ul class="list-device-details">
+													<li class="device-details-item">0405_test_6</li>
+													<li class="device-details-item">Port-1</li>
+												</ul>
+												<div class="additional">
+													<span class="status warning"></span>
+												</div>
+												<div class="device-label">FRONT</div>
+											</div>
+											<div class="mapping ">
+												<h6 class="device-title eq-server">Server</h6>
+												<ul class="list-device-details">
+													<li class="device-details-item">0405_test_6</li>
+													<li class="device-details-item">Port-1</li>
+												</ul>
+												<div class="additional">
+													<span class="status warning"></span>
+												</div>
+												<div class="device-label">REAR</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping uncabled">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon cooper-nic"></div>
+										</div>
+
+
+										<div class="mapping ">
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 2</h5>
+										</div>
+
+										<div class="mapping ">
+											<span class="link-icon link-icon-secondary icon-left icon-add-circle">Add Cabled Device</span>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon ethernet"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 3</h5>
+										</div>
+
+										<div class="mapping mapping-link">
+											<h6 class="device-title eq-power">Power</h6>
+											<div class="additional">
+												<span class="link-icon link-icon-secondary icon-left icon-cross-sm">Uncable</span>
+											</div>
+											<div class="device-label">LACP</div>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping warning">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon micron"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 4</h5>
+										</div>
+
+										<div class="mapping ">
+											<h6 class="device-title eq-server">Server</h6>
+											<ul class="list-device-details">
+												<li class="device-details-item">0405_test_6</li>
+												<li class="device-details-item">Port-1</li>
+											</ul>
+											<div class="additional">
+												<span class="status warning"></span>
+											</div>
+											<div class="device-label">LACP</div>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon micro"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 5</h5>
+										</div>
+
+										<div class="mapping mapping-link">
+											<h6 class="device-title eq-device">Device</h6>
+											<ul class="list-device-details">
+												<li class="device-details-item">0405_test_6</li>
+												<li class="device-details-item">Port-1</li>
+											</ul>
+											<div class="additional">
+												<span class="link-icon link-icon-secondary icon-left icon-cross-sm">Uncable</span>
+											</div>
+											<div class="device-label">LACP</div>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon micro"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Port 6</h5>
+										</div>
+
+										<div class="mapping mapping-link">
+											<h6 class="device-title eq-device-qts">QTS Device</h6>
+											<ul class="list-device-details">
+												<li class="device-details-item">0405_test_6</li>
+												<li class="device-details-item">Port-1</li>
+											</ul>
+											<div class="additional">
+												<span class="link-icon link-icon-secondary icon-left icon-cross-sm">Uncable</span>
+											</div>
+											<div class="device-label">LACP</div>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon power-supply"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Power Supply</h5>
+										</div>
+
+										<div class="mapping ">
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+
+											<div class="slot-icon power-outlet"></div>
+										</div>
+
+										<div class="slot-title-wrapper">
+											<h5 class="slot-title">Power Outlet</h5>
+										</div>
+
+										<div class="mapping ">
+											<h6 class="device-title eq-kvm">KVM</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-console">Console</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-printer">Printer</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-notebook">Notebook</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-storage">Storage</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-monitor">Monitor</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-black-box">Blackbox</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-workstation">Workstation</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-appliance">Security</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-black-box">Appliance</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-phone">Phone</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-rack-infrastructure">Rack Infrastructure</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-network-gear">Network Great</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-vm">VM</h6>
+										</div>
+
+									</div>
+								</li>
+								<li>
+									<div class="item-mapping ">
+										<div class="slot-icon-wrapper">
+											<div class="slot-icon fibre"></div>
+
+										</div>
+
+
+										<div class="mapping ">
+											<h6 class="device-title eq-component">Component</h6>
+										</div>
+
+									</div>
+								</li>
+							</ul>
+							<!-- LIST MAPPING - ENDS -->
+						</div>
+					</div>
+				</div>
+				<!-- SLIDE BOX - ENDS -->
+
+				<!-- SLIDE BOX - BEGINS -->
+				<div class="slide-box js-slide-2 js-slide-box">
+					<div class="slide-box-header" style="height: 103px;">
+						<div class="slide-box-actions actions-left">
+							<span class="action icon-left"></span>
+						</div>
+						<h2 class="slide-box-title">
+							<span class="detached">Port 3</span> Device B - 0405_TEST_6-Port 1
+						</h2>
+						<div class="slide-box-actions">
+							<span class="action icon-close"></span>
+						</div>
+					</div>
+					<div class="slide-box-body">
+						<ul class="tabs tabs-mute">
+							<li class="active">
+								<a class="tab-title" href="javascript:;">
+									<span>Properties</span>
+								</a>
+							</li>
+							<li>
+								<a class="tab-title" href="javascript:;">
+									<span>Build</span>
+								</a>
+							</li>
+							<li>
+								<a class="tab-title" href="javascript:;">
+									<span>Network</span>
+								</a>
+							</li>
+							<li>
+								<a class="tab-title" href="javascript:;">
+									<span>Power</span>
+								</a>
+							</li>
+						</ul>
+						<div class="tabs-content">
+							<!-- TAB PROPERTIES - BEGINS -->
+							<div class="data-section active">
+								<!-- SECTION - BEGINS -->
+								<div class="section first-child">		
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">General Components - View Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-small">Edit</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid view-mode">											
+												<div class="row">
+													<div class="field xs-6 xl-4">
+
+
+														<span class="label">
+															<span>Input Example</span>
+														</span>
+														<span class="value ">
+															701483
+
+
+														</span>
+													</div>
+													<div class="field xs-6 xl-4">
+
+
+														<span class="label">
+															<span>Input Example</span>
+														</span>
+														<span class="value ">
+															
+
+
+														</span>
+													</div>
+
+													<div class="delimiter"></div>
+
+													<div class="field xs-6 xl-4">
+														<span class="label">
+															<span>List example</span>
+														</span>
+														<span class="value ">
+															<ul class="list-values">
+																<li>
+																	<a href="javascript:;">1234567890</a>
+																</li>
+																<li>
+																	<a href="javascript:;">987456321</a>
+																</li>
+																<li>
+																	<a href="javascript:;">852147963</a>
+																</li>
+																<li>
+																	<a href="javascript:;">1593578624</a>
+																</li>
+															</ul>
+															<a href="javascript:;" class="link-icon icon-clear link-icon-secondary icon-left">Clear Location</a>
+														</span>
+													</div>
+													<div class="field xs-6 xl-4">
+														<span class="label">
+															<span>Action Example</span>
+														</span>
+														<span class="value">
+															<a href="javascript:;" class="link-icon icon-add link-icon-secondary icon-left">Add License</a>
+														</span>
+													</div>
+													<div class="field xs-12 xl-4">
+														<span class="label">
+															<span>Password</span>
+														</span>
+														<span class="value">
+															<a href="javascript:;" class="link-icon icon-edit link-icon-secondary icon-left">Edit password</a>
+															<ul class="list-values pushed">
+																<li>
+																	<div class="text-action-wrapper">
+																		<div class="text-action">
+																			MGMT / AnotherPerson /
+																			<a href="javascript:;" class="password-mask">***</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="text-action-wrapper">
+																		<div class="text-action">
+																			SLTM / UserId1 /
+																			<a href="javascript:;" class="password-mask">***</a>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="text-action-wrapper">
+																		<div class="text-action">
+																			ABCD / Whatever / 
+																			<a href="javascript:;" class="password-mask">***</a>
+																		</div>
+																		<div class="loading-sm"></div>
+																	</div>
+																</li>
+															</ul>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">		
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">General Components - Edit Mode</h3>
+											<div class="btn-group">
+												<a class="btn-link" href="javacript:;">Cancel</a>
+												<a href="javascript:;" class="btn btn-small">Save</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">		
+												<div class="row">
+													<div class="field xs-6 xl-4">
+
+
+														<label class="label">
+															<span>Input Example</span>
+														</label>
+
+														<input type="text" value="" class="" />
+
+
+
+
+
+													</div>
+													<div class="field xs-6 xl-4">
+
+
+														<label class="label">
+															<span>Input Example</span><em class="required">*</em>
+														</label>
+
+														<input type="text" value="" class="" />
+
+
+
+
+
+													</div> 
+													<div class="field xs-6 xl-4">
+
+
+														<label class="label">
+															<span>Select Example</span><em class="required">*</em>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+													</div>
+													<div class="field xs-6 xl-4">
+
+
+														<label class="label">
+															<span>Select Example</span>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+													</div>
+													<div class="field xs-6 xl-4">
+														<label class="label">
+															Ckeckbox Example
+														</label>
+
+
+
+														<div class="check-wrap ">
+															<input type="checkbox" id="checkbox12" name="checkbox12">
+															<label for="checkbox12">Ckeckbox label</label>
+														</div>
+
+
+
+
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Operating system - Edit Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn-link">Cancel</a>
+												<a href="javascript:;" class="btn btn-small">Save</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+
+												<div class="row">
+													<div class="field xs-12">
+														<label class="label">
+															<span>Operating System</span>
+														</label>
+														<div class="control-unit">
+															<div class="select">
+																<select class="js-select-custom">
+																	<option value="item1">Linux</option>
+																	<option value="item2">Windows</option>
+																	<option value="item3">IOS</option>
+																</select>
+															</div>
+															<div class="unit-choice">
+																	<input type="text">
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="field xl-12">
+														<label class="label">
+															<span>Drives</span>
+															<em class="required">*</em>
+														</label>
+														<div class="table-wrapper">
+															<table class="table table-editable table-drives table-responsive">
+																<thead>
+																	<tr>
+																		<th class="cell-quantity">Quantity</th>
+																		<th class="cell-type">Type</th>
+																		<th class="cell-size">Size</th>
+																		<th class="cell-speed">Speed</th>
+																		<th class="cell-actions"></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td class="cell-quantity">
+																			<label class="label">
+																				<span>Quantity</span>
+																			</label>
+																			<span class="static-value">10</span>
+																		</td>
+																		<td class="cell-type">
+																			<label class="label">
+																				<span>Type</span>
+																			</label>
+																			<span class="static-value">Near-Line SAS 6Gbps</span>
+																		</td>
+																		<td class="cell-size no-ellipsis">
+																			<label class="label">
+																				<span>Size</span>
+																			</label>
+																			<span class="static-value">12 GB</span>
+																		</td>
+																		<td class="cell-speed">
+																			<label class="label">
+																				<span>Speed</span>
+																			</label>
+																			<span class="static-value">3.6 K</span>
+																		</td>
+																		<td class="cell-actions">
+																			<div class="btn-group">
+																				<a href="javascript:;" class="btn btn-secondary btn-small">Delete</a>
+																				<a href="javascript:;" class="btn btn-small">Edit</a>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="cell-quantity cell-quantity-edit">
+																			<label class="label">
+																				<span>Quantity</span>
+																			</label>
+																			<input type="text">
+																			<div class="error-message ng-star-inserted"> Required field </div>
+																		</td>
+																		<td class="cell-type">
+																			<label class="label">
+																				<span>Type</span>
+																			</label>
+																			<input type="text">
+																		</td>
+																		<td class="cell-size no-ellipsis">
+																			<label class="label">
+																				<span>Size</span>
+																			</label>
+																			<div class="control-unit">
+																				<input type="text" value="1024">
+																				<div class="unit-choice">
+																					<div class="select">
+																						<select class="js-select-custom">
+																							<option value="item1">GB</option>
+																							<option value="item2">TB</option>
+																							<option value="item3">MB</option>
+																						</select>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="error-message ng-star-inserted"> Required field </div>
+																		</td>
+																		<td class="cell-speed">
+																			<label class="label">
+																				<span>Speed</span>
+																			</label>
+																			<div class="control-unit">
+																				<input type="text">
+																				<span class="unit">K</span>
+																			</div>
+																			<div class="error-message ng-star-inserted"> Required field </div>
+																		</td>
+																		<td class="cell-actions">
+																			<div class="btn-group">
+																				<a href="javascript:;" class="btn-link btn-small">Cancel</a>
+																				<a href="javascript:;" class="btn  btn-small">Save</a>
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+
+														<div class="btn-group">
+
+															<a href="javascript:;" class="btn btn-small">Add Drive</a>
+														</div>
+													</div>
+
+													<div class="field xl-12">
+														<label class="label">
+															<span>Ram</span>
+														</label>
+														<div class="control-unit">
+															<input type="text">
+															<div class="unit-choice">
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">GB</option>
+																		<option value="item2">TB</option>
+																		<option value="item3">MB</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="field xl-12">
+														<label class="label">
+															<span>CPUS</span>
+														</label>
+
+														<div class="control-unit">
+
+															<div class="select">
+																<select class="js-select-custom">
+																	<option value="item1">Intel Xeon E-2124G (3.4GHz/8M) (SR3WL) LGA1151</option>
+																	<option value="item2">Intel Xeon Bronze 3104 (1.7GHz/8M) (338-BLTP) LGA3647</option>
+																	<option value="item3"> Intel Xeon Platinum 8176M (2.1GHz/38.5M) (SR37U) LGA3647</option>
+																</select>
+															</div>
+
+															<div class="unit-choice">
+																<input type="text">
+															</div>	
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+							</div>
+							<!-- TAB PROPERTIES - ENDS -->
+							<!-- TAB BUILD - BEGINS -->
+							<div class="data-section">
+
+								<!-- SECTION - BEGINS -->
+								<div class="section first-child">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Functions - View Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-small">Edit</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+												<div class="row">
+													<div class="field xs-12">
+														<div class="check-group align-row check-group-fixed-grid">
+
+
+
+
+															<div class="check-view checked">
+																Databse Server
+															</div>
+
+
+
+
+
+
+															<div class="check-view checked">
+																DNS Server
+															</div>
+
+
+
+
+
+
+															<div class="check-view checked">
+																Log Server
+															</div>
+
+
+
+
+
+
+															<div class="check-view checked">
+																Mail Server
+															</div>
+
+
+
+
+
+
+															<div class="check-view checked">
+																NTP Server
+															</div>
+
+
+
+
+
+
+															<div class="check-view checked">
+																Web Server
+															</div>
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Functions - Edit Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn-link">Cancel</a>
+												<a href="javascript:;" class="btn btn-small">Save</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+												<div class="row">
+													<div class="field xs-12">
+														<div class="check-group align-row check-group-fixed-grid">
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox12" name="checkbox12">
+																<label for="checkbox12">Databse Server</label>
+															</div>
+
+
+
+
+
+
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox13" name="checkbox13">
+																<label for="checkbox13">DNS Server</label>
+															</div>
+
+
+
+
+
+
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox14" name="checkbox14">
+																<label for="checkbox14">Log Server</label>
+															</div>
+
+
+
+
+
+
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox15" name="checkbox15">
+																<label for="checkbox15">Mail Server</label>
+															</div>
+
+
+
+
+
+
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox16" name="checkbox16">
+																<label for="checkbox16">NTP Server</label>
+															</div>
+
+
+
+
+
+
+
+
+
+															<div class="check-wrap ">
+																<input type="checkbox" id="checkbox17" name="checkbox17">
+																<label for="checkbox17">Web Server</label>
+															</div>
+
+
+
+
+
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Disk Configuration</h3>
+											<div class="btn-group">
+												<a href="javascript:;" onclick="showDialog('js-modal-equipment-edit-disk-configuration');" class="btn btn-small">Add Raid Group</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+												<div class="row">
+													<div class="field xl-12">
+														<label class="label">
+															<span>Raid Group 1</span>
+														</label>
+														<div class="data-body-field">
+															<ul class="list-definition">
+																<li>
+																	<dl>
+																		<dt>Level</dt>
+																		<dd>1</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>Sowtware raid</dt>
+																		<dd>No</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>2x</dt>
+																		<dd>SAS 6Gbps 6GB 3,6 K</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>1</dt>
+																		<dd>Near-Line 6Gbps 6GB 3,6 K</dd>
+																	</dl>
+																</li>
+															</ul>
+
+															<div class="table-wrapper">
+																<table class="table table-simple">
+																	<thead>
+																		<tr>
+																			<th>Filesystem</th>
+																			<th>Size</th>
+																			<th>Type</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>ss</td>
+																			<td>4MB</td>
+																			<td>EXT2</td>
+																		</tr>
+																		<tr>
+																			<td>Second</td>
+																			<td>200MB</td>
+																			<td>EXT2</td>
+																		</tr>
+																</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="field xl-12">
+														<label class="label">
+															<span>Raid Group 2</span>
+														</label>
+														<div class="data-body-field">
+															<ul class="list-definition">
+																<li>
+																	<dl>
+																		<dt>Level</dt>
+																		<dd>1</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>Sowtware raid</dt>
+																		<dd>No</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>2x</dt>
+																		<dd>SAS 6Gbps 6GB 3,6 K</dd>
+																	</dl>
+																</li>
+																<li>
+																	<dl>
+																		<dt>1</dt>
+																		<dd>Near-Line 6Gbps 6GB 3,6 K</dd>
+																	</dl>
+																</li>
+															</ul>
+
+															<div class="table-wrapper">
+																<table class="table table-simple">
+																	<thead>
+																		<tr>
+																			<th>Filesystem</th>
+																			<th>Size</th>
+																			<th>Type</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>ss</td>
+																			<td>4MB</td>
+																			<td>EXT2</td>
+																		</tr>
+																		<tr>
+																			<td>Second</td>
+																			<td>200MB</td>
+																			<td>EXT2</td>
+																		</tr>
+																</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="field xl-12">
+														<label class="label">
+															<span>Unassigned disks</span>
+														</label>
+														<div class="data-body-field">
+															<ul class="list-unassigned-disks">
+																<li>4 x Near-Line SAS 6Gbps 5GB 3.6K</li>
+																<li>220 x Near-Line SAS 6Gbps 5GB 3.6K</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">File System</h3>
+										</div>
+
+										<div class="data-body">
+											<div class="table-wrapper ">
+												<table class="table table-editable table-file-system table-responsive">
+													<thead>
+														<tr>
+															<th class="cell-name">Name</th>
+															<th class="cell-size">Size</th>
+															<th class="cell-type">Type</th>
+															<th class="cell-block-size">Block Size</th>
+															<th class="cell-actions"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="cell-name">
+																<label class="label">
+																	<span>Name</span>
+																</label>
+																<span class="static-value">NTFS</span>
+															</td>
+															<td class="cell-size no-ellipsis">
+																<label class="label">
+																	<span>Size</span>
+																</label>
+																<span class="static-value">NTFS 2 MB</span>
+															</td>
+															<td class="cell-type">
+																<label class="label">
+																	<span>Type</span>
+																</label>
+																<span class="static-value">EXT2</span>
+															</td>
+															<td class="cell-block-size">
+																<label class="label">
+																	<span>Block size</span>
+																</label>
+																<span class="static-value">4096</span>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn btn-secondary btn-small">Delete</a>
+																	<a href="javascript:;" class="btn btn-small">Edit</a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td class="cell-name">
+																<label class="label">
+																	<span>Name</span>
+																</label>
+																<div class="control-unit">
+																	<input type="text">
+																</div>
+																<div class="error-message">The value must not exceed 255 characters in length</div>
+															</td>
+															<td class="cell-size no-ellipsis">
+																<label class="label">
+																	<span>Size</span>
+																</label>
+																<div class="control-unit">
+																	<input type="text" value="1024">
+																	<div class="unit-choice">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">GB</option>
+																				<option value="item2">TB</option>
+																				<option value="item3">MB</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="error-message">Required field</div>
+															</td>
+															<td class="cell-type no-ellipsis">
+																<label class="label">
+																	<span>Type</span>
+																</label>
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">EXT2</option>
+																		<option value="item2">NTFS</option>
+																		<option value="item3">FAT32</option>
+																	</select>
+																</div>
+																<div class="error-message ng-star-inserted"> Required field </div>
+															</td>
+															<td class="cell-block-size no-ellipsis">
+																<label class="label">
+																	<span>Block size</span>
+																</label>
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">4096</option>
+																		<option value="item2">1024</option>
+																		<option value="item3">2048</option>
+																	</select>
+																</div>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn-link btn-small">Cancel</a>
+																	<a href="javascript:;" class="btn btn-small">Save</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+													<tfoot>
+														<tr>
+															<td class="text-right" colspan="5">Total Storage: <span class="total"> 0 GB</span></td>
+														</tr>
+													</tfoot>
+												</table>
+											</div>
+
+											<div class="btn-group">
+
+												<a href="javascript:;" class="btn btn-small">Add File System</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Applications</h3>
+										</div>
+
+										<div class="data-body">
+											<div class="table-wrapper">
+												<table class="table table-editable table-responsive">
+													<thead>
+														<tr>
+															<th>Application type</th>
+															<th>Comment</th>
+															<th class="cell-actions"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																<label class="label">
+																	<span>Application type</span>
+																</label>
+																<span class="static-value">Apache HTTP</span>
+															</td>
+															<td>
+																<label class="label">
+																	<span>Comment</span>
+																</label>
+																<span class="static-value">Ewewe</span>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn btn-secondary btn-small">Delete</a>
+																	<a href="javascript:;" class="btn btn-small">Edit</a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td class="no-ellipsis">
+																<label class="label">
+																	<span>Application type</span>
+																</label>
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">Apache HTTP</option>
+																		<option value="item2">1</option>
+																		<option value="item3">1</option>
+																	</select>
+																</div>
+																<div class="error-message ng-star-inserted"> Required field </div>
+															</td>
+															<td>
+																<label class="label">
+																	<span>Comment</span>
+																</label>
+																<input type="text">
+																<div class="error-message ng-star-inserted"> Required field </div>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn-link btn-small">Cancel</a>
+																	<a href="javascript:;" class="btn btn-small">Save</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+											<div class="btn-group">
+
+												<a href="javascript:;" class="btn btn-small">Add Application</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Monitoring Setup</h3>
+										</div>
+
+										<div class="data-body">
+											<div class="table-wrapper">
+												<table class="table table-editable table-monitoring-setup table-responsive">
+													<thead>
+														<tr>
+															<th class="cell-type">Type</th>
+															<th>Polled IP Address</th>
+															<th>Community String</th>
+															<th class="cell-template">EM7 Template</th>
+															<th class="cell-actions"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="cell-type">
+																<label class="label">
+																	<span>Type</span>
+																</label>
+																</span>SNMP
+															</td>
+															<td>
+																<label class="label">
+																	<span>Polled IP Address</span>
+																</label>
+																<span class="static-value">1.2.3.74</span>
+															</td>
+															<td>
+																<label class="label">
+																	<span>Community String</span>
+																</label>
+																<span class="static-value">wewe</span>
+															</td>
+															<td class="cell-template">
+																<label class="label">
+																	<span>EM7 Template</span>
+																</label>
+																<span class="static-value">VMware vSphere Template</span>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn btn-secondary btn-small">Delete</a>
+																	<a href="javascript:;" class="btn btn-small">Edit</a>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td class="no-ellipsis cell-type">
+																<label class="label">
+																	<span>Type</span>
+																</label>
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">SNMP</option>
+																		<option value="item2">1</option>
+																		<option value="item3">1</option>
+																	</select>
+																</div>
+															</td>
+															<td>
+																<label class="label">
+																	<span>Polled IP Address</span>
+																</label>
+																<span class="static-value">1.2.3.74</span>
+															</td>
+															<td>
+																<label class="label">
+																	<span>Community String</span>
+																</label>
+																<input type="text">
+															</td>
+															<td class="no-ellipsis cell-template">
+																<label class="label">
+																	<span>EM7 Template</span>
+																</label>
+																<div class="select">
+																	<select class="js-select-custom">
+																		<option value="item1">VMWare vSphere Template</option>
+																		<option value="item2">VMWare vSphere Template</option>
+																		<option value="item3">VMWare vSphere Template</option>
+																	</select>
+																</div>
+															</td>
+															<td class="cell-actions">
+																<div class="btn-group">
+																	<a href="javascript:;" class="btn-link btn-small">Cancel</a>
+																	<a href="javascript:;" class="btn btn-small">Save</a>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">IP assignment</h3>
+										</div>
+
+										<div class="data-body">
+											<div class="table-box">
+												<div class="table-wrapper table-fence table-scrollable-wrapper">
+													<table class="table">
+														<thead>
+															<tr>
+																<th class="th-sortable">
+																	<span class="th-content">
+																		<span class="th-name">IP Adress</span>
+																		<span class="sort-action"></span>
+																	</span>
+																</th>
+																<th class="th-sortable">
+																	<span class="th-content">
+																		<span class="th-name">Interface Types</span>
+																		<span class="sort-action"></span>
+																	</span>
+
+																</th>
+																<th class="th-sortable">
+																	<span class="th-content">
+																		<span class="th-name">VLAN</span>
+																		<span class="sort-action"></span>
+																	</span>
+																</th>
+																<th class="th-sortable">
+																	<span class="th-content">
+																		<span class="th-name">Subnets/CIDR</span>
+																		<span class="sort-action"></span>
+																	</span>
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr class="no-ellipsis">
+																<td>1.2.3.74</td>
+																<td>SNMP,LOM</td>
+																<td class="cell-vlan">1983-nudsgiuhdsiugh</td>
+																<td>1.2.3.0/25</td>
+															</tr>
+															<tr class="no-ellipsis">
+																<td>1.2.3.74</td>
+																<td>SNMP,LOM</td>
+																<td class="cell-vlan">1983-name1983huifwqhfuwqhiufhqwuihfuiqwhfuihwquifhqwuifuiqwhfuihweuifheiuhfgiudshguihdsiughdsiuhgiudshguihdsiughdsiuhgiudsgiuhdsiugh</td>
+																<td>1.2.3.0/25</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="table-wrapper-mobile table-fence">
+													<div class="frozen">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th class="th-sortable">
+																		<span class="th-content">
+																			<span class="th-name">IP Adress</span>
+																			<span class="sort-action"></span>
+																		</span>
+																	</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+																<tr class="no-ellipsis">
+																	<td>1.2.3.74</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="scrollable">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th class="th-sortable">
+																		<span class="th-content">
+																			<span class="th-name">Interface Types</span>
+																			<span class="sort-action"></span>
+																		</span>
+																	</th>
+																	<th class="th-sortable">
+																		<span class="th-content">
+																			<span class="th-name">VLAN</span>
+																			<span class="sort-action"></span>
+																		</span>
+																	</th>
+																	<th class="th-sortable">
+																		<span class="th-content">
+																			<span class="th-name">Subnets/CIDR</span>
+																			<span class="sort-action"></span>
+																		</span>
+																	</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-nudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-name1983huifwqhfuwqhiufhqwuihfuiqwhfuihwquifhqwuifuiqwhfuihweuifheiuhfgiudshguihdsiughdsiuhgiudshguihdsiughdsiuhgiudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-nudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-name1983huifwqhfuwqhiufhqwuihfuiqwhfuihwquifhqwuifuiqwhfuihweuifheiuhfgiudshguihdsiughdsiuhgiudshguihdsiughdsiuhgiudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-nudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+																<tr>
+																	<td>SNMP,LOM</td>
+																	<td class="cell-vlan">1983-name1983huifwqhfuwqhiufhqwuihfuiqwhfuihwquifhqwuifuiqwhfuihweuifheiuhfgiudshguihdsiughdsiuhgiudshguihdsiughdsiuhgiudsgiuhdsiugh</td>
+																	<td>1.2.3.0/25</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+
+												<!-- PAGINATION - BEGINS -->
+												<div class="pagination-wrapper pagination-wrapper-small">
+
+													<div class="select items-per-page">
+														<select class="js-select-custom">
+
+															<option value="item1">View 10 items</option><option value="item2">View 25 items</option><option value="item3">View 50 items</option>
+														</select>
+													</div>
+
+
+
+
+													<div class="pagination">
+														<span class="prev"></span>
+														<input type="text" class="current" value="1">
+														<span class="total">of 99</span>
+														<span class="next disabled"></span>
+													</div>
+
+												</div>
+											<!-- PAGINATION - ENDS -->
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Equipment Procedures - View Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-small">Edit</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="view-wrapper">
+												<p class="view-text">1212121212121212121212121212121212121212121212121212121212121212121212121212121</p>
+												<div class="view-action">
+													<a class="link-icon link-icon-secondary icon-left icon-visible">View All</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Equipment Procedures - Edit Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn-link">Cancel</a>
+												<a href="javascript:;" class="btn btn-small">Save</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+												<div class="row">
+													<div class="field xl-12">
+														<textarea class="extended"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Dummy Wrapper Example</h3>
+										</div>
+
+										<div class="data-body">
+											<div class="plug">
+												<div class="dummy">
+													No functions
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+							</div>
+							<!-- TAB BUILD - ENDS -->
+							<!-- TAB NETWORKS - BEGINS -->
+							<div class="data-section">
+								<!-- SECTION - BEGINS -->
+								<div class="section first-child">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Services - View Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-small">Edit</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid view-mode">
+												<div class="row">
+													<div class="field xs-12 xl-4">
+
+
+														<span class="label">
+															<span>Default Getaway</span>
+														</span>
+														<span class="value ">
+															
+
+
+														</span>
+													</div>
+													<div class="field xs-12 xl-4">
+
+
+														<span class="label">
+															<span>NTP Server</span>
+														</span>
+														<span class="value ">
+															5.5.5.5, 1.1.1.1
+
+
+														</span>
+													</div>
+													<div class="field xs-12 xl-4">
+
+
+														<span class="label">
+															<span>DNS Server</span>
+														</span>
+														<span class="value ">
+															5.5.5.5, 1.1.1.1
+
+
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Services - Edit Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn-link">Cancel</a>
+												<a href="javascript:;" class="btn btn-small">Save</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="form form-grid">
+												<div class="row">
+													<div class="field xs-12 xl-6">
+
+
+														<label class="label">
+															<span>Default Getaway</span><em class="required">*</em>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+													</div>
+												</div>	
+												<div class="row">
+													<div class="field xs-12 xl-6">
+														<label class="label">
+															<span>DNS Server</span>
+														</label>
+														<div class="control-action-wrapper">
+															<div class="row">
+																<div class="field xs-6">
+																	<input type="text">
+																</div>
+																<div class="field xs-6">
+																	<input type="text">
+																</div>
+															</div>
+															<span class="action icon-delete action-accent"></span>
+														</div>
+													</div>
+													<div class="field xs-12 xl-6">
+														<label class="label">
+															<span>SMTP Server</span>
+														</label>
+														<div class="control-action-wrapper">
+															<div class="row">
+																<div class="field xs-6">
+																	<input type="text">
+																</div>
+																<div class="field xs-6">
+																	<input type="text">
+																</div>
+															</div>
+															<span class="action icon-delete action-accent"></span>
+														</div>
+													</div>
+													<div class="field xs-12 xl-12">
+
+
+														<label class="label">
+															<span>Select Service</span><em class="required">*</em>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+														<div class="btn-group">
+															<a href="javascript:;" class="btn btn-small">Add Service</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Ports - View Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-secondary btn-small">Delete All</a>
+												<a href="javascript:;" class="btn btn-small">Add</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<div class="tabs-wrapper">
+												<ul class="tabs tabs-mute">
+													<li class="active">
+														<a class="tab-title" href="javascript:;">
+															<span>Front</span>
+														</a>
+													</li>
+													<li>
+														<a class="tab-title" href="javascript:;">
+															<span>Rare</span>
+														</a>
+													</li>
+												</ul>
+												<div class="tabs-content">
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+
+													<!-- ACCORDION - BEGINS -->
+													<div class="ui-accordion-header ui-corner-all ui-state-active">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+													<div class="ui-accordion-content-wrapper">
+														<div class="ui-accordion-content ui-widget-content">
+															<div class="form form-grid separated view-mode">
+																<div class="row">
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Mac Address</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Internal Port Name</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Media Type</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Bonding</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>VLAN Tagging</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>VLANs</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="form form-grid separated view-mode">
+																<h5 class="form-title">OS Network Interfaces</h5>
+																<div class="row">
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Mac Address</span>
+																		</span>
+																		<span class="value ">
+																			VLAN
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>IP Address</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Description</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Pingable IP</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>VLAN Tagging</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+																		<span class="label">
+																			<span>NAT VLANs</span>
+																		</span>
+																		<span class="value ">
+																			1-test_kim <span class="device-label">nat</span>
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="form form-grid separated view-mode">
+																<h5 class="form-title">OS Network Interfaces</h5>
+																<div class="row">
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Mac Address</span>
+																		</span>
+																		<span class="value ">
+																			VLAN
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>IP Address</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Description</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Pingable IP</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>VLAN Tagging</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																	<div class="field xs-12 xl-6">
+
+
+																		<span class="label">
+																			<span>Netmask</span>
+																		</span>
+																		<span class="value ">
+																			Value Example
+
+
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="btn-group">
+																<a href="javascript:;" class="btn btn-small">Edit</a>
+															</div>
+														</div>
+													</div>
+													<!-- ACCORDION - ENDS -->
+
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+
+													<div class="ui-accordion-header ui-state-default ui-corner-all">
+														<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial<span class="device-label">LACP</span></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+
+								<!-- SECTION - BEGINS -->
+								<div class="section">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Ports - Edit Mode</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-secondary btn-small">Delete All</a>
+												<a href="javascript:;" class="btn btn-small">Add</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<!-- ACCORDION - BEGINS -->
+											<div class="ui-accordion-header ui-state-default ui-corner-all ui-state-active cabled">
+												<h4 class="ui-accordion-header-text">Onboard Copper NIC port 123 - DS3 - Coaxial</h4>
+											</div>
+											<div class="ui-accordion-content-wrapper">
+												<div class="ui-accordion-content ui-widget-content">
+													<div class="form form-grid edit-mode separated">
+														<h5 class="form-title">VLAN: 1983 name1983</h5>
+														<div class="row">
+															<div class="field xs-12 xl-6">
+
+
+																<label class="label">
+																	<span>Mac Address</span><em class="required">*</em>
+																</label>
+
+																<input type="text" value="" class="" />
+
+
+
+
+
+															</div>
+															<div class="field xs-12 xl-6">
+
+
+																<label class="label">
+																	<span>Internal Port Name</span><em class="required">*</em>
+																</label>
+
+																<input type="text" value="" class="" />
+
+
+
+
+
+															</div>
+															<div class="field xs-12 xl-6">
+
+
+																<label class="label">
+																	<span>Media Type</span><em class="required">*</em>
+																</label>
+
+																<div class="select ">
+																	<select class="js-select-custom">
+																		<option value="item1">Option 1</option>
+																		<option value="item2">Option 2</option>
+																		<option value="item3">Option 3</option>
+																		<option value="item4">Option 4</option>
+																		<option value="item5">Option 5</option>
+
+																	</select>
+																</div>
+
+
+
+															</div>
+															<div class="field xs-12 xl-6">
+
+
+																<label class="label">
+																	<span>Bonding</span><em class="required">*</em>
+																</label>
+
+																<div class="select ">
+																	<select class="js-select-custom">
+																		<option value="item1">Option 1</option>
+																		<option value="item2">Option 2</option>
+																		<option value="item3">Option 3</option>
+																		<option value="item4">Option 4</option>
+																		<option value="item5">Option 5</option>
+
+																	</select>
+																</div>
+
+
+
+															</div>
+															<div class="field xs-12 xl-6">
+																<label class="label">
+																	VLAN Tagging
+																</label>
+
+
+
+																<div class="check-wrap ">
+																	<input type="checkbox" id="checkbox20" name="checkbox20">
+																	<label for="checkbox20">Yes</label>
+																</div>
+
+
+
+
+
+
+															</div>
+															<div class="field xs-12 xl-6">
+																<label class="label">
+																	VLAN source
+																</label>
+																<div class="radio-group align-row">
+
+
+
+																	<div class="radio-wrap ">
+																		<input type="radio" id="radio3" name="radio2">
+																		<label for="radio3">From Placeholder Port</label>
+																	</div>
+
+
+
+
+
+
+
+
+
+																	<div class="radio-wrap ">
+																		<input type="radio" id="radio4" name="radio2">
+																		<label for="radio4">From Catalog</label>
+																	</div>
+
+
+
+
+
+
+																</div>
+															</div>
+															<div class="field xs-12 bg-12 xl-6">
+
+
+																<label class="label">
+																	<span>Role Based Access</span><em class="required">*</em>
+																</label>
+
+																<div class="select ">
+																	<select class="js-select-custom">
+																		<option value="item1">Option 1</option>
+																		<option value="item2">Option 2</option>
+																		<option value="item3">Option 3</option>
+																		<option value="item4">Option 4</option>
+																		<option value="item5">Option 5</option>
+
+																	</select>
+																</div>
+
+
+
+
+																<div class="tags-wrapper">
+																	<ul class="tags">
+																		<li class="tag">
+																			<div class="tag-label">Calendar View</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Equipment Admin</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Equipment User</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Hybrid Cloud Manager</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Network Report</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Online Ordering</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Power Device</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																		<li class="tag">
+																			<div class="tag-label">Power Location</div>
+
+
+																			<div class="tag-action close"></div>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="field bg-12 xl-6">
+																<label class="label">
+																	IP Address
+																</label>
+																<div class="row">
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="field bg-12 xl-6">
+
+
+
+																<label class="label">
+																	<span>Description</span>
+																</label>
+
+																<textarea class="extended"></textarea>
+
+
+
+
+															</div>
+														</div>
+													</div>
+													<div class="form form-grid edit-mode separated">
+														<h5 class="form-title">OS Network Interfaces</h5>
+														<div class="row">
+															<div class="field bg-12 xl-6">
+																<label class="label">
+																	IP Address
+																</label>
+																<div class="row">
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="field field-space-reset xs-12 xl-3">
+																		<div class="select">
+																			<select class="js-select-custom">
+																				<option value="item1">192</option>
+																				<option value="item2">168</option>
+																				<option value="item3">255</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="field bg-12 xl-6">
+
+
+
+																<label class="label">
+																	<span>Description</span>
+																</label>
+
+																<textarea class="extended"></textarea>
+
+
+
+
+															</div>
+														</div>
+														<div class="btn-group">
+															<a href="javascript:;" class="btn btn-small">Add Nat</a>
+														</div>
+													</div>
+													<div class="form-accent-wrapper">
+														<div class="form form-grid edit-mode">
+															<h5 class="form-title">NAT interface added</h5>
+															<div class="row">
+																<div class="field xs-12 xl-6">
+
+
+																	<label class="label">
+																		<span>Bonding</span><em class="required">*</em>
+																	</label>
+
+																	<div class="select ">
+																		<select class="js-select-custom">
+																			<option value="item1">Option 1</option>
+																			<option value="item2">Option 2</option>
+																			<option value="item3">Option 3</option>
+																			<option value="item4">Option 4</option>
+																			<option value="item5">Option 5</option>
+
+																		</select>
+																	</div>
+
+
+
+																</div>
+																<div class="field bg-12 xl-6">
+																	<label class="label">
+																		IP Address
+																	</label>
+																	<div class="row">
+																		<div class="field field-space-reset xs-12 xl-3">
+																			<div class="select">
+																				<select class="js-select-custom">
+																					<option value="item1">192</option>
+																					<option value="item2">168</option>
+																					<option value="item3">255</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="field field-space-reset xs-12 xl-3">
+																			<div class="select">
+																				<select class="js-select-custom">
+																					<option value="item1">192</option>
+																					<option value="item2">168</option>
+																					<option value="item3">255</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="field field-space-reset xs-12 xl-3">
+																			<div class="select">
+																				<select class="js-select-custom">
+																					<option value="item1">192</option>
+																					<option value="item2">168</option>
+																					<option value="item3">255</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="field field-space-reset xs-12 xl-3">
+																			<div class="select">
+																				<select class="js-select-custom">
+																					<option value="item1">192</option>
+																					<option value="item2">168</option>
+																					<option value="item3">255</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="field bg-12 xl-6">
+
+
+
+																	<label class="label">
+																		<span>Description</span>
+																	</label>
+
+																	<textarea class="extended"></textarea>
+
+
+
+
+																</div>
+															</div>
+															<div class="btn-group">
+																<a href="javascript:;" class="btn btn-secondary btn-small">Remove Nat</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- ACCORDION - ENDS -->
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+							</div>
+							<!-- TAB NETWORKS - ENDS -->
+							<!-- TAB POWER - BEGINS -->
+							<div class="data-section">
+								<!-- SECTION - BEGINS -->
+								<div class="section first-child">	
+									<div class="data-layer data-layer-compact">
+										<div class="data-header">
+											<h3 class="data-title">Power Supply Units</h3>
+											<div class="btn-group">
+												<a href="javascript:;" class="btn btn-small">Add</a>
+											</div>
+										</div>
+
+										<div class="data-body">
+											<ul class="list-units">
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">1</span>
+															<h4 class="unit-title">Power strip_678 - PO 1Power strip_678 - PO 1Power strip_678 - PO 1Power strip_678 - P</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<div class="btn-group">
+															<a href="javascript:;" class="btn btn-secondary btn-small">Delete</a>
+															<a href="javascript:;" class="btn btn-small">Edit</a>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">10</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<a class="link-icon link-icon-secondary icon-left icon-restore">Cycle</a>
+														<div class="switcher">
+															<input type="checkbox" id="switch1" name="set-name" class="switch-input">
+															<label for="switch1" class="switch-label"></label>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">11</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<div class="switcher">
+															<input type="checkbox" id="switch2" name="set-name" class="switch-input" checked>
+															<label for="switch2" class="switch-label"></label>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">12</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<div class="switcher">
+															<input type="checkbox" id="switch3" name="set-name" class="switch-input" disabled>
+															<label for="switch3" class="switch-label"></label>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">12</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<div class="switcher">
+															<input type="checkbox" id="switch3" name="set-name" class="switch-input" checked disabled>
+															<label for="switch3" class="switch-label"></label>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">12</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<span class="label-state ">off</span>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">12456879</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<span class="label-state ">on</span>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">101</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<a class="link-icon link-icon-secondary icon-left icon-restore">Cycle</a>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<span class="unit-id-view">55</span>
+															<h4 class="unit-title">Not Connected</h4>
+														</div>
+													</div>
+													<div class="unit-actions">
+														<div class="status-loading">
+															<div class="loading-sm"></div>
+															Processing
+														</div>
+														<div class="switcher">
+															<input type="checkbox" id="switch4" name="set-name" class="switch-input" checked>
+															<label for="switch4" class="switch-label"></label>
+														</div>
+													</div>
+												</li>
+												<li class="unit-item">
+													<div class="unit-item-caption-wrapper">
+														<div class="unit-item-caption">
+															<input type="text" class="unit-id-edit"/>
+															<h4 class="unit-title">Power strip_678 - PO 1Power strip_678 - PO 1Power strip_678 - PO 1Power strip_678 - P</h4>
+														</div>
+														<div class="error-message">External Port name must be unique</div>
+													</div>
+													<div class="unit-actions">
+														<div class="btn-group">
+															<a href="javascript:;" class="btn-link btn-small">Cancel</a>
+															<a href="javascript:;" class="btn  btn-small">Save</a>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- SECTION - ENDS -->
+							</div>
+							<!-- TAB POWER - ENDS -->
+						</div>
+					</div>
+				</div>
+				<!-- SLIDE BOX - ENDS -->
+
+				<!-- SLIDE BOX - BEGINS -->
+				<div class="slide-box js-slide-3">
+					<div class="slide-box-header">
+						<div class="slide-box-actions actions-left">
+							<span class="action icon-left"></span>
+						</div>
+						<h2 class="slide-box-title">Add cabled device</h2>
+						<div class="slide-box-actions">
+							<span class="action icon-close"></span>
+						</div>
+					</div>
+					<div class="slide-box-body">
+						<div class="cable-map-config">
+							<div class="config-header">
+								<h3 class="config-title icon-step-1">Select device to cable to</h3>
+								<div class="congif-header-actions">
+									<a href="javascript:;" class="btn btn-master btn-small">Next</a>
+								</div>
+								<div class="config-device">
+									<span class="config-device-label">Source:</span>
+									<span class="config-device-name">021001 - Onboard Slot NIC Port 1 - DS3 -
+										Coaxial</span>
+								</div>
+							</div>
+							<div class="config-body">
+								<!-- FILTER - BEGINS -->
+								<div class="filter-master">
+										<div class="filter-view">
+
+											<div class="filter-view-container">
+
+												<div class="filter-view-search  filter-view-search-accent">
+
+													<div class="search-items">
+
+														<div class="search-item search-field">
+															<div class="search">
+																<input type="search" placeholder="Search">
+															</div>
+														</div>
+													</div>
+
+													<div class="search-actions">
+														<span class="action icon-delete"></span>
+													</div>
+												</div>
+
+												<div class="filter-view-actions">
+													<a href="javascript:;" class="link-icon icon-filter icon-left js-filter-edit-trigger">Advanced Search</a>
+													<!-- <a href="javascript:;" class="action icon-filter js-filter-edit-trigger"></a> -->
+												</div>
+											</div>
+
+											<!-- BUTTONS - BEGINS -->
+											<!-- BUTTONS - ENDS -->
+										</div>
+
+										<div class="filter-edit" style="display: none;">
+											<div class="form-grid">
+												<div class="row">
+													<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+														<label class="label">
+															<span>Label</span>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+													</div>
+													<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+
+														<label class="label">
+															<span>Label</span>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom" disabled>
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+													</div>
+													<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+														<label class="label">
+															<span>Label</span>
+														</label>
+
+														<input type="text" value="" class="" />
+
+
+
+
+
+													</div>
+													<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+														<label class="label">
+															<span>Label</span>
+														</label>
+
+														<div class="select ">
+															<select class="js-select-custom">
+																<option value="item1">Option 1</option>
+																<option value="item2">Option 2</option>
+																<option value="item3">Option 3</option>
+																<option value="item4">Option 4</option>
+																<option value="item5">Option 5</option>
+
+															</select>
+														</div>
+
+
+
+													</div>
+													<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+														<label class="label">
+															<span>Label</span>
+														</label>
+
+														<input type="text" value="" class="" />
+
+
+
+
+
+													</div>
+												</div>
+												<div class="row row-actions">
+													<div class="field xl-3 md-4 sm-6 xs-12">
+														<a href="javascript:;" class="link-icon icon-left icon-arrow-top js-filter-edit-close">Hide All Filters</a>
+													</div>
+													<div class="field field-actions xl-3 md-4 sm-6 xs-12">
+														<div class="btn-group">
+															<a href="javascript:;" class="btn-link js-filter-edit-close">Clear All</a>
+															<a href="javascript:;" class="btn js-filter-edit-close">Apply</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+								</div>
+								<!-- FILTER - ENDS -->
+
+								<!-- FILTER RESULTS - BEGINS -->
+								<!-- FILTER RESULTS - ENDS -->
+
+								<!-- for dev: please add "tr-hover" class to row when cursor on it. Do this on both desktop and mobile verions of the table -->
+
+								<!-- TABLE - BEGINS -->
+								<div class="table-box">
+									<div class="table-wrapper table-scrollable-wrapper table-cable-to">
+										<div class="table-head-wrapper">
+											<table class="table">
+												<thead>
+													<tr>
+
+														<th class="cell-indicator"></th>
+														<th>Hostname</th>
+
+
+
+
+
+														<th class="cell-manufacturer-model">Manufacture / Model</th>
+														<th>CPU / RAM</th>
+														<th>Available Ports</th>
+														<th class="cell-alert"></th>
+
+
+
+
+													</tr>
+												</thead>
+											</table>
+										</div>
+
+										<div class="table-body-wrapper">
+											<table class="table">
+												<tbody>
+													<tr class="tr-hover">
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+
+
+
+													</tr>
+													<tr class="tr-disabled">
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"><span class="status warning"></span></td>
+
+
+													</tr>
+													<tr class="tr-selected">
+
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+
+													</tr>
+													<tr>
+
+
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="table-wrapper-mobile">
+										<!-- FROZEN PART - BEGINS -->
+										<div class="frozen">
+											<table class="table">
+												<thead>
+													<tr>
+
+														<th class="cell-indicator"></th>
+														<th>Hostname</th>
+
+
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="tr-hover">
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+
+													</tr>
+													<tr class="tr-disabled">
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+
+													</tr>
+													<tr class="tr-selected">
+
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+
+													</tr>
+													<tr>
+
+
+
+
+
+														<td class="cell-indicator"></td>
+														<td>090750</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- FROZEN PART - ENDS -->
+
+										<!-- SCROLLABLE PART - BEGINS -->
+										<div class="scrollable">
+											<table class="table">
+												<thead>
+													<tr>
+
+														<th class="cell-manufacturer-model">Manufacture / Model</th>
+														<th>CPU / RAM</th>
+														<th>Available Ports</th>
+														<th class="cell-alert"></th>
+
+
+
+
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="tr-hover">
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+
+
+
+													</tr>
+													<tr class="tr-disabled">
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"><span class="status warning"></span></td>
+
+
+													</tr>
+													<tr class="tr-selected">
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+
+													</tr>
+													<tr>
+
+
+
+
+
+														<td class="cell-manufacturer-model">70165</td>
+														<td>SN5435</td>
+														<td></td>
+														<td class="cell-alert"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!-- SCROLLABLE PART - ENDS -->
+									</div>
+								</div>
+								<!-- TABLE - BEGINS -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- SLIDE BOX - ENDS -->
+
+				<!-- SLIDE BOX - BEGINS -->
+				<div class="slide-box js-slide-4">
+					<div class="slide-box-header">
+						<div class="slide-box-actions actions-left">
+							<span class="action icon-left"></span>
+						</div>
+						<h2 class="slide-box-title">Add cabled device</h2>
+						<div class="slide-box-actions">
+							<span class="action icon-close"></span>
+						</div>
+					</div>
+					<div class="slide-box-body">
+						<div class="cable-map-config">
+							<div class="config-header">
+								<h3 class="config-title icon-step-2">Select port to cable to</h3>
+								<div class="congif-header-actions">
+									<a href="javascript:;" class="btn btn-master btn-small">Finish</a>
+								</div>
+								<div class="config-device">
+									<span class="config-device-label">Source:</span>
+									<span class="config-device-name">021001 - Onboard Slot NIC Port 1 - DS3 -
+										Coaxial</span>
+								</div>
+							</div>
+							<div class="config-body">
+								<div class="config-device">
+									<span class="config-device-label">Target:</span>
+									<span class="config-device-name">bndl01</span>
+								</div>
+								<div class="list-mapping-wrapper">
+									<ul class="list-mapping">
+										<li>
+											<div class="item-mapping ">
+												<div class="slot-icon-wrapper">
+													<div class="slot-icon fibre"></div>
+
+												</div>
+												<label for="radio0" class="mapping">
+													<div class="radio-wrap">
+														<input type="radio" id="radio0" name="mapping-radio" 
+														>
+														<label for="radio0">Port 0</label>
+													</div>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="item-mapping active">
+												<div class="slot-icon-wrapper">
+
+													<div class="slot-icon ethernet"></div>
+												</div>
+												<label for="radio1" class="mapping">
+													<div class="radio-wrap">
+														<input type="radio" id="radio1" name="mapping-radio"  checked
+														>
+														<label for="radio1">Port 1</label>
+													</div>
+													<ul class="list-device-details">
+														<li class="device-details-item">0405_test_6</li>
+														<li class="device-details-item">Port-0</li>
+													</ul>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="item-mapping warning">
+												<div class="slot-icon-wrapper">
+
+													<div class="slot-icon micron"></div>
+												</div>
+												<label for="radio2" class="mapping">
+													<div class="radio-wrap">
+														<input type="radio" id="radio2" name="mapping-radio" 
+														>
+														<label for="radio2">Port 2</label>
+													</div>
+													<ul class="list-device-details">
+														<li class="device-details-item">0405_test_6</li>
+														<li class="device-details-item">Port-0</li>
+													</ul>
+													<div class="additional">
+														<span class="status warning"></span>
+													</div>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="item-mapping disabled">
+												<div class="slot-icon-wrapper">
+
+													<div class="slot-icon micro"></div>
+												</div>
+												<label for="radio3" class="mapping">
+													<div class="radio-wrap">
+														<input type="radio" id="radio3" name="mapping-radio"  disabled
+														>
+														<label for="radio3">Port 3</label>
+													</div>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- SLIDE BOX - ENDS -->
+
+		</div>
+
+		<!-- SLIDE BOX CONTAINER - ENDS -->
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+
+</body>
+</html>

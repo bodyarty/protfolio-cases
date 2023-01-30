@@ -1,0 +1,38 @@
+// ------------------------------------------------------------------------- //
+// TOOLTIPSTER PLUGIN CUSTOMIZATIONS.
+//
+// PLUGIN IS USED ONLY FOR STATIC HTML : NO WORRIES
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 00 TOOLTIPSTER
+// ------------------------------------------------------------------------- //
+// need fixes
+// tootipster has another structure, arrow is made by element, not pseudo
+// somethin is wrong with height
+
+.tooltipster-base {
+	@extend %tooltip;
+
+	// .tooltip is a custom class
+	// plugin is used only for js actually
+	.tooltip {
+		position: relative;
+		max-width: none;
+
+		// ARROW TO BOTTOM
+		&::after {
+			@extend %tooltip-arrow;
+			content: '';
+			bottom: -5px;
+			left: 50%;
+			border-top: 5px solid $tooltip-bg;
+			border-right: 5px solid transparent;
+			border-left: 5px solid transparent;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+// Avoid flashing beforehand
+.tip > .tooltip {display: none;}

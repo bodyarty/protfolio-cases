@@ -1,0 +1,385 @@
+<div class="modal" id="js-modal-сonfirmation">
+	<div class="modal-dialog modal-large">
+		<div class="modal-content">
+
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">Confirmation</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+
+					<div class="description description-space-bottom">
+						<p class="mute">
+							You have requested to regenerated Notive of Commencement for CCX-4689 order. Press 'Confirm' so
+							SDP can send a Notice of Commencement to Customers and following CC/BBC options:
+						</p>
+					</div>
+
+					<div class="row">
+						<div class="field xl-6 xs-12">
+							<label class="label">
+								Do you want to notify customer?
+							</label>
+							<div class="radio-group align-row">
+
+
+
+								<div class="radio-wrap ">
+									<input type="radio" id="radio5" name="radio5">
+									<label for="radio5">Yes</label>
+								</div>
+
+
+
+
+
+
+
+
+
+								<div class="radio-wrap ">
+									<input type="radio" id="radio6" name="radio5">
+									<label for="radio6">No</label>
+								</div>
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xs-12 xl-6">
+
+
+							<label class="label">
+								<span>Customers Recipients</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+							<div class="tags-wrapper">
+								<ul class="tags">
+									<li class="tag">
+										<div class="tag-label">Reda Saidi</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+									<li class="tag">
+										<div class="tag-label">Michelle Luba</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+									<li class="tag">
+										<div class="tag-label">Irina Kim</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xl-12">
+							<label class="label">
+								Account Team Members
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="cell-position">Position</th>
+												<th class="cell-name">Name</th>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="cell-position">Account owner</td>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">CC</td>
+											</tr>
+											<tr>
+												<td class="cell-position">Account owner</td>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">BCC</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Position</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Account owner</td>
+												</tr>
+												<tr>
+													<td>Account owner</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Email</th>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>John Fisher</td>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td>John Fisher</td>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field sm-12 xl-8">
+							<label class="label">
+								Additional QTS Recipients
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="cell-name">Name</th>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">CC</td>
+											</tr>
+											<tr>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">BCC</td>
+											</tr>
+										</tbody>
+									</table>
+	
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="cell-name">Name</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="cell-name">John Fisher</td>
+												</tr>
+												<tr>
+													<td class="cell-name">John Fisher</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Email</th>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field sm-12 md-8 xl-6">
+							<label class="label">
+								Additional non-qts recipients
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>test@gmail.com)</td>
+												<td class="cell-status">CC</td>
+											</tr>
+										</tbody>
+									</table>
+	
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Email</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>test@gmail.com)</td>
+												</tr>
+												<tr>
+													<td>test2@gmail.com)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xs-12 xl-4">
+							<div class="check-wrap">
+								<input type="checkbox" id="checkbox1" name="checkbox1" checked="">
+								<label for="checkbox1">Include me as</label>
+							</div>
+							<div class="select">
+								<select class="js-select-custom">
+									<option value="item1">BCC</option>
+									<option value="item2">CC</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Confirm</div>
+						<div class="btn btn-link">Cancel</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>

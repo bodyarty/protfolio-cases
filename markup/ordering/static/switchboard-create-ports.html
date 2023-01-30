@@ -1,0 +1,2549 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Ordering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.ordering.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="current">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="current">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader subheader-compressed sliding">
+	<div class="subheader-container">
+		
+		<!-- SUBHEADER SECTION - BEGINS -->
+		<div class="subheader-section">
+			
+			<!-- SUBHEADER ROW - BEGINS -->
+			<div class="subheader-row subheader-row-fading">
+				<ul class="breadcrumbs">
+					<li><a href="dashboard.html">Online Ordering</a></li>
+					<li><a href="switchboard-search-ports.html">Switchboard</a></li>
+					<li class="active">Create Page Commons</li>
+				</ul>
+			</div>
+			<!-- SUBHEADER ROW - ENDS -->
+			
+			<div class="subheader-row subheader-row-mobile">
+				<h1 class="page-title">Create Page Commons</h1>
+				
+				<div class="btn-group">
+					<a href="switchboard-search-ports.html" class="btn-link mobile-shifted">Cancel</a>
+					<a href="switchboard-search-ports-view.html" class="btn btn-secondary">Delete Order</a>
+					<a href="switchboard-search-ports-view.html" class="btn">Save as Draft</a>
+					<a href="switchboard-search-ports.html" class="btn btn-master">Submit Order</a>
+				</div>
+			</div>
+		</div>
+		<!-- SUBHEADER SECTION - ENDS -->
+		
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT - BEGINS -->
+<div class="content-main condensed">
+	<div class="content-container">
+		
+		<div class="page">
+			
+			<!-- CORE - BEGINS -->
+			<div class="core">
+				
+				<!-- SECTION - BEGINS -->
+				<div class="section first-child">
+					
+					<div class="data-layer data-layer-compact">
+						<div class="data-header">
+							<h2 class="data-title">General Info</h2>
+						</div>
+						
+						<div class="data-body">
+							<div class="form edit-mode form-grid">
+								<div class="row">
+									<div class="field xs-12">
+										<div class="radio-group align-row">
+
+
+
+											<div class="radio-wrap ">
+												<input type="radio" id="radio1" name="radio2">
+												<label for="radio1">QTS Switchboard</label>
+											</div>
+
+
+
+
+
+
+
+
+
+											<div class="radio-wrap ">
+												<input type="radio" id="radio2" name="radio2">
+												<label for="radio2">Carrier Hotel Switchboard</label>
+											</div>
+
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="field xs-12">
+
+
+										<label class="label">
+											<span>Select Example</span><em class="required">*</em>
+										</label>
+
+										<div class="select ">
+											<select class="js-select-custom">
+												<option value="item1">Option 1</option>
+												<option value="item2">Option 2</option>
+												<option value="item3">Option 3</option>
+												<option value="item4">Option 4</option>
+												<option value="item5">Option 5</option>
+
+											</select>
+										</div>
+
+
+
+									</div> 
+									<div class="field xs-12">
+
+
+										<label class="label">
+											<span>Input Example</span>
+										</label>
+
+										<input type="text" value="" class="" />
+
+
+
+
+
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="field xs-12">
+
+
+										<label class="label">
+											<span>Select Example</span><em class="required">*</em>
+										</label>
+
+										<div class="select ">
+											<select class="js-select-custom">
+												<option value="item1">Option 1</option>
+												<option value="item2">Option 2</option>
+												<option value="item3">Option 3</option>
+												<option value="item4">Option 4</option>
+												<option value="item5">Option 5</option>
+
+											</select>
+										</div>
+
+
+
+									</div>
+									<div class="field xs-12">
+
+
+
+										<label class="label">
+											<span>Textarea Example</span>
+										</label>
+
+										<textarea class=""></textarea>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- SECTION - ENDS -->
+				
+				<!-- SECTION - BEGINS -->
+				<div class="section">
+					<div class="data-layer data-layer-compact">
+						<div class="data-header">
+							<h2 class="data-title">Switchboard Port Details</h2>
+							<div class="data-header-sup">
+								<p class="clarification">( Where do you want the circuit to originate? )</p>
+							</div>
+						</div>
+						
+						<div class="data-body">
+							<div class="form edit-mode form-grid separated">	
+								<div class="row">
+									<div class="field xs-12">
+										<label class="label">
+											Checkbox Example (2 in a Row)
+										</label>
+
+
+
+										<div class="check-wrap ">
+											<input type="checkbox" id="checkbox12" name="checkbox12">
+											<label for="checkbox12">Yes, I want faster turnaround (for an extra charge)</label>
+										</div>
+
+
+
+
+
+
+									</div>
+									<div class="field xs-12">
+										<label class="label">
+											Radio Example (2 in a Row)
+										</label>
+										<div class="radio-group align-row">
+
+
+
+											<div class="radio-wrap ">
+												<input type="radio" id="radio3" name="radio2">
+												<label for="radio3">Public</label>
+											</div>
+
+
+
+
+
+
+
+
+
+											<div class="radio-wrap ">
+												<input type="radio" id="radio4" name="radio2">
+												<label for="radio4">Private</label>
+											</div>
+
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<p class="clarification">Where do you want the circuit to extend to?</p>
+							
+							<div class="form edit-mode form-grid">
+								<div class="row">
+									<div class="field xl-6 xs-12">
+										<label class="label">
+											Eror for Rack
+										</label>
+										<span class="value">
+											<div class="alert-box warning">
+												Rack is not selected
+											</div>
+										</span>
+									</div>
+									<div class="field xl-6 xs-12">
+										<label class="label">
+											Tooltip Example
+										</label>
+										<span class="value">
+											<div class="tip tip-clickable warning"></div>
+											ASH1-400
+										</span>
+									</div>
+									<div class="field xl-6 xs-12">
+										<label class="label">
+											Checkbox and Control
+										</label>
+
+
+
+										<div class="check-wrap spaced-bottom">
+											<input type="checkbox" id="checkbox15" name="checkbox15">
+											<label for="checkbox15">Yes, I want faster turnaround (for an extra charge)</label>
+										</div>
+
+
+
+
+
+
+										<div class="select ">
+											<select class="js-select-custom">
+												<option value="item1">Option 1</option>
+												<option value="item2">Option 2</option>
+												<option value="item3">Option 3</option>
+												<option value="item4">Option 4</option>
+												<option value="item5">Option 5</option>
+
+											</select>
+										</div>
+
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="field xs-12">
+										<label class="label">
+											Link Example
+										</label>
+										<span class="value">
+											<a href="javascript:;" onclick="showDialog('js-modal-rack-location');">Select Rack</a>
+										</span>
+									</div>
+									<div class="field xs-12">
+										<label class="label">
+											Upload File
+										</label>
+										<div class="file-upload">
+											<label for="file-upload">Upload File</label>
+											<input type="file" id="file-upload">
+										</div>
+										<ul class="list-files-uploaded">
+											<li>
+												<span class="document">File Number 1.pdf <span class="action icon-delete"></span></span>
+											</li>
+											<li>
+												<span class="document">File Number 2.pdf</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="field xs-12 xl-6">
+										<label class="label">
+											MAC LAYER SPECIFICATION
+										</label>
+										<div class="check-wrap check-wrap-extended">
+											<span class="value">Title for checkbox</span>
+											<input type="checkbox" id="checkbox1" name="checkbox1" checked="">
+											<label for="checkbox1">Ticket Requester</label>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="field xs-12">
+
+
+
+										<label class="label">
+											<span>Comments</span>
+										</label>
+
+										<textarea class="extended"></textarea>
+
+
+
+
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="field xl-12 control-single">
+
+
+										<label class="label">
+											<span>Select Example</span><em class="required">*</em>
+										</label>
+
+										<div class="select ">
+											<select class="js-select-custom">
+												<option value="item1">Option 1</option>
+												<option value="item2">Option 2</option>
+												<option value="item3">Option 3</option>
+												<option value="item4">Option 4</option>
+												<option value="item5">Option 5</option>
+
+											</select>
+										</div>
+
+
+
+									</div>
+									
+									<div class="field xl-12">
+										<div class="table-wrapper table-expense">
+											<table class="table ">
+												<thead>
+													<tr>
+														<th class="cell-actions"></th>
+														<th class="cell-name">Product List</th>
+														<th class="cell-price">Price</th>
+														<th class="cell-quantity">Quantity</th>
+														<th class="cell-summ">Summ</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="cell-actions">
+															<span class="action icon-delete action-secondary"></span>
+														</td>
+														<td class="cell-name">RH&E w-Monthly Commit MRC</td>
+														<td class="cell-price">$ 90.00</td>
+														<td class="cell-quantity cell-quantity-edit">
+															<div class="control-unit">
+																<input type="text" class="small">
+																<span class="unit">hrs</span>
+															</div>
+														</td>
+														<td class="cell-summ">$ 90.00</td>
+													</tr>
+													<tr>
+														<td class="cell-actions">
+															<span class="action icon-delete action-secondary"></span>
+														</td>
+														<td class="cell-name">RH&E w-Monthly Commit MRCRH&E w-Monthly Commit MRCRH&E w-Monthly Commit MRCRH&E w-Monthly Commit MRC</td>
+														<td class="cell-price">$ 90.00</td>
+														<td class="cell-quantity cell-quantity-edit">
+															<div class="control-unit">
+																<input type="text" class="small">
+																<span class="unit">hrs</span>
+															</div>
+														</td>
+														<td class="cell-summ">$ 90.00</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td class="text-right" colspan="5">Total Summ <span class="total">$ 380.00</span></td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="field xl-6 xs-12">
+										<label class="label">Label</label>
+										<div class="control-accessory">
+											<input type="text">
+											<div class="accessory">
+												<div class="action icon-done action-secondary"></div>
+												<div class="action icon-delete action-secondary"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="field xl-6  xs-12">
+										<label class="label">Label</label>
+										<div class="value">
+											<div class="text-action-wrapper">
+												<div class="text-action">
+													123
+												</div>
+												<span class="action icon-edit action-secondary action-right"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="field xl-6 xs-12">
+										<label class="label">Label</label>
+										<div class="control-accessory">
+											<input type="text">
+											<div class="accessory">
+												<a href="javascript:;" class="link-accent">Validate</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="field xl-6 xs-12">
+										<label class="label">Label</label>
+										<div class="control-accessory">
+											<input type="text">
+											<div class="accessory">
+												<div class="status success">Success</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="field xl-6 xs-12">
+										<label class="label">Label</label>
+										<div class="control-accessory">
+											<input type="text">
+											<div class="accessory">
+												<div class="loading-inline-text">Validating</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="field xl-6 xs-12">
+										<label class="label">Label</label>
+										<div class="control-accessory">
+											<input type="text">
+											<div class="accessory">
+												<div class="status error">Nooooooooooooo</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="alert-group">
+									<div class="alert-box alert-highlight">
+										<span class="accent">Please Note</span>: QTS will deliver the cross connect from Switchboard to your termination point (your
+										cabinet or panel as requested). In order to complete the activation process, you will need to complete the physical connection and
+										configure your equipment (Switch or Router).Please open a <a href="javascript:;">Remote Hands</a> ticket with the QTS OSC if you need assistance to do
+										this.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- SECTION - ENDS -->
+			</div>
+			<!-- CORE - ENDS -->
+			
+			<!-- SIDEBAR - BEGINS -->
+			<div class="sidebar-wrapper">
+				<aside class="sidebar sliding">
+					<div class="panel-group">
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+								<div class="panel-actions">
+									<a class="link-icon icon-refresh" href="javascript:;">Refresh</a>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<div class="status in-progress status-accent">In Progress</div>
+									<div class="history-summary">
+										<p>Your Cross Connect order was reviewed but Data Center Operations team rejected it because of the following reason:</p>
+										<p class="chat-bubble incoming">We've ran out of cables of 1 Gig-E types, would 10 Gig-E type would be ok for you?</p>
+										<p>You can update the order and re-submit it for review.</p>
+									</div>
+								</div>
+
+								<div class="panel-content">
+									<div class="collapse-area">
+										<ul class="list-history">
+											<li class="list-history-item current">
+												<div class="identity">
+													<div class="name">QTS DCO Teamtest test test test test test test test</div>
+												</div>
+												<div class="condition">
+													<div class="state">Completed</div>
+													<div class="date">01/05/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">QTS DCO Team</div>
+												</div>
+												<div class="condition">
+													<div class="state">Approved</div>
+													<div class="date">01/05/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">Alex Lee</div>
+												</div>
+												<div class="condition">
+													<div class="state">Information provided</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+												<p class="comment">
+													Updated LOA file attached now.
+												</p>
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">QTS DCO Team</div>
+												</div>
+												<div class="condition">
+													<div class="state">More information requested</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+												<p class="comment">
+													Hello, please provide updated LOA file, current file c...
+													<a href="javascript:;" onclick="showDialog('js-modal-see-comment');" class="show-full-info">Show more</a>
+												</p>
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">Alex Lee</div>
+												</div>
+												<div class="condition">
+													<div class="state">Submitted</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">John Doe</div>
+												</div>
+												<div class="condition">
+													<div class="state">Created</div>
+													<div class="date">29/04/2018</div>
+												</div>
+
+											</li>
+										</ul>
+										<p>Your crossConnect implementation is in progress. We will notify you when the implementation is complete.</p>
+									</div>
+
+									<div class="collapse-actions">
+										<a class="link-icon icon-arrow-top" href="javascript:;">Hide History</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+							</div>
+							<div class="panel-body">
+								<div class="text-action-wrapper">
+									<div class="text-action status status-accent in-progress">
+										In Progress
+									</div>
+									<span class="action icon-edit action-secondary action-right"></span>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Helpful Tips</h4>
+							</div>
+
+							<div class="panel-body">
+								<p>Switchboard Port pricing is based on the selected port type.</p>
+								<p>Please note that expedited orders will incur an additional setup charge.</p>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+							</div>
+							<div class="panel-body">
+								<div class="panel-content">
+									<div class="status in-progress status-accent">In Progress</div>
+								</div>
+								<div class="panel-content">
+									<div class="description">
+										<h5 class="description-title">Next Steps:</h5>
+										<ol>
+											<li>QTS reviews the order details</li>
+											<li>QTS updates the order status</li>
+											<li>After the order is approved, you can submit Subscription Request(s) against this subscription</li>
+											<li>System tracks Time Spent against this subscription</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- DRAWER - BEGINS -->
+						<div class="drawer js-drawer">
+
+							<!-- DRAWER PREVIEW - BEGINS -->
+							<div class="drawer-preview">
+								<div class="drawer-header">
+									<h5 class="drawer-title">Pricing Information</h5>
+									<div class="drawer-logo megaport-logo"></div>
+									<div class="actions">
+										<span class="drawer-trigger"></span>
+									</div>
+								</div>
+								<div class="drawer-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+							<!-- DRAWER PREVIEW - ENDS -->
+
+							<!-- DRAWER REMAINING - BEGINS -->
+							<div class="drawer-remaining">
+								<div class="drawer-content">
+									<p>Switchboard Port pricing is based on the selected port type.</p>
+									<p>Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+							</div>
+							<!-- DRAWER REMAINING - ENDS -->
+
+						</div>
+						<!-- DRAWER - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Notice of Commencement</h4>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Regenerate Notice of Commencement Letter for this order.</p>
+									<p>You can select whether to include Customer to this emeil or generate it for internal QTS recipients only.</p>
+								</div>
+
+								<div class="panel-content">
+									<div class="btn-group">
+										<a href="javascipt:;" class="btn" onclick="showDialog('js-modal-сonfirmation');">Regenerate</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo packetfabric-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Hour Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price price-reccurring">
+											<dt class="price-label">Monthly Recurring Fee</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value editable">
+												<div class="charge">
+													<span class="currency">$</span> 12 0001
+												</div>
+												<div class="actions">
+													<span class="action icon-edit"></span>
+												</div>
+											</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value editable">
+												<div class="charge">
+													<input type="text" value="50000">
+												</div>
+												<div class="actions">
+													<span class="action icon-done"></span>
+													<span class="action icon-delete"></span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+					</div>
+				</aside>
+			</div>
+			<!-- SIDEBAR - ENDS -->
+
+		</div>
+
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+
+<div class="modal" id="js-modal-rack-location">
+	<div class="modal-dialog modal-large modal-sided">
+		<div class="modal-content">
+			
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+			
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+			
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">Select Rack Location</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+					<div class="description">
+						<p class="mute">
+							Select rack location for A-side cross connect within AM, Amsterdam data center.
+						</p>
+					</div>
+					
+					<div class="table-box">
+						<div class="table-wrapper table-scrollable-wrapper table-fence table-select-location">
+							<div class="table-head-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-checkbox"></th>
+											<th class="cell-name">Name</th>
+
+
+
+
+
+
+
+
+
+											<th class="cell-location">Location</th>
+											<th class="cell-building">Building</th>
+											<th class="cell-parent-space">Parent Space</th>
+											<th class="cell-status">Status</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+								</table>
+							</div>
+							
+							<div class="table-body-wrapper">
+								<table class="table">
+									<tbody>
+										<tr>
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox0" name="checkbox0">
+													<label for="checkbox0"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox1" name="checkbox1">
+													<label for="checkbox1"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox2" name="checkbox2">
+													<label for="checkbox2"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox3" name="checkbox3">
+													<label for="checkbox3"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox4" name="checkbox4">
+													<label for="checkbox4"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox5" name="checkbox5">
+													<label for="checkbox5"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox7" name="checkbox7">
+													<label for="checkbox7"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox8" name="checkbox8">
+													<label for="checkbox8"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="table-wrapper-mobile table-fence">
+							<!-- FROZEN PART - BEGINS -->
+							<div class="frozen">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-checkbox"></th>
+											<th class="cell-name">Name</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox0" name="checkbox0">
+													<label for="checkbox0"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox1" name="checkbox1">
+													<label for="checkbox1"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox2" name="checkbox2">
+													<label for="checkbox2"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox3" name="checkbox3">
+													<label for="checkbox3"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox4" name="checkbox4">
+													<label for="checkbox4"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox5" name="checkbox5">
+													<label for="checkbox5"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox7" name="checkbox7">
+													<label for="checkbox7"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox8" name="checkbox8">
+													<label for="checkbox8"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- FROZEN PART - ENDS -->
+							
+							<!-- SCROLLABLE PART - BEGINS -->
+							<div class="scrollable">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-location">Location</th>
+											<th class="cell-building">Building</th>
+											<th class="cell-parent-space">Parent Space</th>
+											<th class="cell-status">Status</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- SCROLLABLE PART - ENDS -->
+						</div>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Select</div>
+						<div class="btn-link" onclick="closeDialog();">Cancel</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+				
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>
+<div class="modal" id="js-modal-сonfirmation">
+	<div class="modal-dialog modal-large">
+		<div class="modal-content">
+
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">Confirmation</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+
+					<div class="description description-space-bottom">
+						<p class="mute">
+							You have requested to regenerated Notive of Commencement for CCX-4689 order. Press 'Confirm' so
+							SDP can send a Notice of Commencement to Customers and following CC/BBC options:
+						</p>
+					</div>
+
+					<div class="row">
+						<div class="field xl-6 xs-12">
+							<label class="label">
+								Do you want to notify customer?
+							</label>
+							<div class="radio-group align-row">
+
+
+
+								<div class="radio-wrap ">
+									<input type="radio" id="radio5" name="radio5">
+									<label for="radio5">Yes</label>
+								</div>
+
+
+
+
+
+
+
+
+
+								<div class="radio-wrap ">
+									<input type="radio" id="radio6" name="radio5">
+									<label for="radio6">No</label>
+								</div>
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xs-12 xl-6">
+
+
+							<label class="label">
+								<span>Customers Recipients</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+							<div class="tags-wrapper">
+								<ul class="tags">
+									<li class="tag">
+										<div class="tag-label">Reda Saidi</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+									<li class="tag">
+										<div class="tag-label">Michelle Luba</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+									<li class="tag">
+										<div class="tag-label">Irina Kim</div>
+
+
+										<div class="tag-action close"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xl-12">
+							<label class="label">
+								Account Team Members
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="cell-position">Position</th>
+												<th class="cell-name">Name</th>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="cell-position">Account owner</td>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">CC</td>
+											</tr>
+											<tr>
+												<td class="cell-position">Account owner</td>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">BCC</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Position</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Account owner</td>
+												</tr>
+												<tr>
+													<td>Account owner</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Email</th>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>John Fisher</td>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td>John Fisher</td>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field sm-12 xl-8">
+							<label class="label">
+								Additional QTS Recipients
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="cell-name">Name</th>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">CC</td>
+											</tr>
+											<tr>
+												<td class="cell-name">John Fisher</td>
+												<td>johnfisher@qtcdatacenters.com</td>
+												<td class="cell-status">BCC</td>
+											</tr>
+										</tbody>
+									</table>
+	
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="cell-name">Name</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="cell-name">John Fisher</td>
+												</tr>
+												<tr>
+													<td class="cell-name">John Fisher</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Email</th>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td>johnfisher@qtcdatacenters.com</td>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field sm-12 md-8 xl-6">
+							<label class="label">
+								Additional non-qts recipients
+							</label>
+							<div class="table-box columns-few">
+								<div class="table-wrapper table-fence table-members">
+	
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Email</th>
+												<th class="cell-status">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>test@gmail.com)</td>
+												<td class="cell-status">CC</td>
+											</tr>
+										</tbody>
+									</table>
+	
+								</div>
+
+								<div class="table-wrapper-mobile table-fence">
+									<!-- FROZEN PART - BEGINS -->
+									<div class="frozen">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Email</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>test@gmail.com)</td>
+												</tr>
+												<tr>
+													<td>test2@gmail.com)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- FROZEN PART - ENDS -->
+									
+									<!-- SCROLLABLE PART - BEGINS -->
+									<div class="scrollable">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="cell-status">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="cell-status">CC</td>
+												</tr>
+												<tr>
+													<td class="cell-status">BCC</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- SCROLLABLE PART - ENDS -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="field xs-12 xl-4">
+							<div class="check-wrap">
+								<input type="checkbox" id="checkbox1" name="checkbox1" checked="">
+								<label for="checkbox1">Include me as</label>
+							</div>
+							<div class="select">
+								<select class="js-select-custom">
+									<option value="item1">BCC</option>
+									<option value="item2">CC</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Confirm</div>
+						<div class="btn btn-link">Cancel</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+<script src="../../../assets/js/drawer.js"></script>
+
+</body>
+</html>

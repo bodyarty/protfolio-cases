@@ -1,0 +1,93 @@
+<div class="modal" id="js-modal-duo" style="display: none;">
+
+	<!-- MODAL MARKUP - BEGINS -->
+	<div class="modal-dialog modal-xlarge">
+		<div class="modal-head">
+			<div class="modal-close" onclick="closeDialog();"></div>
+		</div>
+
+		<div class="modal-content">
+
+			<!-- MODAL HEADER - BEGINS -->
+			<div class="modal-header">
+				<h3 class="modal-title">Duo Management</h3>
+			</div>
+			<!-- MODAL HEADER - ENDS -->
+
+			<!-- MODAL BODY - BEGINS -->
+			<div class="modal-body">
+
+				<div class="description separated">
+					<div class="collapsible-block">
+						<p class="mute">
+							Your company profile has the External Duo Security MFA service enabled. <span class="collapsed">For any users in your Roster that have the ‘Duo – External’ authentication type assigned, they will first be authenticated locally when logging in to the Portal, followed by a 2nd factor authentication using your company’s Duo account. Please use the following form to set the Auth API keys provided by Duo. You can use the ‘Test Connection’ link to ensure that the keys you entered are indeed valid. If this test is not successful, your Roster users will not be able to login to the Portal.</span>
+						</p>
+						<div class="collapse-action">
+							<a class="collapse-link collapse-link-dropdown" href="javascript:;">View More</a>
+							<a class="collapse-link collapse-link-dropup" href="javascript:;">View Less</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="form form-grid">
+					<div class="row">
+						<div class="field xs-12">
+
+
+							<label class="label"><span>Duo API Host</span><em class="required">*</em>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+						<div class="field xs-12">
+
+
+							<label class="label"><span>Duo Integration Key</span><em class="required">*</em>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+						<div class="field xs-12">
+
+
+							<label class="label"><span>Duo Secret Key</span><em class="required">*</em>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MODAL BODY - ENDS -->
+
+			<!-- MODAL FOOTER - BEGINS -->
+			<div class="modal-footer">
+				<div class="btn-group">
+					<div class="btn" onclick="closeDialog();">Save</div>
+					<a class="btn-link" href="users.html">Cancel</a>
+				</div>
+			</div>
+			<!-- MODAL FOOTER - ENDS -->
+
+		</div>
+	</div>
+	<!-- MODAL MARKUP - ENDS -->
+
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>

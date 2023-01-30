@@ -1,0 +1,5174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.dashboard.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader sliding">
+	<div class="subheader-container">
+		
+		<!-- SUBHEADER SECTION - BEGINS -->
+		<div class="subheader-section">
+			
+			<!-- SUBHEADER ROW - BEGINS -->
+			<div class="subheader-row">
+				<div class="selection-master">
+					<div class="selection-master-header">
+						<h1 class="page-title">Dashboard</h1> for
+					</div>
+					
+					<div class="select select-master">
+						<select class="js-select-custom">
+							<option value="item1">Option 1</option>
+							<option value="item2">Option 2</option>
+							<option value="item3">Option 3</option>
+							<option value="item4">Option 4</option>
+							<option value="item5">Option 5</option>
+
+						</select>
+					</div>
+
+				</div>
+				
+				<div class="btn-group">
+					<a href="javascript:;" class="btn btn-text-icon btn-icon-left btn-refresh">Refresh</a>
+					<a href="javascript:;" class="btn btn-master" onclick="showDialog('js-modal-dashboard-edit');">Edit Dashboard</a>
+				</div>
+				
+			</div>
+			<!-- SUBHEADER ROW - ENDS -->
+			
+		</div>
+		<!-- SUBHEADER SECTION - ENDS -->
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT MAIN - BEGINS -->
+<div class="content-main">
+	
+	<div class="content-container">
+		
+
+		<!-- ANNOUNCEMENT - BEGINS -->
+		<div class="announcement-wrapper">
+			<div class="announcement-body">
+				<div class="announcement">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iure nisi inventore sapiente rerum exercitationem? Lorem ipsum dolor sit amet, <a href="javascript:;">consectetur adipisicing elit</a>. Veritatis cumque blanditiis, amet tenetur perspiciatis? Aliquam aperiam soluta, provident est quo. Sed praesentium minus dolore eligendi neque perspiciatis velit voluptatem magnam.</p>
+				</div>
+
+				<div class="announcement-actions">
+					<span class="action icon-close"></span>
+				</div>
+			</div>
+		</div>
+		<!-- ANNOUNCEMENT  - ENDS -->
+
+		
+		<!-- WIDGETS - BEGINS -->
+		<div class="widgets">
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+  <div class="widget-header">
+  	<h3 class="widget-title">Widget Title</h3>
+  	<div class="widget-actions">
+  		<button class="action icon-refresh action-middle" type="button"></button>
+  	</div>
+  </div>
+  <div class="widget-body">
+    <!----><!---->
+    <div class="widget-section ng-star-inserted">
+      <div class="tabs-ligt-wrapper">
+        <ul class="tabs-light">
+          <li class="active ng-star-inserted">
+            <a target="_blank" class="tab-title"> ASH1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> DFW1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> JCY1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> MIA1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> RIC1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> SJC1 </a>
+          </li>
+          <li class="ng-star-inserted">
+            <a target="_blank" class="tab-title"> SJC1 </a>
+          </li>
+          <li class="attention ng-star-inserted">
+            <a target="_blank" class="tab-title"> SUW1 </a>
+          </li>
+          <!---->
+        </ul>
+        <div class="tabs-light-content">
+          <div class="graph-row">
+            <div class="graph">
+              <div class="plug">
+                <rh-utilization-chart
+                  ><svg rhutilizationchartdirective="" style="width: 100%">
+                    <g
+                      class="chart"
+                      transform=" translate(18.9, 5.175000000000001)"
+                    >
+                      <g
+                        class="axis-y"
+                        fill="none"
+                        font-size="10"
+                        font-family="sans-serif"
+                        text-anchor="end"
+                      >
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,140.14999999999998)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            0
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,112.21999999999998)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            1
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,84.28999999999998)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            2
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,56.35999999999999)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            3
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,28.42999999999999)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            4
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,0.5)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="171.85"
+                            style="
+                              stroke: rgb(157, 159, 162);
+                              stroke-width: 0.5px;
+                            "
+                          ></line>
+                          <text fill="currentColor" x="-4" dy="0.32em">
+                            5
+                            <tspan style="fill: rgb(157, 159, 162)">h</tspan>
+                          </text>
+                        </g>
+                      </g>
+                      <g class="column" transform=" translate(2.5, 0)"></g>
+                      <g class="column" transform=" translate(0.4625, 100)">
+                        <rect
+                          class="bar"
+                          x="1"
+                          y="0"
+                          width="35.9625"
+                          height="39.64999999999998"
+                          style="fill: rgb(33, 62, 136); cursor: pointer"
+                        ></rect>
+                      </g>
+                      <g class="column" transform=" translate(45.4625, 0)">
+                        <rect
+                          class="bar"
+                          x="1"
+                          y="0"
+                          width="35.9625"
+                          height="139.64999999999998"
+                          style="fill: rgb(24, 157, 137); cursor: pointer"
+                        ></rect>
+                      </g>
+                      <g class="column" transform=" translate(134.45, 30)">
+                        <rect
+                          class="bar"
+                          x="1"
+                          y="0"
+                          width="35.9625"
+                          height="109.64999999999998"
+                          style="fill: rgb(246, 178, 60); cursor: pointer"
+                        ></rect>
+                      </g>
+
+                      <g class="column" transform=" translate(88.425, 50)">
+                        <rect
+                          class="bar"
+                          x="1"
+                          y="0"
+                          width="35.9625"
+                          height="89.64999999999998"
+                          style="fill: rgb(211, 24, 33); cursor: pointer"
+                        ></rect>
+                      </g>
+                      <g class="column" transform=" translate(131.3875, 0)"></g>
+                    </g></svg
+                ></rh-utilization-chart>
+              </div>
+            </div>
+            <div class="graph-description">
+              <ul class="list-description">
+                <li class="list-description-item ng-star-inserted">
+                  <span
+                    class="bullet"
+                    style="background-color: rgb(33, 62, 136)"
+                  ></span
+                  ><a
+                    qts-helptip=""
+                    helptipapplication="sdp-dashboard"
+                    helptippage="remoteHands"
+                    target="_blank"
+                    class="item-label helptip"
+                    href="https://develop.dev.qtsdatacenters.com/portal/onlineOrdering-ui.do?code=ORDERS_HISTORY#/rhe/subscriptions?location=ASH1&amp;status=Fulfilled&amp;expand=true"
+                    >Metric 1</a
+                  ><span class="value-group"
+                    ><span class="value-element"
+                      ><span class="item-value">0</span
+                      ><span class="item-unit"> h</span></span
+                    ><!----></span
+                  >
+                </li>
+                <li class="list-description-item ng-star-inserted">
+                  <span
+                    class="bullet"
+                    style="background-color: rgb(246, 178, 60)"
+                  ></span
+                  ><a
+                    qts-helptip=""
+                    helptipapplication="sdp-dashboard"
+                    helptippage="remoteHands"
+                    target="_blank"
+                    class="item-label helptip"
+                    href="https://develop.dev.qtsdatacenters.com/portal/onlineOrdering-ui.do?code=ORDERS_HISTORY#/rhe/subscriptions?location=ASH1&amp;status=Fulfilled"
+                    >Metric 2</a
+                  ><span class="value-group"
+                    ><span class="value-element"
+                      ><span class="item-value">5</span
+                      ><span class="item-unit"> h</span></span
+                    ><!----></span
+                  >
+                </li>
+                <li class="list-description-item">
+                  <span class="bullet" style="background-color: #d31821"></span>
+
+                  <span class="item-label">
+                    <span class="item-label-body">Metric 3</span>
+                  </span>
+
+                  <span class="item-value"> 2 </span>
+
+                  <span class="item-unit"> h </span>
+                </li>
+                <li class="list-description-item ng-star-inserted">
+                  <span
+                    class="bullet"
+                    style="background-color: rgb(24, 157, 137)"
+                  ></span
+                  ><a
+                    qts-helptip=""
+                    helptipapplication="sdp-dashboard"
+                    helptippage="remoteHands"
+                    target="_blank"
+                    class="item-label helptip"
+                    href="https://develop.dev.qtsdatacenters.com/portal/onlineOrdering-ui.do?code=ORDERS_HISTORY#/rhe/subscriptions?location=ASH1&amp;status=Fulfilled"
+                    >Metric 4</a
+                  ><span class="value-group"
+                    ><span class="value-element"
+                      ><span class="item-value">5</span
+                      ><span class="item-unit"> h</span></span
+                    ><!----></span
+                  >
+                </li>
+                <!---->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----><!---->
+  </div>
+</div>
+<!-- WIDGET - ENDS -->
+</div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-marketing">
+	<div class="widget-cover"></div>
+	<div class="widget-body">
+
+		<!-- insert custom markup here, remember to add class "widget-marketing" on top -->
+		<!-- EXAMPLARY MARKUP - BEGINS -->
+		<h3 class="event-type">HOW-TO-VIDEOS</h3>
+		<div class="event-description">
+			<p>Step-by-Step Instructional Videos</p>
+		</div>
+		<ul class="list-marked">
+			<li class="list-marked-item"><a href="">How to Order a Cross Connect to Your Cage</a></li>
+			<li class="list-marked-item"><a href="">How to Order a Cross Connect to a Carrier</a></li>
+			<li class="list-marked-item"><a href="">How to Order a Switchboard Port</a></li>
+			<li class="list-marked-item"><a href="">How to Manage Your Environment Remotely</a></li>
+			<li class="list-marked-item"><a href="">Accessing Your internetConnect Bandwidth Usage</a></li>
+		</ul>
+		<!-- EXAMPLARY MARKUP - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">AVERAGE TEMPERATURE</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">CH-1DC1-1-DH1</h4>
+		</div>
+		<div class="metrics-group metrics-group-slim">
+			<!-- EQUIVALENCY - BEGINS -->
+			<div class="metrics metrics-secondary metrics-slim metrics-align-center metrics-valign-center">
+				<ul class="list-base list-base-single-item">
+					<li class="list-base-item item-temperature item-vertical">
+						<span class="base-item">
+							<span class="item-label">
+								<span class="label-wrapper-inner">
+									<span class="item-label-value">71.1</span>
+									<span class="item-label-unit">&#176;F</span>
+								</span>
+							</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!-- EQUIVALENCY - ENDS -->
+
+			<!-- GRAPH - BEGINS -->
+			<div class="metrics metrics-primary">
+				<div class="graph-wrapper graph-accent">
+					<!-- GRAPHS HEADER - BEGINS -->
+					<div class="graph-header">
+						<h4 class="graph-title">AVG Temp Trends</h4>
+					</div>
+					<!-- GRAPHS HEADER - ENDS -->
+				</div>
+			</div>
+			<!-- GRAPH - ENDS -->
+		</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Power</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		
+		<!-- WIDGET BODY HEADER - BEGINS -->
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+
+			<div class="status-leed gold">
+				LEED<br>Gold
+			</div>
+		</div>
+		<!-- WIDGET BODY HEADER - ENDS -->
+		
+		<!-- METRICS GROUP - BEGINS -->
+		<div class="metrics-group metrics-group-slim">
+			<!-- CAPACITY AVERAGE - BEGINS -->
+			<div class="metrics metrics-slim metrics-align-center">
+				<h5 class="title-metrics">% Capacity Average</h4>
+					
+				<!-- BATTERY - BEGINS -->
+				<div class="battery level-success">
+					<div class="level-total">
+						<div class="level" style="transform: translateY(34%);"></div>
+					</div>
+					<div class="level-value">34%</div>
+				</div>
+				<!-- BATTERY - ENDS -->
+			</div>
+			<!-- CAPACITY AVERAGE - ENDS -->
+			
+					
+			<!-- TRENDS GRAPH - BEGINS -->
+			<div class="metrics metrics-primary">
+				<div class="graph-wrapper graph-power graph-accent">
+					<!-- GRAPHS HEADER - BEGINS -->
+					<div class="graph-header">
+						<h4 class="graph-title">kW Trends for DFW1</h4>
+						<div class="tip tip-clickable">
+
+							<div class="tooltip ">Primary/Redundant pair can't exist on the same Router. Drop-down contains only Ports on Routers that diverse from Primary port router.</div>
+						</div>
+
+						
+						<!-- CHART LEGEND - BEGINS -->
+						<ul class="chart-legend">
+							<li class="chart-legend-item">
+								<span class="bullet" style="background: #F6B23C;"></span>
+								<span class="legend-name">DFW1 (CST)</span>
+							</li>
+						</ul>
+						<!-- CHART LEGEND - ENDS -->
+					</div>
+					<!-- GRAPHS HEADER - ENDS -->
+					
+				</div>
+			</div>
+			<!-- TRENDS GRAPH - ENDS -->
+
+		</div>
+		<!-- METRICS GROUP - ENDS -->
+				
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">PHYSICAL SECURITY REPORTS</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+			<li class="list-base-item item-badge-holders">
+
+
+				<span class="base-item">
+
+					<span class="item-label label-link">
+						Badge Holder Summary
+
+					</span>
+
+
+
+					<span class="item-actions">
+
+						<span class="action icon-download"></span>
+
+
+					</span>
+
+				</span>
+
+			</li>
+			<li class="list-base-item item-badge-activity">
+
+
+				<span class="base-item">
+
+					<span class="item-label label-link">
+						Badge Activity
+
+					</span>
+
+
+
+					<span class="item-actions">
+
+						<span class="action icon-download"></span>
+
+
+					</span>
+
+				</span>
+
+			</li>
+			<li class="list-base-item item-users-on-site">
+
+
+				<span class="base-item">
+
+					<span class="item-label label-link">
+						Users On-Site
+
+					</span>
+
+
+
+					<span class="item-actions">
+
+						<span class="action icon-download"></span>
+
+
+					</span>
+
+				</span>
+
+			</li>
+			<li class="list-base-item item-visitors-on-site">
+
+
+				<span class="base-item">
+
+					<span class="item-label label-link">
+						Temporary Visitors On-Site
+
+					</span>
+
+
+
+					<span class="item-actions">
+
+						<span class="action icon-download"></span>
+
+
+					</span>
+
+				</span>
+
+			</li>
+			<li class="list-base-item item-active-user">
+
+
+				<span class="base-item">
+
+					<span class="item-label label-link">
+						Active SDP User List
+
+					</span>
+
+
+
+					<span class="item-actions">
+
+						<span class="action icon-download"></span>
+
+
+					</span>
+
+				</span>
+
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Remote Hands (New)</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<div class="widget-section">
+			<!-- TABS LIGHT WRAPPER - BEGINS -->
+			<div class="tabs-ligt-wrapper">
+				<div class="tabs-light-header">
+					<ul class="tabs-light">
+						<li class="attention active"><a class="tab-title" href="javascript:;">CH1</a></li>
+						<li><a class="tab-title" href="javascript:;">DFW1</a></li>
+					</ul>
+				</div>
+
+				<div class="tabs-light-content">
+					<div class="graph-row">
+						<div class="graph">
+							<div class="plug">
+								<div class="dummy">Graph is Here</div>
+							</div>
+						</div>
+			
+						<div class="graph-description">			
+							<ul class="list-description">
+								<li class="list-description-item ">
+
+
+									<span class="bullet" style="background-color: #189D89;"></span>
+
+
+									<span class="item-label">
+										<span class="item-label-body">Hours Subscribed</span>
+									</span>
+
+
+									<span class="value-group">
+										<span class="value-element">
+											<span class="item-value">
+												5
+											</span>
+											<span class="item-unit">
+												h
+											</span>
+										</span>
+										<span class="value-element">
+											<span class="item-value">
+												45
+											</span>
+											<span class="item-unit">
+												m
+											</span>
+										</span>
+									</span>
+
+
+								</li>
+								<li class="list-description-item ">
+
+
+									<span class="bullet" style="background-color: #F6B23C;"></span>
+
+
+									<span class="item-label">
+										<span class="item-label-body">Hours Available</span>
+									</span>
+
+
+									<span class="item-value">
+										4
+									</span>
+
+									<span class="item-unit">
+										h
+									</span>
+
+
+
+
+								</li>
+								<li class="list-description-item ">
+
+
+									<span class="bullet" style="background-color: #213E88;"></span>
+
+
+									<span class="item-label">
+										<span class="item-label-body">Hours Used</span>
+									</span>
+
+
+									<span class="item-value">
+										1
+									</span>
+
+									<span class="item-unit">
+										h
+									</span>
+
+
+
+
+								</li>
+								<li class="list-description-item ">
+
+
+									<span class="bullet" style="background-color: #D31821;"></span>
+
+
+									<span class="item-label">
+										<span class="item-label-body">Overage</span>
+									</span>
+
+
+									<span class="item-value">
+										2
+									</span>
+
+									<span class="item-unit">
+										h
+									</span>
+
+
+
+
+								</li>
+							</ul>
+
+							<div class="list-description-summary">
+								<span class="status error">Over usage cost</span>
+								<span class="summary-value">$1600</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- TABS LIGHT WRAPPER - ENDS -->
+		</div>
+	</div>
+	<div class="widget-footer">
+		<a href="javascipt:;" class="link-icon icon-arrow-right">Contact QTS to upgrade your subscription</a>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+			<div class="network-diagram">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start up"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end down"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="connection-caption">
+						Metro or Long Haul
+						Virtual Connect
+					</div>
+				</div>
+				<div class="network-diagram-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-last-port">
+						<span class="port port-start down"></span>
+						<div class="connection-line down"></div>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+								<span class="caption-vlan-type">vlan 220</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-zone">Zone B</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-carrier">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Carrier
+							</div>
+							<div class="caption-name">
+								56 Marrietta
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+			<div class="network-diagram">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start up"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end down"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="connection-caption">
+						Metro or Long Haul
+						Virtual Connect
+					</div>
+				</div>
+				<div class="network-diagram-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-last-port">
+						<span class="port port-start down"></span>
+						<div class="connection-line down"></div>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+								<span class="caption-vlan-type">vlan 220</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-zone">Zone B</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+			<div class="network-diagram connection-multi">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start up"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end down"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="connection-caption">
+						Metro or Long Haul
+						Virtual Connect
+					</div>
+				</div>
+				<div class="network-diagram-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection-group">
+						<div class="connection-container first">
+							<div class="connection virtual">
+								<span class="port port-start up"></span>
+								<div class="connection-linking-container up">
+									<div class="linking-first"></div>
+									<div class="linking-center"></div>
+									<div class="linking-last"></div>
+								</div>
+								<span class="port port-end up"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+						<div class="connection-container">
+							<div class="connection virtual">
+								<span class="port port-start down"></span>
+								<div class="connection-line down"></div>
+								<span class="port port-end down"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device-group">
+						<div class="device external down">
+							<div class="device-picture icon-carrier">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Your Rack
+								</div>
+								<div class="caption-name">
+									56 Marrietta
+								</div>
+							</div>
+						</div>
+						<div class="device external down">
+							<div class="device-picture icon-rack">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Your Rack
+								</div>
+								<div class="caption-name">
+									DFW1
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+			<div class="network-diagram connection-multi">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start up"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end down"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					
+					<div class="connection-caption">
+						Metro or Long Haul
+						Virtual Connect
+					</div>
+				</div>
+				<div class="network-diagram-section section-device">
+					<div class="device internal down">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								QTS Switchboard
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection-group">
+						<div class="connection-container first">
+							<div class="connection virtual">
+								<span class="port port-start up"></span>
+								<div class="connection-linking-container up">
+									<div class="linking-first"></div>
+									<div class="linking-center"></div>
+									<div class="linking-last"></div>
+								</div>
+								<span class="port port-end up"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+						<div class="connection-container">
+							<div class="connection virtual">
+								<span class="port port-start down"></span>
+								<div class="connection-line down"></div>
+								<span class="port port-end down"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device-group">
+						<div class="device external down">
+							<div class="device-picture icon-cloud icon-google-cloud">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Google some title caption
+								</div>
+								<div class="caption-name">
+									Chicago some text caption
+								</div>
+							</div>
+						</div>
+						<div class="device external down">
+							<div class="device-picture icon-rack">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Your Rack
+								</div>
+								<div class="caption-name">
+									DFW1
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+			<div class="network-diagram connection-multi network-switchboard-single">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Switchboard Router
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection-group">
+						<div class="connection-container first">
+							<div class="connection virtual">
+								<span class="port port-start up"></span>
+								<div class="connection-linking-container up">
+									<div class="linking-first"></div>
+									<div class="linking-center"></div>
+									<div class="linking-last"></div>
+								</div>
+								<span class="port port-end up"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+						<div class="connection-container">
+							<div class="connection virtual">
+								<span class="port port-start down"></span>
+								<div class="connection-line down"></div>
+								<span class="port port-end down"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+						<div class="connection-container last">
+							<div class="connection virtual">
+								<span class="port port-start error"></span>
+								<div class="connection-linking-container error">
+									<div class="linking-first"></div>
+									<div class="linking-center"></div>
+									<div class="linking-last"></div>
+								</div>
+								<span class="port port-end error"></span>
+							</div>
+							<div class="port-captions">
+								<span class="caption port-start">
+									<span class="caption-speed">10Gb</span>
+									<span class="caption-vlan-type">vlan 220</span>
+								</span>
+								<span class="caption port-end">
+									<span class="caption-zone">Zone B</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device-group">
+						<div class="device external down">
+							<div class="device-picture icon-cloud icon-google-cloud">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Google some title caption
+								</div>
+								<div class="caption-name">
+									Chicago some text caption
+								</div>
+							</div>
+						</div>
+						<div class="device external down">
+							<div class="device-picture icon-rack">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									Your Rack
+								</div>
+								<div class="caption-name">
+									DFW1
+								</div>
+							</div>
+						</div>
+						<div class="device external">
+							<div class="device-picture icon-cloud icon-ms-azure">
+							</div>
+							<div class="device-caption">
+								<div class="caption-title">
+									MS Azure
+								</div>
+								<div class="caption-name">
+									Chicago
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Network Diagram</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+		</div>
+		<div class="widget-section">
+			<div class="network-diagram network-switchboard-single">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Switchboard Router
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+								<span class="caption-vlan-type">vlan 220</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-zone">Zone B</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device external down">
+						<!--FOR DEV: TO CHANGE ICON FROM AZURE TO GOOGLE/AWS USE FOLLOWING CLASSES: icon-google-cloud/icon-aws-->
+						<div class="device-picture icon-cloud icon-ms-azure">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								AWS
+							</div>
+							<div class="caption-name">
+								US East-01
+							</div>
+							<div class="caption-name">
+								CHI onramp
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="widget-section">
+			<div class="network-diagram network-switchboard-single">
+				<div class="network-diagram-section section-device">
+					<div class="device internal up">
+						<div class="device-picture icon-rack">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Your Rack
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="network-diagram-section section-connection">
+					<div class="connection no-first-port">
+						<div class="connection-line up"></div>
+						<span class="port port-end up"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-zone">Zone A</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-speed">10Gb</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Phisical Cross Connects
+					</div>
+				</div>
+
+				<div class="network-diagram-section section-device">
+					<div class="device internal">
+						<div class="device-picture icon-switch"></div>
+						<div class="device-caption">
+							<div class="caption-title">
+								Switchboard Router
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="network-diagram-section section-connection">
+					<div class="connection virtual">
+						<span class="port port-start"></span>
+						<div class="connection-line"></div>
+						<span class="port port-end"></span>
+						<div class="port-captions">
+							<span class="caption port-start">
+								<span class="caption-speed">10Gb</span>
+								<span class="caption-vlan-type">vlan 220</span>
+							</span>
+							<span class="caption port-end">
+								<span class="caption-zone">Zone B</span>
+							</span>
+						</div>
+					</div>
+					<div class="connection-caption">
+						Virtual Cross Connects
+					</div>
+				</div>
+				<div class="network-diagramm-section section-device">
+					<div class="device external down">
+						<!--FOR DEV: TO CHANGE ICON FROM AZURE TO GOOGLE/AWS USE FOLLOWING CLASSES: icon-google-cloud/icon-aws-->
+						<div class="device-picture icon-cloud icon-ms-azure">
+						</div>
+						<div class="device-caption">
+							<div class="caption-title">
+								AWS
+							</div>
+							<div class="caption-name">
+								US East-01
+							</div>
+							<div class="caption-name">
+								CHI onramp
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget widget-sustainability renewable">
+	<div class="widget-header">
+		<h3 class="widget-title">Sustainability(update)</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- WIDGET BODY HEADER - BEGINS -->
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+
+			<div class="status-leed silver">
+				LEED<br>Silver
+			</div>
+		</div>
+		<!-- WIDGET BODY HEADER - ENDS -->
+		
+		<!-- METRICS GROUP - BEGINS -->
+		<div class="metrics-group">
+			
+			<!-- GRAPH - BEGINS -->
+			<div class="metrics">
+				<!-- LEED STATUS - BEGINS -->
+				<div class="metrics">
+					<div class="status-leed status-leed-renewable secondary">
+						
+					</div>
+				</div>
+				<!-- LEED STATUS - ENDS -->
+			</div>
+			<!-- GRAPH - ENDS -->
+			
+			<!-- EQUIVALENCY - BEGINS -->
+			<div class="metrics">
+				<h5 class="title-metrics"><span class="mute">Greenhouse Gas Emissions Saved </span> 100000.0 kWh</h5>
+
+				<ul class="list-metrics">
+					<li class="list-metrics-item item-car">
+						<span class="item-value"><span>864,488</span></span>
+						<span class="item-label">miles driven by an average passenger vehicle</span>
+					</li>
+					
+					<li class="list-metrics-item item-house">
+						<span class="item-value"><span>42.3</span></span>
+						<span class="item-label">home's energy use for one year</span>
+					</li>
+					
+					<li class="list-metrics-item item-nature">
+						<span class="item-value">416</span>
+						<span class="item-label">acres of U.S. forests in one year</span>
+					</li>
+					
+					<li class="list-metrics-item item-recycle">
+						<span class="item-value">15,427</span>
+						<span class="item-label">trash bags of waste recycled instead of landfilled</span>
+					</li>
+				</ul>
+			</div>
+			<!-- EQUIVALENCY - ENDS -->
+			
+		</div>
+		<!-- METRICS GROUP - ENDS -->
+		
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Daily on Site Activity</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<div class="widget-body-header">
+			<div class="actions">
+				<div class="select">
+					<select class="js-select-custom">
+						<option value="item1">All</option>
+						<option value="item2">DFW1</option>
+						<option value="item3">CHI1</option>
+						<option value="item4">ATL</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="score-donut-single">
+			<!-- SCORE DONUT - BEGINS -->
+			<div class="score-donut score-donut-accent">
+				<div class="donut"><!-- insert circle here --></div>
+
+				<div class="score-wrap">
+					<span class="score">0</span>
+
+					<div class="score-legend">
+
+							Total On Site
+
+					</div>
+				</div>
+			</div>
+			<!-- SCORE DONUT - ENDS -->
+
+			
+			<!-- SCORE DONUT DESCRIPTION - BEGINS -->
+			<div class="score-donut-description">
+				<ul class="list-description">
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #F6B23C;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Badge Holders on site</span>
+						</span>
+
+
+						<span class="item-value">
+							18
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #000;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Visitors on-site</span>
+						</span>
+
+
+						<span class="item-value">
+							32
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+				</ul>
+			</div>
+			<!-- SCORE DONUT DESCRIPTION - ENDS -->
+		</div>
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Recent Activities</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		
+		<ul class="list-base">
+			<li class="list-base-item item-crossconnect">
+
+
+				<span class="base-item">
+
+					<span class="item-label">
+						New crossConnects
+
+					</span>
+
+					<span class="item-value">0</span>
+
+
+
+				</span>
+
+			</li>
+			<li class="list-base-item item-cards">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						New Badges
+
+						<span class="microcopy">Expire in 30 days</span>
+					</span>
+
+					<span class="item-value">4</span>
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-users">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Users Updated
+
+					</span>
+
+					<span class="item-value">5</span>
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-incidents">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Incidents
+
+					</span>
+
+					<span class="item-value">5</span>
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-switchboard">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Switchboard Port orders
+
+					</span>
+
+					<span class="item-value">8</span>
+
+
+				</a>
+
+
+			</li>
+		</ul>
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Tickets</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+
+		<!-- SCORE DONUT ROW - BEGINS -->
+		<div class="score-donut-row">
+			<!-- SCORE DONUT - BEGINS -->
+			<div class="score-donut ">
+				<div class="donut"><!-- insert circle here --></div>
+
+				<div class="score-wrap">
+					<span class="score">48</span>
+
+				</div>
+			</div>
+			<!-- SCORE DONUT - ENDS -->
+
+
+			<div class="score-donut-description">
+				<h5 class="list-description-title">Incidents</h5>
+				<ul class="list-description">
+					<li class="list-description-item ">
+
+
+
+
+						<span class="item-label">
+							<span class="item-label-body">Awaiting</span>
+						</span>
+
+
+						<span class="item-value">
+							48
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+
+
+						<span class="item-label">
+							<span class="item-label-body">Resolved/Closed</span>
+						</span>
+
+
+						<span class="item-value">
+							72
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- SCORE DONUT ROW - ENDS -->
+
+		<!-- SCORE DONUT ROW - BEGINS -->
+		<div class="score-donut-row">
+			<!-- SCORE DONUT - BEGINS -->
+			<div class="score-donut ">
+				<div class="donut"><!-- insert circle here --></div>
+
+				<div class="score-wrap">
+					<span class="score">18</span>
+
+				</div>
+			</div>
+			<!-- SCORE DONUT - ENDS -->
+
+
+			<div class="score-donut-description">
+				<h5 class="list-description-title">Incidents</h5>
+				<ul class="list-description">
+					<li class="list-description-item ">
+
+
+
+
+						<span class="item-label">
+							<span class="item-label-body">Awaiting</span>
+						</span>
+
+
+						<span class="item-value">
+							18
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+
+
+						<span class="item-label">
+							<span class="item-label-body">Resolved/Closed</span>
+						</span>
+
+
+						<span class="item-value">
+							100
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- SCORE DONUT ROW - ENDS -->
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Physical Access</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+
+		<!-- LIST POINT - BEGINS -->
+		<ul class="list-point">
+			<li class="list-point-item">
+				<a href="javascript:;" class="point-item">
+					<span class="item-value ">7</span> 
+					<span class="item-label">New Badges Holders</span>
+				</a><div class="tip tip-clickable">
+
+	<div class="tooltip ">Primary/Redundant pair can't exist on the same Router. Drop-down contains only Ports on Routers that diverse from Primary port router.</div>
+</div>
+
+
+			</li>
+			<li class="list-point-item">
+
+				<span class="item-value ">7</span> 
+				<span class="item-label">Temporary Access Requests</span>
+			</li>
+		</ul>
+		<!-- LIST POINT - ENDS -->
+
+		<!-- SINGLE BAR - BEGINS -->
+		<div class="single-bar-wrapper">
+			<div class="single-bar-description">
+				<div class="single-bar-legend ">
+					<dl class="legend-item ">
+						<dt>163</dt>
+						<dd>non-Badge Holders</dd>
+					</dl>
+					<dl class="legend-item ">
+						<dt>43</dt>
+						<dd>Badge Holders</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="single-bar">
+				<!-- insert the bar here -->
+			</div>
+		</div>
+		<!-- SINGLE BAR - ENDS -->
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-switchboard">
+	<div class="widget-header">
+		<h3 class="widget-title">Switchboard</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- TABS LIGHT WRAPPER - BEGINS -->
+		<div class="tabs-light-wrapper">
+			<!-- TABS LIGHT - BEGINS -->
+			<ul class="tabs-light">
+				<li class="active attention"><a class="tab-title" href="javascript:;">DFW1</a></li>
+				<li class="attention"><a class="tab-title" href="javascript:;">SJC1SJC1S</a></li>
+				<li><a class="tab-title" href="javascript:;">SJC2</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+			</ul>
+			<!-- TABS LIGHT - BEGINS -->
+			<!-- TABS LIGHT CONTENT - BEGINS -->
+			<div class="tabs-light-content">
+				<h4 class="light-content-title">
+					<span>6</span> Ports
+				</h4>
+
+				<!-- LIST SWITCH - BEGINS -->
+				<ul class="list-switch">
+					<li class="list-switch-item">
+
+						<!-- LIST SWITCH HEADER - BEGINS -->
+						<div class="list-switch-item-header">
+							<span class="unit-name-wrapper">
+								<span class="action icon-expanded action-secondary"></span>
+								<a class="unit-name" href="javascript:;">SP-1851SP-1851SP-1851SP-1851SP-1851</a>
+							</span>
+
+							<span class="status success">Fullfilled</span>
+
+							<div class="status-wrapper network">
+								<span class="status cancelled-critical">Down</span>
+								<div class="action icon-power-settings action-secondary"></div>
+								<div class="loading-sm"></div>
+							</div>
+							
+						</div>
+						<!-- LIST SWITCH HEADER - ENDS -->
+
+						<!-- LIST SWITCH SUB - BEGINS -->
+						<ul class="list-switch sub-list-switch">
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status incoming" href="javascript:;">VC-1212VC-1212VC-1212VC-1212</a>
+								</span>
+								<span class="status pending">Approval RequestedApproval RequestedApproval Requested</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status incoming" href="javascript:;">VC-1254</a>
+								</span>
+								<span class="status working">Active</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1176</a>
+								</span>
+								<span class="status cancelled">Cancelled</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1205</a>
+								</span>
+								<span class="status success">Approved</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1205</a>
+								</span>
+								<span class="status open">Draft</span>
+							</li>
+						</ul>
+						<!-- LIST SWITCH SUB - ENDS -->
+
+					</li>
+				</ul>
+				<!-- LIST SWITCH - ENDS -->
+
+				<!-- LIST SWITCH - BEGINS -->
+				<ul class="list-switch">
+					<li class="list-switch-item">
+
+						<!-- LIST SWITCH HEADER - BEGINS -->
+						<div class="list-switch-item-header">
+							<span class="unit-name-wrapper">
+									<span class="action icon-more action-secondary"></span>
+								<a class="unit-name" href="javascript:;">SP-1851</a>
+							</span>
+							<span class="status success">Fullfilled</span>
+						</div>
+						<!-- LIST SWITCH HEADER - ENDS -->
+
+						<!-- LIST SWITCH SUB - BEGINS -->
+						<ul class="list-switch sub-list-switch collapsed">
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1212</a>
+								</span>
+								<span class="status success">Approval Requested</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1254</a>
+								</span>
+								<span class="status working">Active</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1176</a>
+								</span>
+								<span class="status pending">Cancelled</span>
+							</li>
+							<li class="list-switch-item">
+								<span class="unit-name-wrapper">
+									<a class="status outcoming" href="javascript:;">VC-1205</a>
+								</span>
+								<span class="status not-working">Inactive</span>
+							</li>
+						</ul>
+						<!-- LIST SWITCH SUB - ENDS -->
+					</li>
+				</ul>
+				<!-- LIST SWITCH - ENDS -->
+
+			</div>
+			<!-- TABS LIGHT CONTENT - ENDS -->
+		</div>
+		<!-- TABS LIGHT WRAPPER - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-switchboard">
+	<div class="widget-header">
+		<h3 class="widget-title">Switchboard</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- TABS LIGHT WRAPPER - BEGINS -->
+		<div class="tabs-light-wrapper">
+			<!-- TABS LIGHT - BEGINS -->
+			<ul class="tabs-light">
+				<li class="active attention"><a class="tab-title" href="javascript:;">DFW1</a></li>
+				<li class="attention"><a class="tab-title" href="javascript:;">SJC1SJC1S</a></li>
+				<li><a class="tab-title" href="javascript:;">SJC2</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+				<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+			</ul>
+			<!-- TABS LIGHT - BEGINS -->
+			<div class="tabs-light-content">
+				<div class="dummy">
+						Seems you do not have connectivity established. Click <a href="javascript:;">here</a> to order new Switchboard port
+				</div>
+			</div>
+		</div>
+		<!-- TABS LIGHT WRAPPER - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Crossconnect</h3>
+		<div class="widget-actions">
+			<a class="action icon-external action-middle" href="javascript:;"></a>
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		
+		<div class="score-donut-single">
+			<!-- SCORE DONUT - BEGINS -->
+			<div class="score-donut score-donut-accent">
+				<div class="donut"><!-- insert circle here --></div>
+
+				<div class="score-wrap">
+					<span class="score">100</span>
+
+					<div class="score-legend">
+
+							Total Orders
+
+					</div>
+				</div>
+			</div>
+			<!-- SCORE DONUT - ENDS -->
+
+			
+			<!-- SCORE DONUT DESCRIPTION - BEGINS -->
+			<div class="score-donut-description">
+				<ul class="list-description">
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #F6B23C;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Need Customer Action</span>
+						</span>
+
+
+						<span class="item-value">
+							18
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #000;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Work in Progress</span>
+						</span>
+
+
+						<span class="item-value">
+							32
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #189D89;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Fulfilled Fulfilled Fulfilled Fulfilled Fulfilled Fulfilled Fulfilled</span>
+						</span>
+
+
+						<span class="item-value">
+							60
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+				</ul>
+			</div>
+			<!-- SCORE DONUT DESCRIPTION - ENDS -->
+		</div>
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Remote Hands (Subscribed)</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+
+
+		<div class="widget-section">
+			<!-- TABS LIGHT WRAPPER - BEGINS -->
+			<div class="tabs-ligt-wrapper">
+				<div class="tabs-light-header">
+					<ul class="tabs-light">
+						<li class="attention active"><a class="tab-title" href="javascript:;">DFW1</a></li>
+
+					</ul>
+
+					<div class="tabs-info">
+						<time class="period accent">May 2019</time>
+					</div>
+				</div>
+
+				<div class="tabs-light-content">
+
+					<!-- SINGLE BAR - BEGINS -->
+					<div class="single-bar-wrapper">
+						<div class="single-bar-description">
+							<div class="single-bar-legend full-width">
+								<dl class="legend-item accent">
+									<dt>10</dt>
+									<dd>Hours (monthly)</dd>
+								</dl>
+								<dl class="legend-item ">
+									<dt>2</dt>
+									<dd>Hrs Over</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="single-bar">
+							<!-- insert the bar here -->
+						</div>
+					</div>
+					<!-- SINGLE BAR - ENDS -->
+
+					<div class="link-point-box">
+						<span class="point-num">7</span>
+						<a href="javascript:;">Requests sumbitted</a>
+					</div>
+				</div>
+			</div>
+			<!-- TABS LIGHT WRAPPER - ENDS -->
+		</div>
+
+		<div class="widget-section">
+			<a href="javascipt:;" class="link-icon icon-arrow-right">Contact QTS to upgrade your subscription</a>
+		</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Documentation</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+			<li class="list-base-item item-video">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Video (YouTube)
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item ">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Some Document
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-doc">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Another Document
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-external">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						External URL (QTS Corporate Site)
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-tool">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Online Ordering
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper widget-dual"><!-- WIDGET - BEGINS -->
+<div class="widget widget-sustainability">
+	<div class="widget-header">
+		<h3 class="widget-title">Sustainability</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- WIDGET BODY HEADER - BEGINS -->
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+
+			<div class="status-leed silver">
+				LEED<br>Silver
+			</div>
+		</div>
+		<!-- WIDGET BODY HEADER - ENDS -->
+		
+		<!-- METRICS GROUP - BEGINS -->
+		<div class="metrics-group">
+			
+			<!-- GRAPH - BEGINS -->
+			<div class="metrics">
+				<div class="graph-wrapper graph-accent graph-sustainability">
+					<!-- GRAPHS HEADER - BEGINS -->
+					<div class="graph-header">
+						<h4 class="graph-title">Data Center Primary Sources</h4>
+					</div>
+					<!-- GRAPHS HEADER - ENDS -->
+				</div>
+			</div>
+			<!-- GRAPH - ENDS -->
+			
+			<!-- EQUIVALENCY - BEGINS -->
+			<div class="metrics">
+				<h5 class="title-metrics accent"><span class="mute">My Greenhouse Gas Equivalency </span> 100000.0 kWh</h5>
+
+				<ul class="list-metrics">
+					<li class="list-metrics-item item-car">
+						<span class="item-value"><span>864,488</span></span>
+						<span class="item-label">miles driven by an average passenger vehicle</span>
+					</li>
+					
+					<li class="list-metrics-item item-house">
+						<span class="item-value"><span>42.3</span></span>
+						<span class="item-label">home's energy use for one year</span>
+					</li>
+					
+					<li class="list-metrics-item item-nature">
+						<span class="item-value">416</span>
+						<span class="item-label">acres of U.S. forests in one year</span>
+					</li>
+					
+					<li class="list-metrics-item item-recycle">
+						<span class="item-value">15,427</span>
+						<span class="item-label">trash bags of waste recycled instead of landfilled</span>
+					</li>
+				</ul>
+			</div>
+			<!-- EQUIVALENCY - ENDS -->
+			
+		</div>
+		<!-- METRICS GROUP - ENDS -->
+		
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-sustainability">
+	<div class="widget-header">
+		<h3 class="widget-title">Sustainability</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- WIDGET BODY HEADER - BEGINS -->
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+
+			<div class="status-leed silver">
+				LEED<br>Silver
+			</div>
+		</div>
+		<!-- WIDGET BODY HEADER - ENDS -->
+		
+		<!-- METRICS GROUP - BEGINS -->
+		<div class="metrics-group">
+			
+			<!-- GRAPH - BEGINS -->
+			<div class="metrics">
+				<div class="graph-wrapper graph-accent graph-sustainability">
+					<!-- GRAPHS HEADER - BEGINS -->
+					<div class="graph-header">
+						<h4 class="graph-title">Data Center Primary Sources</h4>
+					</div>
+					<!-- GRAPHS HEADER - ENDS -->
+				</div>
+			</div>
+			<!-- GRAPH - ENDS -->
+			
+			
+		</div>
+		<!-- METRICS GROUP - ENDS -->
+		
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Remote Hands (Subscribed)</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+
+		<div class="widget-section">
+		<!-- SINGLE BAR - BEGINS -->
+		<div class="single-bar-wrapper">
+			<div class="single-bar-description">
+				<div class="single-bar-legend full-width">
+					<dl class="legend-item accent">
+						<dt>30</dt>
+						<dd>Hours (monthly)</dd>
+					</dl>
+					<dl class="legend-item ">
+						<dt>10</dt>
+						<dd>Hrs Over</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="single-bar">
+				<!-- insert the bar here -->
+			</div>
+		</div>
+		<!-- SINGLE BAR - ENDS -->
+		</div>
+
+		<div class="widget-section">
+			<!-- TABS LIGHT WRAPPER - BEGINS -->
+			<div class="tabs-ligt-wrapper">
+				<div class="tabs-light-header">
+					<ul class="tabs-light">
+						<li class="attention active"><a class="tab-title" href="javascript:;">DFW1</a></li>
+
+						<li class="attention"><a class="tab-title" href="javascript:;">SJC1</a></li>
+						<li><a class="tab-title" href="javascript:;">SJC2</a></li>
+						<li><a class="tab-title" href="javascript:;">SUW1</a></li>
+					</ul>
+
+				</div>
+
+				<div class="tabs-light-content">
+					<div class="content-details">
+						<time class="period">May 2019</time>
+					</div>
+
+					<!-- SINGLE BAR - BEGINS -->
+					<div class="single-bar-wrapper">
+						<div class="single-bar-description">
+							<div class="single-bar-legend full-width">
+								<dl class="legend-item accent">
+									<dt>10</dt>
+									<dd>Hours (monthly)</dd>
+								</dl>
+								<dl class="legend-item ">
+									<dt>2</dt>
+									<dd>Hrs Over</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="single-bar">
+							<!-- insert the bar here -->
+						</div>
+					</div>
+					<!-- SINGLE BAR - ENDS -->
+
+					<div class="link-point-box">
+						<span class="point-num">7</span>
+						<a href="javascript:;">Requests sumbitted</a>
+					</div>
+				</div>
+			</div>
+			<!-- TABS LIGHT WRAPPER - ENDS -->
+		</div>
+
+		<div class="widget-section">
+			<a href="javascipt:;" class="link-icon icon-arrow-right">Contact QTS to upgrade your subscription</a>
+		</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS -->	</div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<!--temporary markup!!! -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Asset Manager</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		
+		<div class="widget-section">
+			<!-- SINGLE BAR - BEGINS -->
+			<div class="single-bar-wrapper">
+				<div class="single-bar-description">
+					<div class="single-bar-legend full-width">
+						<dl class="legend-item accent">
+							<dt>181</dt>
+							<dd>Assets Total</dd>
+						</dl>
+						<dl class="legend-item ">
+							<dt></dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="single-bar">
+					<!-- insert the bar here -->
+				</div>
+			</div>
+			<!-- SINGLE BAR - ENDS -->
+		</div>
+		
+		<div class="score-donut-single">
+
+			<!-- SCORE DONUT DESCRIPTION - BEGINS -->
+			<div class="score-donut-description">
+				<ul class="list-description">
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #F6B23C;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Not Tagged</span>
+						</span>
+
+
+						<span class="item-value">
+							16
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #000;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">New Equipment</span>
+						</span>
+
+
+						<span class="item-value">
+							12
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #189D89;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Provisioned Racks</span>
+						</span>
+
+
+						<span class="item-value">
+							24
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+					<li class="list-description-item ">
+
+
+						<span class="bullet" style="background-color: #c6c8ca;"></span>
+
+
+						<span class="item-label">
+							<span class="item-label-body">Racked & Stacked Equipment</span>
+						</span>
+
+
+						<span class="item-value">
+							129
+						</span>
+
+						<span class="item-unit">
+							kW*
+						</span>
+
+
+
+
+					</li>
+
+				</ul>
+			</div>
+			<!-- SCORE DONUT DESCRIPTION - ENDS -->
+		</div>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-marketing">
+	<div class="widget-cover"></div>
+	<div class="widget-body">
+		<!-- insert custom markup here, remember to add class "widget-marketing" on top -->
+		<!-- EXAMPLARY MARKUP - BEGINS -->
+		<h3 class="event-type">Upcoming event</h3>
+		<h4 class="event-name">Nam Porttitor Blandit Accumsan</h4>
+		<div class="event-description">
+			<p>March 4-8, 2019</p>
+			<p>Moscone Center, San Francisco</p>
+		</div>
+		<a href="javascript:;" class="link-icon icon-arrow-right">Register to Attend</a>
+		<!-- EXAMPLARY MARKUP - ENDS -->
+
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget widget-marketing">
+	<div class="widget-cover cover-full"></div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Power</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		
+				
+		<!-- WIDGET BODY HEADER - BEGINS -->
+		<div class="widget-body-header">
+			<h4 class="widget-subtitle">DFW1</h4>
+
+			<div class="status-leed ">
+				
+			</div>
+		</div>
+		<!-- WIDGET BODY HEADER - ENDS -->
+		
+		<!-- METRICS GROUP - BEGINS -->
+		<div class="metrics-group">
+			
+			<!-- LEED STATUS - BEGINS -->
+			<div class="metrics">
+				<div class="status-leed certified">
+					LEED Certified
+				</div>
+			</div>
+			<!-- LEED STATUS - ENDS -->
+			
+		</div>
+		<!-- METRICS GROUP - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Service Desk</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+			<li class="list-base-item item-report-issue">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Report an Issue
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-action-needed">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Action Needed
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-temp-access-request">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Temp Access Request
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-equipment-removal">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Equipment Removal
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-remote-hands">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Remote Hands
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-inbound-shipment">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Inbound Shipment
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Quick Actions</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+			<li class="list-base-item item-service-desk">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Service Desk
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-cards">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Request Badge Access
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-cards">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Request Badge Deactivation
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Compliance Documents</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+			<li class="list-base-item item-doc">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Document 1
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-doc">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Document 2
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item item-doc">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Document 3
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+			<li class="list-base-item ">
+
+				<a class="base-item item-link" href="javascript:;">
+
+					<span class="item-label">
+						Document 4
+
+					</span>
+
+
+
+				</a>
+
+
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Widget Title</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- PLUGS - BEGINS -->
+
+		<div class="dummy ">No Data Available</div>
+
+		<!-- PLUGS - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Widget Title</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+	<div class="widget-body">
+		<!-- PLUGS - BEGINS -->
+
+		<div class="loading "></div>
+
+		<!-- PLUGS - ENDS -->
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Roster Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+				<li class="list-base-item item-um-dashboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							User Management Dashboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-badge-holders">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Badge Holders
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-badge-activity">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Badge Activity
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-unused-badges">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Unused Badges
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-users-on-site">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Users on site
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-visitors-on-site">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Visitors on site
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-active-user">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Active SDP user
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-um-users">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Users
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-services">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Services
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-roles">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Roles
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-environments">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Environments
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-companies">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Companies
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-home">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Home
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+
+			
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Online Ordering Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+				<li class="list-base-item item-online-ordering">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Online Ordering
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-online-ordering-dashboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Online Ordering Dashboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-crossconnect">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Crossconnect
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-remote-hands-secondary">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Remote Hands
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-switchboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Switchboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-activation-code">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Activation Code
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+			
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Power Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+				<li class="list-base-item item-power">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Power
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-power-dashboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Power Dashboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-location-report">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Location Report
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-device-report">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Device Report
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+			
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">3D Mapper Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+				<li class="list-base-item item-3d-scene">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							3D Scene
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-file-management">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							File Management
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+			
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Asset Manager Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+				<li class="list-base-item item-asset-manager">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Asset Manager
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-equipment">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Equipment
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-rack-locations">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Rack Locations
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-cable-map">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Cable Map
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Invoices Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+
+				<li class="list-base-item item-invoices">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Invoices
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-statements">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Statements
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Power Billing Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+
+
+				<li class="list-base-item item-power-billing">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Power Billing Generate
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-site-summary">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Site Summary
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-customer-summary">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Customer Summary
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Video Management Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+
+
+
+				<li class="list-base-item item-events">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Events
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-live-streaming">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Live Streaming
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-camera-event-logs">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Camera Event Logs
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Calendar Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+
+
+
+
+				<li class="list-base-item item-calendar">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Calendar
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-calendar-dashboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Calendar Dashboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-calendar-monthly">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Calendar Monthly
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-calendar-weekly">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Calendar Weekly
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-calendar-today">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Calendar for Today
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+			<div class="widget-wrapper"><!-- WIDGET - BEGINS -->
+<div class="widget">
+	<div class="widget-header">
+		<h3 class="widget-title">Other Modules Icons</h3>
+		<div class="widget-actions">
+			<button class="action icon-refresh action-middle" type="button"></button>
+		</div>
+	</div>
+
+	<div class="widget-body">
+		<ul class="list-base">
+
+
+
+			
+
+
+
+
+
+				<li class="list-base-item item-notification-center">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Notification Center
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-create-case">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Create Case
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-sensor-analytics">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Sensor Analytics
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-knowledge-base-article">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Knowledge Base Article
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-sdp-release-notes">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							SDP Release Note
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-qts-api-guide">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							QTS API Guide
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-help-center">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Help Center
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-cx-marketplace">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Marketplace
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-find-carrier">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Find a Carrier
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-find-datacenter">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Find a Data Center
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-manage-carrier">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Manage Carrier
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-smart-cart">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Smart Cart
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-service-desk">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Service Desk
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-service-desk-dashboard">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Service Desk Dashboard
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-cases">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Cases
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+				<li class="list-base-item item-fourth-wall">
+
+
+					<span class="base-item">
+
+						<span class="item-label">
+							Fourth Wall
+
+						</span>
+
+
+
+
+					</span>
+
+				</li>
+		</ul>
+	</div>
+</div>
+<!-- WIDGET - ENDS --></div>
+		</div>
+		<!-- WIDGETS - ENDS -->
+		
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+<div class="modal" id="js-modal-dashboard-edit" style="display: none;">
+	<div class="modal-dialog modal-dialog-darken modal-edit-mode modal-scroll-body">
+
+		<!-- for dev: take code starting from here, above classes are added by ng-prime (angular 7 apps) -->
+
+		<!-- MODAL MARKUP - BEGINS -->
+		<div class="modal-head">
+			<h3 class="modal-title">Manage Dashboard</h3>
+			<div class="modal-close" onclick="closeDialog();"></div>
+		</div>
+
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="form form-grid separated">
+					<div class="row">
+						<div class="field xl-12">
+
+
+							<label class="label">
+								<span>Default Data Center</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+
+									<option value="item1">ATL1</option>
+								</select>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="check-row-wrapper">
+					<h4 class="modal-subtitle">Manage Widgets</h4>
+
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox0" name="checkbox0">
+							<label for="checkbox0">Recent Activities</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox1" name="checkbox1">
+							<label for="checkbox1">Power</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox2" name="checkbox2">
+							<label for="checkbox2">Tickets</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox3" name="checkbox3">
+							<label for="checkbox3">Physical Access</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox4" name="checkbox4">
+							<label for="checkbox4">Switchboard</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox5" name="checkbox5">
+							<label for="checkbox5">Switchboard</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox6" name="checkbox6">
+							<label for="checkbox6">Crossconnect</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox7" name="checkbox7">
+							<label for="checkbox7">Remote Hands (Subscribed)</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox8" name="checkbox8">
+							<label for="checkbox8">Communications</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox9" name="checkbox9">
+							<label for="checkbox9">Sustainability</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox10" name="checkbox10">
+							<label for="checkbox10">Asset Manager</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+					<div class="check-row">
+
+
+
+						<div class="check-wrap ">
+							<input type="checkbox" id="checkbox11" name="checkbox11">
+							<label for="checkbox11">Sensor</label>
+						</div>
+
+
+
+
+
+
+						<div class="actions">
+							<span class="action icon-move"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<!-- BUTTONS - BEGINS -->
+				<div class="btn-group">
+					<button class="btn" type="btn">Add to Dashboard</button>
+					<a href="javascript:;" class="btn-link" onclick="closeDialog();">Cancel</a>
+				</div>
+				<!-- BUTTONS - BEGINS -->
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+
+</body>
+</html>

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Ordering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.ordering.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="current">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="current">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader subheader-compressed sliding">
+	<div class="subheader-container">
+		
+		<!-- SUBHEADER SECTION - BEGINS -->
+		<div class="subheader-section">
+			
+			<!-- SUBHEADER ROW - BEGINS -->
+			<div class="subheader-row subheader-row-fading">
+				<ul class="breadcrumbs">
+					<li><a href="dashboard.html">Online Ordering</a></li>
+					<li><a href="switchboard-search-ports.html">Switchboard</a></li>
+					<li class="active">View Page Commons</li>
+				</ul>
+			</div>
+			<!-- SUBHEADER ROW - ENDS -->
+			
+			<div class="subheader-row">
+				<h1 class="page-title">View Page Commons</h1>
+				
+				<div class="btn-group">
+					<a href="switchboard-search-ports.html" class="btn-link mobile-shifted">Cancel</a>
+					<a href="switchboard-search-ports-view.html" class="btn btn-secondary">Save as Draft</a>
+					<a href="switchboard-search-ports.html" class="btn btn-master">Submit Order</a>
+				</div>
+			</div>
+		</div>
+		<!-- SUBHEADER SECTION - ENDS -->
+		
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT - BEGINS -->
+<div class="content-main condensed">
+	<div class="content-container">
+		
+		<div class="page">
+
+			<!-- CORE - BEGINS -->
+			<div class="core-wrapper">
+				<div class="core">
+					
+					<!-- SECTION - BEGINS -->
+					<div class="section first-child">
+						
+						<div class="data-layer data-layer-compact">
+							<div class="data-header">
+								<h2 class="data-title">General Info</h2>
+							</div>
+							
+							<div class="data-body">
+								<div class="form view-mode form-grid">
+									<div class="row">
+										<div class="field xs-12">
+
+
+											<span class="label">
+												<span>Select Example (2 in a Row)</span>
+											</span>
+											<span class="value ">
+												Select View Mode
+											</span>
+										</div>
+										<div class="field xs-12">
+
+
+											<span class="label">
+												<span>Input Example (2 in a Row)</span>
+											</span>
+											<span class="value ">
+												Input View Mode
+
+
+											</span>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<!-- SECTION - ENDS -->
+					
+					<!-- SECTION - BEGINS -->
+					<div class="section">
+						<div class="data-layer data-layer-compact">
+							<div class="data-header">
+								<h2 class="data-title">Switchboard Port Details</h2>
+								<div class="data-header-sup">
+									<p class="clarification">( Where do you want the circuit to originate? )</p>
+								</div>
+							</div>
+							
+							<div class="data-body">
+								<div class="form view-mode form-grid separated">
+									<div class="row">
+										<div class="field xl-6 xs-12">
+
+
+											<span class="label">
+												<span>Select Example (1 in a Row)</span>
+											</span>
+											<span class="value ">
+												Select View Mode
+											</span>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="field xs-12">
+
+
+											<span class="label">
+												<span>Select Example (2 in a Row)</span>
+											</span>
+											<span class="value ">
+												Select View Mode
+											</span>
+										</div>
+										<div class="field xs-12">
+
+
+											<span class="label">
+												<span>Input Example (2 in a Row)</span>
+											</span>
+											<span class="value ">
+												Input View Mode
+
+
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<h4 class="semititle">Where do you want the circuit to extend to?</h4>
+								
+								<div class="form view-mode form-grid">
+									<div class="row">
+										<div class="field xs-12">
+											<label class="label">
+												File Uploaded
+											</label>
+											<ul class="list-files-uploaded">
+												<li>
+													<span class="document">File Number 1.pdf <span class="action icon-delete action-secondary"></span></span>
+												</li>
+												<li>
+													<span class="document">File Number 2.pdf</span>
+												</li>
+											</ul>
+										</div>
+										<div class="field xs-12">
+
+
+											<span class="label">
+												<span>No Value Example</span>
+											</span>
+											<span class="value ">
+												-
+											</span>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="field xs-12">
+											<label class="label">
+												Link Example
+											</label>
+											<span class="value">
+												<div class="link-action">
+													<a href="javascript:;">Link</a>
+													<span class="action icon-delete action-secondary"></span>
+												</div>
+											</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="field xl-6 xs-12">
+											<label class="label">
+												Link Example
+											</label>
+											<span class="value">
+												Text
+												<div class="value-action">
+													<a href="javascript:;">Turn On</a>
+													<div class="loading-inline-text" style="display: none;">Turning on...</div>
+												</div>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- SECTION - ENDS -->
+				</div>
+			</div>
+			<!-- CORE - ENDS -->
+
+			<!-- SIDEBAR - BEGINS -->
+			<div class="sidebar-wrapper">
+				<aside class="sidebar sliding">
+					<div class="panel-group">
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+								<div class="panel-actions">
+									<a class="link-icon icon-refresh" href="javascript:;">Refresh</a>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<div class="status in-progress status-accent">In Progress</div>
+									<div class="history-summary">
+										<p>Your Cross Connect order was reviewed but Data Center Operations team rejected it because of the following reason:</p>
+										<p class="chat-bubble incoming">We've ran out of cables of 1 Gig-E types, would 10 Gig-E type would be ok for you?</p>
+										<p>You can update the order and re-submit it for review.</p>
+									</div>
+								</div>
+
+								<div class="panel-content">
+									<div class="collapse-area">
+										<ul class="list-history">
+											<li class="list-history-item current">
+												<div class="identity">
+													<div class="name">QTS DCO Teamtest test test test test test test test</div>
+												</div>
+												<div class="condition">
+													<div class="state">Completed</div>
+													<div class="date">01/05/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">QTS DCO Team</div>
+												</div>
+												<div class="condition">
+													<div class="state">Approved</div>
+													<div class="date">01/05/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">Alex Lee</div>
+												</div>
+												<div class="condition">
+													<div class="state">Information provided</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+												<p class="comment">
+													Updated LOA file attached now.
+												</p>
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">QTS DCO Team</div>
+												</div>
+												<div class="condition">
+													<div class="state">More information requested</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+												<p class="comment">
+													Hello, please provide updated LOA file, current file c...
+													<a href="javascript:;" onclick="showDialog('js-modal-see-comment');" class="show-full-info">Show more</a>
+												</p>
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">Alex Lee</div>
+												</div>
+												<div class="condition">
+													<div class="state">Submitted</div>
+													<div class="date">30/04/2018</div>
+												</div>
+
+											</li>
+											<li class="list-history-item ">
+												<div class="identity">
+													<div class="name">John Doe</div>
+												</div>
+												<div class="condition">
+													<div class="state">Created</div>
+													<div class="date">29/04/2018</div>
+												</div>
+
+											</li>
+										</ul>
+										<p>Your crossConnect implementation is in progress. We will notify you when the implementation is complete.</p>
+									</div>
+
+									<div class="collapse-actions">
+										<a class="link-icon icon-arrow-top" href="javascript:;">Hide History</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+							</div>
+							<div class="panel-body">
+								<div class="text-action-wrapper">
+									<div class="text-action status status-accent in-progress">
+										In Progress
+									</div>
+									<span class="action icon-edit action-secondary action-right"></span>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Helpful Tips</h4>
+							</div>
+
+							<div class="panel-body">
+								<p>Switchboard Port pricing is based on the selected port type.</p>
+								<p>Please note that expedited orders will incur an additional setup charge.</p>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Order Status</h4>
+							</div>
+							<div class="panel-body">
+								<div class="panel-content">
+									<div class="status in-progress status-accent">In Progress</div>
+								</div>
+								<div class="panel-content">
+									<div class="description">
+										<h5 class="description-title">Next Steps:</h5>
+										<ol>
+											<li>QTS reviews the order details</li>
+											<li>QTS updates the order status</li>
+											<li>After the order is approved, you can submit Subscription Request(s) against this subscription</li>
+											<li>System tracks Time Spent against this subscription</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- DRAWER - BEGINS -->
+						<div class="drawer js-drawer">
+
+							<!-- DRAWER PREVIEW - BEGINS -->
+							<div class="drawer-preview">
+								<div class="drawer-header">
+									<h5 class="drawer-title">Pricing Information</h5>
+									<div class="drawer-logo megaport-logo"></div>
+									<div class="actions">
+										<span class="drawer-trigger"></span>
+									</div>
+								</div>
+								<div class="drawer-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+							<!-- DRAWER PREVIEW - ENDS -->
+
+							<!-- DRAWER REMAINING - BEGINS -->
+							<div class="drawer-remaining">
+								<div class="drawer-content">
+									<p>Switchboard Port pricing is based on the selected port type.</p>
+									<p>Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+							</div>
+							<!-- DRAWER REMAINING - ENDS -->
+
+						</div>
+						<!-- DRAWER - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Notice of Commencement</h4>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Regenerate Notice of Commencement Letter for this order.</p>
+									<p>You can select whether to include Customer to this emeil or generate it for internal QTS recipients only.</p>
+								</div>
+
+								<div class="panel-content">
+									<div class="btn-group">
+										<a href="javascipt:;" class="btn" onclick="showDialog('js-modal-сonfirmation');">Regenerate</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo packetfabric-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Hour Price</dt>
+											<dd class="price-value"><span class="currency">$</span> 12 0001</dd>
+										</dl>
+
+										<dl class="price price-reccurring">
+											<dt class="price-label">Monthly Recurring Fee</dt>
+											<dd class="price-value"><span class="currency">$</span> 50 000</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+						<!-- PANEL BRIEF - BEGINS -->
+						<div class="panel panel-brief mobile-invisible">
+							<div class="panel-header">
+								<h4 class="panel-title">Pricing Information</h4>
+								<div class="panel-header-logo megaport-logo">
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="panel-content">
+									<p>Switchboard Port pricing is based on the selected port type. Please note that expedited orders will incur an additional setup charge.</p>
+								</div>
+
+								<div class="panel-content">
+
+									<div class="price-group">
+										<dl class="price">
+											<dt class="price-label">Monthly Price</dt>
+											<dd class="price-value editable">
+												<div class="charge">
+													<span class="currency">$</span> 12 0001
+												</div>
+												<div class="actions">
+													<span class="action icon-edit"></span>
+												</div>
+											</dd>
+										</dl>
+
+										<dl class="price">
+											<dt class="price-label">Total Price</dt>
+											<dd class="price-value editable">
+												<div class="charge">
+													<input type="text" value="50000">
+												</div>
+												<div class="actions">
+													<span class="action icon-done"></span>
+													<span class="action icon-delete"></span>
+												</div>
+											</dd>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- PANEL BRIEF - ENDS -->
+
+					</div>
+				</aside>
+			</div>
+			<!-- SIDEBAR - ENDS -->
+
+		</div>
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+<div class="modal" id="js-modal-see-comment">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">More Information Requested</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+					<div class="history-summary">
+						<p>Your Cross Connect order was reviewed but Data Center Operations team rejected it because of the following reason:</p>
+						<p class="chat-bubble incoming">Here are the very long preview comments that are received from DCO team about 1st ServiceNow project. The full text would be presented on the modal dialog for Customer but short text cropped with "..." would be shown by default on the history and applied actions panel for given CCX order.</p>
+						<p>Please update your order and re-submit it for review.</p>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Ok</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+<script src="../../../assets/js/drawer.js"></script>
+
+</body>
+</html>

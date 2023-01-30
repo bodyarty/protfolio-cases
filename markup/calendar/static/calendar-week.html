@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.calendar.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader sliding">
+	<div class="subheader-container">
+		<h1 class="page-title">Calendar - Month</h1>
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT MAIN - BEGINS -->
+<div class="content-main">
+	
+	<!-- FILTER - BEGINS -->
+	<div class="filter-master">
+		<div class="filter-master-container">
+			<div class="filter-view">
+
+				<div class="filter-view-container">
+
+					<div class="filter-view-search  filter-view-search-accent">
+
+						<div class="search-items">
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">label:</span>
+									<span class="filter-value">Value</span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Date</span>
+
+									<span class="filter-action icon-calendar"></span>
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value1, Value2, Value3</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+							<div class="search-item">
+								<!-- FILTER APPLIED - BEGINS -->
+								<div class="filter-picked">
+									<span class="filter-label">Label:</span>
+									<span class="filter-value">Value</span>
+									<span class="filter-action icon-delete"></span>
+
+								</div>
+								<!-- FILTER APPLIED - ENDS -->
+							</div>
+
+							<div class="search-item search-field">
+								<div class="search">
+									<input type="search" placeholder="Search">
+								</div>
+							</div>
+						</div>
+
+						<div class="search-actions">
+							<span class="action icon-delete"></span>
+						</div>
+					</div>
+
+					<div class="filter-view-actions">
+						<a href="javascript:;" class="link-icon icon-filter icon-left js-filter-edit-trigger">Advanced Search</a>
+						<!-- <a href="javascript:;" class="action icon-filter js-filter-edit-trigger"></a> -->
+					</div>
+				</div>
+
+				<!-- BUTTONS - BEGINS -->
+					<div class="btn-group">
+						<a href="javascript:;" class="btn btn-master" onclick="showDialog('js-modal-plan-summary');">Action Name</a>
+					</div>
+				<!-- BUTTONS - ENDS -->
+			</div>
+
+			<div class="filter-edit" style="display: none;">
+				<div class="form-grid">
+					<div class="row">
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom" disabled>
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<div class="select ">
+								<select class="js-select-custom">
+									<option value="item1">Option 1</option>
+									<option value="item2">Option 2</option>
+									<option value="item3">Option 3</option>
+									<option value="item4">Option 4</option>
+									<option value="item5">Option 5</option>
+
+								</select>
+							</div>
+
+
+
+						</div>
+						<div class="field xl-3 md-4 sm-6 xs-12">
+
+
+							<label class="label">
+								<span>Label</span>
+							</label>
+
+							<input type="text" value="" class="" />
+
+
+
+
+
+						</div>
+					</div>
+					<div class="row row-actions">
+						<div class="field xl-3 md-4 sm-6 xs-12">
+							<a href="javascript:;" class="link-icon icon-left icon-arrow-top js-filter-edit-close">Hide All Filters</a>
+						</div>
+						<div class="field field-actions xl-3 md-4 sm-6 xs-12">
+							<div class="btn-group">
+								<a href="javascript:;" class="btn-link js-filter-edit-close">Clear All</a>
+								<a href="javascript:;" class="btn js-filter-edit-close">Apply</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- FILTER - ENDS -->
+
+	<!-- FILTER RESULTS - BEGINS -->
+	<!-- FILTER RESULTS - ENDS -->
+
+
+	<div class="content-container">
+
+		<!-- CALENDAR PLUGIN - BEGINS -->
+		
+			<!-- CALENDAR - ENDS -->
+			<full-calendar class="fc-qts-theme fc fc-unthemed fc-ltr fc-media-screen fc-direction-ltr fc-theme-standard ng-star-inserted"><calendar-toolbar class="ng-star-inserted"><div class="fc-toolbar fc-header-toolbar"><div class="fc-left"><div class="period-nav period-month period-week"><h2>Jul 26 - Aug 1, 2021</h2><button type="button" class="fc-prev-button fc-button fc-state-default"><span class="fc-icon fc-icon-left-single-arrow"></span></button><button type="button" class="fc-next-button fc-button fc-state-default"><span class="fc-icon fc-icon-right-single-arrow"></span></button></div><div class="fc-button-group date-selection"><button type="button" class="fc-today-button fc-button fc-state-default fc-corner-left">Today</button><qts-calendar-wrapper><div class="btn-wrapper"><button class="action icon-delete">Clear</button></div><p-calendar showtransitionoptions="0ms" hidetransitionoptions="0ms" class="ng-tns-c62-3 ng-pristine ng-valid ng-star-inserted ng-touched"><span class="ng-tns-c62-3 p-calendar p-calendar-w-btn"><input type="text" autocomplete="off" class="ng-tns-c62-3 p-inputtext p-component ng-star-inserted" placeholder=""><button type="button" pbutton="" pripple="" tabindex="0" class="p-datepicker-trigger ng-tns-c62-3 p-ripple p-button p-component p-button-icon-only ng-star-inserted"><span class="p-button-icon pi pi-calendar" aria-hidden="true"></span><span aria-hidden="true" class="p-button-label">&nbsp;</span></button><!----><!----><!----></span></p-calendar></qts-calendar-wrapper></div></div><div class="fc-right"><div class="fc-button-group"><button type="button" class="fc-month-button fc-button fc-state-default fc-corner-left">Month</button><button type="button" class="fc-basicWeek-button fc-button fc-state-default fc-state-active">Week</button><button type="button" class="fc-basicDay-button fc-button fc-state-default fc-corner-right">Day</button></div></div><div class="fc-center"></div><div class="fc-clear"></div><div id="calendar-header-sub-menu" class="action-bar"><div class="actions"><a class="link-icon icon-download icon-left fc-export-button">Export</a></div></div></div></calendar-toolbar><div class="fc-view-harness fc-view-harness-active" style="height: 846.626px;"><div class="fc-daygrid fc-basicWeek-view fc-view"><table class="fc-scrollgrid  fc-scrollgrid-liquid"><thead><tr class="fc-scrollgrid-section fc-scrollgrid-section-header "><td><div class="fc-scroller-harness"><div class="fc-scroller" style="overflow: hidden;"><table class="fc-col-header " style="width: 1378px;"><colgroup></colgroup><tbody><tr><th class="fc-col-header-cell fc-day fc-day-mon fc-day-past" data-date="2021-07-26"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-26&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Mon 7/26</a></div></th><th class="fc-col-header-cell fc-day fc-day-tue fc-day-past" data-date="2021-07-27"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-27&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Tue 7/27</a></div></th><th class="fc-col-header-cell fc-day fc-day-wed fc-day-past" data-date="2021-07-28"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-28&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Wed 7/28</a></div></th><th class="fc-col-header-cell fc-day fc-day-thu fc-day-past" data-date="2021-07-29"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-29&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Thu 7/29</a></div></th><th class="fc-col-header-cell fc-day fc-day-fri fc-day-past" data-date="2021-07-30"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-30&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Fri 7/30</a></div></th><th class="fc-col-header-cell fc-day fc-day-sat fc-day-past" data-date="2021-07-31"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-07-31&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Sat 7/31</a></div></th><th class="fc-col-header-cell fc-day fc-day-sun fc-day-past" data-date="2021-08-01"><div class="fc-scrollgrid-sync-inner"><a class="fc-col-header-cell-cushion " data-navlink="{&quot;date&quot;:&quot;2021-08-01&quot;,&quot;type&quot;:&quot;day&quot;}" tabindex="0">Sun 8/1</a></div></th></tr></tbody></table></div></div></td></tr></thead><tbody><tr class="fc-scrollgrid-section fc-scrollgrid-section-body  fc-scrollgrid-section-liquid"><td><div class="fc-scroller-harness fc-scroller-harness-liquid"><div class="fc-scroller fc-scroller-liquid-absolute" style="overflow: hidden auto;"><div class="fc-daygrid-body fc-daygrid-body-unbalanced " style="width: 1378px;"><table class="fc-scrollgrid-sync-table" style="width: 1378px; height: 367px;"><colgroup></colgroup><tbody><tr><td class="fc-daygrid-day fc-day fc-day-mon fc-day-past" data-date="2021-07-26"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0067811 | Risk: Low | Planned Impact: No | Annual Fire Alarm Testing, VESDA Testing, Sprinkler Testing and Fire Drill - MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">09:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-tue fc-day-past" data-date="2021-07-27"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0067811 | Risk: Low | Planned Impact: No | Annual Fire Alarm Testing, VESDA Testing, Sprinkler Testing and Fire Drill - MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-wed fc-day-past" data-date="2021-07-28"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0067811 | Risk: Low | Planned Impact: No | Annual Fire Alarm Testing, VESDA Testing, Sprinkler Testing and Fire Drill - MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-thu fc-day-past" data-date="2021-07-29"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0067811 | Risk: Low | Planned Impact: No | Annual Fire Alarm Testing, VESDA Testing, Sprinkler Testing and Fire Drill - MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071735 | Risk: Low | Planned Impact: No | Testing Calendar - Site Wide Company Field not set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ASH3">ASH3</span></span><span class="fc-time event-time">02:53 pm - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Electrical | CHG0071736 | Risk: Low | Planned Impact: Yes | Testing Calendar - Specific Customer and Company Field set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">03:03 pm - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071738 | Risk: Low | Planned Impact: No | Testing Calendar - Multiple Customers, Company Field set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">03:24 pm - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071740 | Risk: Low | Planned Impact: No | Testing Calendar - Internal Only Company Field Not set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ASH3">ASH3</span></span><span class="fc-time event-time">03:39 pm - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-fri fc-day-past" data-date="2021-07-30"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0067811 | Risk: Low | Planned Impact: No | Annual Fire Alarm Testing, VESDA Testing, Sprinkler Testing and Fire Drill - MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 05:00 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071740 | Risk: Low | Planned Impact: No | Testing Calendar - Internal Only Company Field Not set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ASH3">ASH3</span></span><span class="fc-time event-time">12:00 am - 03:39 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071738 | Risk: Low | Planned Impact: No | Testing Calendar - Multiple Customers, Company Field set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 03:25 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Electrical | CHG0071736 | Risk: Low | Planned Impact: Yes | Testing Calendar - Specific Customer and Company Field set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 03:03 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0071735 | Risk: Low | Planned Impact: No | Testing Calendar - Site Wide Company Field not set 20210727</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ASH3">ASH3</span></span><span class="fc-time event-time">12:00 am - 02:53 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-sat fc-day-past" data-date="2021-07-31"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td><td class="fc-daygrid-day fc-day fc-day-sun fc-day-past" data-date="2021-08-01"><div class="fc-daygrid-day-frame fc-scrollgrid-sync-inner"><div class="fc-daygrid-day-events"><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0057350 | Risk: Low | Planned Impact: No | (Annual) DFW1 DFW1 Monthly PM on Generator Run 2020</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0067814 | Risk: Low | Planned Impact: No | UPS Battery Testing Q3-MIA1</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="MIA1">MIA1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness" style="margin-top: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Electrical | CHG0070056 | Risk: Low | Planned Impact: No | Annual Thermographic Scanning.</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="ATL1">ATL1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070455 | Risk: Low | Planned Impact: No | Annual Air Handler Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070457 | Risk: Low | Planned Impact: No | Annual Air Compressor/ Nitrogen Generator PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070459 | Risk: Low | Planned Impact: No |  Annual CRAC Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070460 | Risk: Low | Planned Impact: No | Annual IDF PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070461 | Risk: Low | Planned Impact: No | Annual Kyoto Pm</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070462 | Risk: Low | Planned Impact: No | Annual Make Up Air Unit PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070463 | Risk: Low | Planned Impact: No | Annual Munters PM</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-comprehensive">Normal</span><span class="fc-title event-title">Facilities / Maintenance | CHG0070812 | Risk: Low | Planned Impact: No | Roof replacement 2nd half of Administration building, all of Commons, Knub and Cafe buildings</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="RIC1">RIC1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">Facilities / Mechanical | CHG0065180 | Risk: Low | Planned Impact: No | CAHU Quarterly PM Inspections</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="DFW1">DFW1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-event-harness fc-daygrid-event-harness-abs" style="visibility: hidden; top: 0px; left: 0px; right: 0px;"><a class="fc-daygrid-event fc-daygrid-dot-event fc-event fc-event-start fc-event-end fc-event-past event-weekly-wrapper"><div class="event-weekly"><div class="fc-content"><span class="event-label event-routine">Standard</span><span class="fc-title event-title">General Construction | CHG0062744 | Risk: Low | Planned Impact: No | Project Sunshine: General Construction, continuation of CHG0042229, CHG0044988, CHG0046564 &amp; CHG0050143, CHG0053818, CHG0057302</span><span class="event-locations-wrapper"><span class="event-locations" qtstooltip="CHI1">CHI1</span></span><span class="fc-time event-time">12:00 am - 11:59 pm EDT</span></div></div></a></div><div class="fc-daygrid-day-bottom" style="margin-top: 0px;"><a class="fc-daygrid-more-link fc-more-link">show more</a></div></div><div class="fc-daygrid-day-bg"></div></div></td></tr></tbody></table></div></div></div></td></tr></tbody></table></div></div></full-calendar>
+			<div class="loading" style="display: none;"></div>
+			<div class="tooltip" id="tooltipContentContainer" style="display: none;"></div>
+		<!-- CALENDAR PLUGIN - ENDS -->
+
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+
+</body>
+</html>

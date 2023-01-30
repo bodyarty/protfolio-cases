@@ -1,0 +1,45 @@
+<div class="modal" id="js-modal-see-comment">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">More Information Requested</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+					<div class="history-summary">
+						<p>Your Cross Connect order was reviewed but Data Center Operations team rejected it because of the following reason:</p>
+						<p class="chat-bubble incoming">Here are the very long preview comments that are received from DCO team about 1st ServiceNow project. The full text would be presented on the modal dialog for Customer but short text cropped with "..." would be shown by default on the history and applied actions panel for given CCX order.</p>
+						<p>Please update your order and re-submit it for review.</p>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Ok</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>

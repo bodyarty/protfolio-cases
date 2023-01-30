@@ -1,0 +1,798 @@
+<div class="modal" id="js-modal-rack-location">
+	<div class="modal-dialog modal-large modal-sided">
+		<div class="modal-content">
+			
+			<!-- for dev: take code starting from here, above classes are added by bootstrap (angular 1 apps) -->
+			
+			<!-- MODAL MARKUP - BEGINS -->
+			<div class="modal-head">
+				<div class="modal-close" onclick="closeDialog();"></div>
+			</div>
+			
+			<div class="modal-content-inner">
+				
+				<!-- MODAL HEADER - BEGINS -->
+				<div class="modal-header">
+					<h3 class="modal-title">Select Rack Location</h3>
+				</div>
+				<!-- MODAL HEADER - ENDS -->
+				
+				<!-- MODAL BODY - BEGINS -->
+				<div class="modal-body">
+					<div class="description">
+						<p class="mute">
+							Select rack location for A-side cross connect within AM, Amsterdam data center.
+						</p>
+					</div>
+					
+					<div class="table-box">
+						<div class="table-wrapper table-scrollable-wrapper table-fence table-select-location">
+							<div class="table-head-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-checkbox"></th>
+											<th class="cell-name">Name</th>
+
+
+
+
+
+
+
+
+
+											<th class="cell-location">Location</th>
+											<th class="cell-building">Building</th>
+											<th class="cell-parent-space">Parent Space</th>
+											<th class="cell-status">Status</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+								</table>
+							</div>
+							
+							<div class="table-body-wrapper">
+								<table class="table">
+									<tbody>
+										<tr>
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox0" name="checkbox0">
+													<label for="checkbox0"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox1" name="checkbox1">
+													<label for="checkbox1"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox2" name="checkbox2">
+													<label for="checkbox2"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox3" name="checkbox3">
+													<label for="checkbox3"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox4" name="checkbox4">
+													<label for="checkbox4"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox5" name="checkbox5">
+													<label for="checkbox5"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox7" name="checkbox7">
+													<label for="checkbox7"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox8" name="checkbox8">
+													<label for="checkbox8"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<div class="table-wrapper-mobile table-fence">
+							<!-- FROZEN PART - BEGINS -->
+							<div class="frozen">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-checkbox"></th>
+											<th class="cell-name">Name</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox0" name="checkbox0">
+													<label for="checkbox0"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox1" name="checkbox1">
+													<label for="checkbox1"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox2" name="checkbox2">
+													<label for="checkbox2"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox3" name="checkbox3">
+													<label for="checkbox3"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox4" name="checkbox4">
+													<label for="checkbox4"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox5" name="checkbox5">
+													<label for="checkbox5"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox7" name="checkbox7">
+													<label for="checkbox7"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-checkbox">
+
+
+
+												<div class="check-wrap single">
+													<input type="checkbox" id="checkbox8" name="checkbox8">
+													<label for="checkbox8"></label>
+												</div>
+
+
+
+
+
+
+											</td>
+											<td class="cell-name" title="ENCL-ATL1-DCl-1-2e2-104-24">ENCL-ATL1-DCl-1-2e2-104-24</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- FROZEN PART - ENDS -->
+							
+							<!-- SCROLLABLE PART - BEGINS -->
+							<div class="scrollable">
+								<table class="table">
+									<thead>
+										<tr>
+
+											<th class="cell-location">Location</th>
+											<th class="cell-building">Building</th>
+											<th class="cell-parent-space">Parent Space</th>
+											<th class="cell-status">Status</th>
+
+
+
+
+
+
+
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+
+										</tr>
+										<tr>
+
+
+
+
+
+
+
+
+
+											<td class="cell-location">ATL1</td>
+											<td class="cell-building">DC1</td>
+											<td class="cell-parent-space">STE-DFW-1-DC1-1-DH-1-DK331</td>
+											<td class="cell-status">Available</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- SCROLLABLE PART - ENDS -->
+						</div>
+					</div>
+				</div>
+				<!-- MODAL BODY - ENDS -->
+				
+				<!-- MODAL FOOTER - BEGINS -->
+				<div class="modal-footer">
+					<div class="btn-group">
+						<div class="btn" onclick="closeDialog();">Select</div>
+						<div class="btn-link" onclick="closeDialog();">Cancel</div>
+					</div>
+				</div>
+				<!-- MODAL FOOTER - ENDS -->
+				
+			</div>
+			<!-- MODAL MARKUP - ENDS -->
+			
+		</div>
+	</div>
+</div>
+
+<div class="modal-backdrop" style="display: none;"></div>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Ordering</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICON - BEGINS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="../../../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- FAVICON - ENDS -->
+
+	<link href="../../../assets/css/app.ordering.min.css" rel="stylesheet" type="text/css" />
+
+
+	
+</head>
+
+<body class="">
+
+<!-- HEADER - BEGINS -->
+<header class="header sliding">
+	<div class="header-container">
+		<div class="logo">
+			<a href="../../../markup/index.html"><span class="offscreen">QTS</span></a>
+		</div>
+		
+		<!-- PROFILE META - BEGINS -->
+		<div class="meta">
+			<div class="sup-actions-wrapper">
+				<div class="sup-actions">
+					<span class="status critical">REC</span>
+					<button class="btn btn-secondary action-header">
+						To Session Window
+					</button>
+					<button class="btn btn-secondary action-header">
+						Huddle Video
+					</button>
+				</div>
+				<div class="sup-actions">
+					<span class="action action-header icon-huddle action-middle indicated"></span>
+					<span class="action action-header icon-bell action-middle indicated"></span>
+					<span class="action action-header icon-calendar action-middle indicated"></span>
+
+					<!-- reason of such notification placement - dev structure -->
+					<!-- NOTIFICATIONS FEED - BEGINS -->
+					<div class="notifications-feed-wrapper" style="position: absolute; top: 0; left :0; visibility: hidden;">
+						<div class="notifications-feed">
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Incidents and Requests</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value ">5</span> 
+												<span class="item-label">open incidents</span>
+											</a>
+
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">0</span> 
+											<span class="item-label">requested items awating Customer action</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Physical Access Status</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">open incidents</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">14</span> 
+											<span class="item-label">incidents awating Customer action</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value success">3</span> 
+											<span class="item-label">opened requested items requested items</span>
+										</li>
+									</ul>
+								</div>
+								<div class="notifications-section-footer">
+									<div class="actions">
+										<a href="javascript:;" class="link-icon icon-arrow-right">View details</a>
+									</div>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Events</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value emergency">0</span> 
+											<span class="item-label">Emergency</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value comprehensive">0</span> 
+											<span class="item-label">Comprehensive</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value routine">22</span> 
+											<span class="item-label">Routine</span>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+							<!-- NOTIFIACTIONS SECTION - BEGINS -->
+							<section class="notifications-section">
+								<header class="notification-header">
+									<h3 class="notification-title">Power Notifications</h3>
+								</header>
+								<div class="notifications-section-body">
+									<ul class="list-point list-point-accent">
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuit Pairs</span>
+										</li>
+										<li class="list-point-item">
+
+											<span class="item-value ">5</span> 
+											<span class="item-label">Overused Circuits</span>
+										</li>
+										<li class="list-point-item">
+											<a href="javascript:;" class="point-item">
+												<span class="item-value">23</span>
+											</a>
+											<span class="item-label">Ports down</span>
+
+											<div class="actions">
+												<span class="action icon-power-settings action-secondary"></span>
+											</div>
+										</li>
+
+										<li class="list-point-item">
+											<span class="item-value load">23</span>
+											<span class="item-label">Ports down</span>
+											<div class="actions">
+												<span class="loading-sm"></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<!-- NOTIFIACTIONS SECTION - ENDS -->
+
+						</div>
+					</div>
+					<!-- NOTIFICATIONS FEED - ENDS -->
+				</div>
+			</div>
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+				
+			<span class="side-trigger js-side-trigger"><span></span></span>
+			
+		</div>
+		<!-- PROFILE META - ENDS -->
+		
+		<aside class="side">
+			<div class="side-container">
+
+				<!-- MAIN NAV - BEGINS -->
+				<nav class="main-nav">
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Manage</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Users</a></li>
+							<li><a href="javascript:;">Assets</a></li>
+							<li><a href="javascript:;" class="current">Online Orders</a></li>
+							<li><a href="javascript:;">Service Request</a></li>
+							<li><a href="javascript:;">Hybrid Cloud</a></li>
+							<li><a href="javascript:;">Workbook</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Analytics</h4>
+						<ul>
+							<li><a href="javascript:;" class="">Power</a></li>
+							<li><a href="javascript:;">Sensor</a></li>
+							<li><a href="javascript:;">Sustainability</a></li>
+							<li><a href="javascript:;">3D Mapper</a></li>
+							<li><a href="javascript:;">Cloudcheckr</a></li>
+							<li><a href="javascript:;">Reporting</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+
+					<!-- MAIN NAV SECTION - BEGINS -->
+					<div class="main-nav-section">
+						<h4 class="nav-section-title">Help</h4>
+						<ul>
+							<li><a href="javascript:;">Help Center</a></li>
+							<li><a href="javascript:;">API Docs</a></li>
+						</ul>
+					</div>
+					<!-- MAIN NAV SECTION - ENDS -->
+				</nav>
+				<!-- MAIN NAV - ENDS -->
+
+				<!-- REFERNCE LINKS - BEGINS -->
+				<ul class="list-pipes list-reference">
+					<li><a href="javascript:;">Data Center Rules</a></li>
+					<li><a href="javascript:;">Privacy Policy</a></li>
+					<li><a href="javascript:;">Legacy Notices</a></li>
+					<li><a href="javascript:;">Acceptable Use Policy</a></li>
+				</ul>
+				<!-- REFERNCE LINKS - ENDS -->
+
+			</div>
+
+			<!-- ACCOUNT - BEGINS -->
+			<div class="account-wrapper">
+				<ul class="account">
+					<li class="account-item account-item-fluid">
+						<label class="label">Switch Company</label>
+						<span class="account-link">
+							<a href="javascript:;">Emergn Ltd</a>
+						</span>
+					</li>
+					<li class="account-item">
+						<label class="label">Account</label>
+						<div class="dropdown-wrapper ">
+							<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+							<div class="dropdown js-dropdown" id="js-dropdown-user">
+								<ul class="list-dropdown">
+									<li>
+										<span>Edit Account</span>
+									</li>
+
+									<li>
+										<span>Switch Company</span>
+									</li>
+
+									<li class='item-link'>
+										<span>Logout</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- ACCOUNT - ENDS -->
+		</aside>
+
+		
+	</div>
+</header>
+<!-- HEADER - ENDS -->
+
+<aside class="side">
+	<div class="side-container">
+
+		<!-- MAIN NAV - BEGINS -->
+		<nav class="main-nav">
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Manage</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Users</a></li>
+					<li><a href="javascript:;">Assets</a></li>
+					<li><a href="javascript:;" class="current">Online Orders</a></li>
+					<li><a href="javascript:;">Service Request</a></li>
+					<li><a href="javascript:;">Hybrid Cloud</a></li>
+					<li><a href="javascript:;">Workbook</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Analytics</h4>
+				<ul>
+					<li><a href="javascript:;" class="">Power</a></li>
+					<li><a href="javascript:;">Sensor</a></li>
+					<li><a href="javascript:;">Sustainability</a></li>
+					<li><a href="javascript:;">3D Mapper</a></li>
+					<li><a href="javascript:;">Cloudcheckr</a></li>
+					<li><a href="javascript:;">Reporting</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+
+			<!-- MAIN NAV SECTION - BEGINS -->
+			<div class="main-nav-section">
+				<h4 class="nav-section-title">Help</h4>
+				<ul>
+					<li><a href="javascript:;">Help Center</a></li>
+					<li><a href="javascript:;">API Docs</a></li>
+				</ul>
+			</div>
+			<!-- MAIN NAV SECTION - ENDS -->
+		</nav>
+		<!-- MAIN NAV - ENDS -->
+
+		<!-- REFERNCE LINKS - BEGINS -->
+		<ul class="list-pipes list-reference">
+			<li><a href="javascript:;">Data Center Rules</a></li>
+			<li><a href="javascript:;">Privacy Policy</a></li>
+			<li><a href="javascript:;">Legacy Notices</a></li>
+			<li><a href="javascript:;">Acceptable Use Policy</a></li>
+		</ul>
+		<!-- REFERNCE LINKS - ENDS -->
+
+	</div>
+
+	<!-- ACCOUNT - BEGINS -->
+	<div class="account-wrapper">
+		<ul class="account">
+			<li class="account-item account-item-fluid">
+				<label class="label">Switch Company</label>
+				<span class="account-link">
+					<a href="javascript:;">Emergn Ltd</a>
+				</span>
+			</li>
+			<li class="account-item">
+				<label class="label">Account</label>
+				<div class="dropdown-wrapper ">
+					<div class="dropdown-trigger js-dropdown-trigger" data-target="#js-dropdown-user"><span class="dropdown-value">DarceyMullis_DarceyMullis_DarceyMullis_DarceyMullis</span></div>
+					<div class="dropdown js-dropdown" id="js-dropdown-user">
+						<ul class="list-dropdown">
+							<li>
+								<span>Edit Account</span>
+							</li>
+
+							<li>
+								<span>Switch Company</span>
+							</li>
+
+							<li class='item-link'>
+								<span>Logout</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ACCOUNT - ENDS -->
+</aside>
+
+
+<!-- SUBHEADER - BEGINS -->
+<div class="subheader sliding">
+	<div class="subheader-container">
+		<h1 class="page-title">Online Ordering</h1>
+	</div>
+</div>
+<!-- SUBHEADER - ENDS -->
+
+<!-- CONTENT MAIN - BEGINS -->
+<div class="content-main">
+	<div class="content-container">
+		
+		<div class="cards">
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card switchboard">
+					<div class="card-header">
+						<a href="oo-switchboard-search-ports.html" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="oo-switchboard-search-ports.html">Switchboard</a>
+
+						</h4>
+
+						<div class="card-actions">
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Intended to address multiple connectivity use cases via a single automated platform.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="oo-switchboard-search-ports.html" class="link-icon icon-arrow-right">View Orders (3)</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="switchboard-create-ports.html">Order Port</a>
+
+							<a class="btn btn-secondary" href="oo-switchboard-search-ports.html">Order Virtual Connect</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card crossconnect">
+					<div class="card-header">
+						<a href="crossconnect-search.html" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="crossconnect-search.html">crossConnect</a>
+
+						</h4>
+
+						<div class="card-actions">
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Provides important access to your applications and critical communication paths to your customers. </p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="crossconnect-search.html" class="link-icon icon-arrow-right">View Orders (24)</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Order Now</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card remote-hands">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Remote Hands</a>
+
+						</h4>
+
+						<div class="card-actions">
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>QTS Remote Hands provides physical hands-on access to computer equipment located in QTS Data Centers.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Orders (100)</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Subscribe Now</a>
+
+							<a class="btn btn-secondary" href="javascript:;">Remote Hands Request</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card cloudramp">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">QTS Cloudramp for AWS</a>
+
+						</h4>
+
+						<div class="card-actions">
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Cloud ready colocation, on-demand. Secure. Compliant. Connected.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Subsriptions (24)</a>
+
+						</div>
+
+					</div>
+
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card activation-codes">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Activation Codes</a>
+
+						</h4>
+
+						<div class="card-actions">
+							<button class="action icon-edit action-middle"></button>
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>QTS Remote Hands provides physical hands-on access to computer equipment located in QTS Data Centers.</p>
+						</div>
+
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Create</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card power-circuit">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Power Circuit</a>
+
+						</h4>
+
+						<div class="card-actions">
+							<button class="action icon-edit action-middle"></button>
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Power Circuit information and description.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Orders (24)</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Order Now</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card smart-cart">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Smart Cart</a>
+
+						</h4>
+
+						<div class="card-actions">
+							<button class="action icon-edit action-middle"></button>
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>SmartCart is a safe and secure way to remotely access and control your servers and network devices directly from SDP through a reservable KVM interface. Once the KVM is installed and your session is activated, you’ll be able to remotely configure or test your racked equipment as if you were physically on-site. KVMs must be reserved 24 hours in advance and are subject to availability.  Session time is charged on an hourly basis at standard Remote Hands rates.  For emergency KVM deployments, please contact the OSC directly.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Reservations (14)</a>
+
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Sessions (5)</a>
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Reserve Now</a>
+
+							<a class="btn btn-secondary" href="javascript:;">Start Smart Cart Session</a>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card fourth-wall">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Fourth Wall</a>
+
+						</h4>
+
+						<div class="card-actions">
+							<button class="action icon-edit action-middle"></button>
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Fourth Wall information and description.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Orders (24)</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Order Now</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+			<div class="card-wrapper">
+				<!-- CARD - BEGINS -->
+				<div class="card sustainability">
+					<div class="card-header">
+						<a href="javascript:;" class="shield"></a>
+
+						<h4 class="card-title">
+							<a href="javascript:;">Sustainability</a>
+
+						</h4>
+
+						<div class="card-actions">
+							<button class="action icon-edit action-middle"></button>
+
+							<button class="action icon-refresh action-middle" type="button"></button>
+						</div>
+					</div>
+
+					<div class="card-body">
+						<div class="card-description">
+							<p>Sustainability some description is here.</p>
+						</div>
+
+						<div class="card-quick-cta">
+							<a href="javascript:;" class="link-icon icon-arrow-right">View Orders</a>
+
+						</div>
+
+					</div>
+
+					<div class="card-footer">
+
+						<div class="btn-group btn-group-wrap">
+							<a class="btn btn-master" href="javascript:;">Order Now</a>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- CARD - ENDS -->
+			</div>
+
+		</div>
+		
+	</div>
+</div>
+<!-- CONTENT MAIN - ENDS -->
+
+<!-- FOOTER - BEGINS -->
+<footer class="footer" id="footer">
+	<div class="footer-container">
+
+		<div class="footer-row">
+			<div class="copyright-info">
+				<p>&copy; <span id="copyrightCurrentYear"></span> QTS Realty Trust, Inc. All Rights Reserved</p>
+			</div>
+			<div class="contacts-info">
+				<ul class="list-contacts">
+					<li class="list-contacts-item item-mail"><a href="mailto:support@qtsdatacenters.com">support@qtsdatacenters.com</a></li>
+					<li class="list-contacts-item item-phone"><a href="tel:1-866-239-5000">1-866-239-5000</a></li>
+
+					<li class="list-contacts-item item-question"><a href="javascript:;">Help</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-row">
+			<ul class="list-pipes list-reference">
+				<li><a href="http://www.qtsdatacenters.com/company/data-center-rules">Data Center Rules</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/privacy-policy">Privacy Policy</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/legal-notices">Legacy Notices</a></li>
+				<li><a href="http://www.qtsdatacenters.com/company/acceptable-use-policy">Acceptable Use Policy</a></li>
+			</ul>
+		</div>
+
+	</div>
+</footer>
+<!-- FOOTER - ENDS -->
+<!-- VENDOR JS - BEGINS -->
+<script src="../../../assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/vendor/tooltipster.bundle.min.js"></script>
+<script src="../../../assets/js/vendor/select2.min.js"></script>
+<!-- VENDOR JS - ENDS -->
+
+<!-- GENERAL JS - BEGINS -->
+<script src="../../../assets/js/general.js"></script>
+<!-- GENERAL JS - ENDS -->
+
+<!-- COMPONENTS JS - BEGINS -->
+<script src="../../../assets/js/side.js"></script>
+<script src="../../../assets/js/layout.js"></script>
+<script src="../../../assets/js/dropdown.js"></script>
+<script src="../../../assets/js/modal.js"></script>
+<script src="../../../assets/js/select2-custom.js"></script>
+<script src="../../../assets/js/tooltipster-custom.js"></script>
+<script src="../../../assets/js/back-to-top.js"></script>
+<script src="../../../assets/js/equalize-rows.js"></script>
+<script src="../../../assets/js/tabs-sliding-panel.js"></script>
+<script src="../../../assets/js/filter-toggle.js"></script>
+<script src="../../../assets/js/slide-box.js"></script>
+<script src="../../../assets/js/canvas.js"></script>
+<script src="../../../assets/js/heatmap-history-switcher.js"></script>
+<script src="../../../assets/js/login-carousel-simple.js"></script>
+<script src="../../../assets/js/table.sticky.js"></script>
+<script src="../../../assets/js/button-pressed-toggle.js"></script>
+<!-- COMPONENTS JS - ENDS -->
+
+
+</body>
+</html>

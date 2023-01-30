@@ -1,0 +1,641 @@
+// ------------------------------------------------------------------------- //
+// NG PRIME CUSTOMIZATIONS - SHARED V11
+// ANGULAR 1 and ANGULAR 2 APPS
+// https://www.primefaces.org/primeng/#/
+//
+// LIBRARY IS USED FOR PROD : BE CAREFUL!!!
+//
+// Separated from _custom-prime-ng.scss, as it must be shared across
+// __imports-prod-modern.scss and __imports-prod.scss
+// Mostly for features included into header, which is common for all applications.
+//
+// TABLE OF CONTENTS
+// 00 VARIABLES
+// 01 OVERLAY PANEL
+// 02 SELECT, MULTISELECT, CALENDAR - COMMON
+// 03 SELECT - SPECIALS
+// 04 AUTOCOMPLETE
+// 05 MODALS
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 00 VARIABLES
+// ------------------------------------------------------------------------- //
+$disabled-color-transparency-helper                         : rgba($disabled-color, .8);
+$hairline-color-dark-transparency-helper                    : $gray-80-hex;
+$hairline-color-light-transparency-helper                   : $gray-40-hex;
+$form-control-bg-color-disabled-transparency-helper         : rgba($gray-40-hex, .8);
+
+// ------------------------------------------------------------------------- //
+// 01 OVERLAY PANEL
+// required for notifications-feed
+// ------------------------------------------------------------------------- //
+
+.p-overlaypanel {
+	@extend %tooltip;
+	margin: 5px 0 -15px -2px;
+	max-width: 500px;
+	font-size: em(12);
+
+	.tooltip-title {
+		font-size: em(14, 12);
+	}
+
+	&.p-overlaypanel-flipped {
+		margin-top: -15px;
+		margin-bottom: 5px;
+	}
+
+	&::after,
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 5px;
+		width: 0;
+		height: 0;
+		border: solid transparent;
+		pointer-events: none;
+	}
+
+	&::before {
+		margin: 0;
+		border-width: 5px;
+		border-color: transparent;
+		border-bottom-color: $tooltip-bg;
+	}
+
+	&.p-overlaypanel-flipped::before {
+		border-top-color: $tooltip-bg;
+	}
+
+	&.p-overlaypanel-flipped::after,
+	&.p-overlaypanel-flipped::before {
+		top: 100%;
+		bottom: auto;
+		border-bottom-color: transparent;
+	}
+
+	.p-overlaypanel-content {
+		@extend %tooltip-value;
+		padding-right: 25px;
+	}
+
+	.p-overlaypanel-close {
+		@extend %tooltip-close;
+	}
+
+	&.tooltip-secondary {
+		background: $tooltip-secondary-bg;
+
+		&::before {
+			border-bottom-color: $tooltip-secondary-bg;
+		}
+
+		&.p-overlaypanel-flipped::before {
+			border-top-color: $tooltip-secondary-bg;
+		}
+
+		.p-overlaypanel-content {
+			background: $tooltip-secondary-bg;
+			color: $tooltip-secondary-color;
+		}
+	}
+
+	// POPOVER INSIDE
+	.popover-wrapper &,
+	&.popover-wrapper {
+		@include z-index(dropdown, $important: true);
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		width: $popover-wrapper-width;
+		max-width: none;
+		font-size: 100%; // TEST RESET FONT SIZE
+
+		.p-overlaypanel-content {
+			padding: 0;
+		}
+
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	// POPOVER SIZE - MIDDLE
+	.popover-wrapper-middle &,
+	&.popover-wrapper-middle {
+		width: $popover-wrapper-middle-width;
+		max-width: none;
+	}
+
+	// NOTIFICATIONS FEED
+	.notifications-feed-wrapper &,
+	&.notifications-feed-wrapper {
+		@include z-index(modal, $important: true);
+		top: $header-height !important; // fixing wrong positioning of ui-overlaypanel
+		margin-top: 0;
+		padding: 0;
+		width: $notif-feed-width;
+		max-width: none;
+		font-size: 100%; // TEST RESET FONT SIZE
+
+		.p-overlaypanel-content {
+			padding: 0;
+		}
+
+		&::after,
+		&::before {
+			display: none;
+		}
+
+		.p-overlaypanel-close {
+			@include icon($icon-cross-sm, $action-color);
+
+			&:hover {
+				@include icon($icon-cross-sm, $action-color-hover);
+			}
+		}
+
+		// RESPONSIVE - TABLET PORTRAIT
+		@include for-size(phone-low) {
+			width: $notif-feed-width-sm;
+		}
+	}
+}
+
+.popover-wrapper .innter-tooltip {
+	width: 700px;
+}
+
+// ------------------------------------------------------------------------- //
+// 01 SELECT, MULTISELECT, CALENDAR - COMMONS
+//
+// required for dropdowns in modal window SWITCH USER
+// multiselect and calendar are not used there but are set to make css compact
+// ------------------------------------------------------------------------- //
+
+.p-dropdown,
+.p-multiselect,
+.p-calendar,
+.p-listbox {
+	@include dropdown-trigger();
+	padding: 0;
+
+	// hide input - default styles
+	.p-hidden-accessible {
+		position: absolute;
+		overflow: hidden;
+		margin: -1px;
+		padding: 0;
+		width: 1px;
+		height: 1px;
+		border: 0;
+		clip: rect(0 0 0 0);
+	}
+
+	// DISABLED
+	&.p-disabled {
+		@include dropdown-trigger-disabled();
+
+		// TO FIX TRANSPARENСY IN OPEN DROPDOWN
+		border-color: $hairline-color-dark-transparency-helper;
+		background-color: $form-control-bg-color-disabled-transparency-helper;
+		color: $disabled-color-transparency-helper;
+		opacity: 1;
+
+		.p-inputtext,
+		.p-multiselect-label {
+			color: $disabled-color-transparency-helper;
+			cursor: default;
+		}
+	}
+}
+
+// TRIGGER
+.p-dropdown-trigger,
+.p-multiselect-trigger {
+	@include dropdown-trigger-arrow();
+}
+
+// TRIGGER VALUE
+.p-inputtext,
+.p-multiselect-label-container {
+	@include dropdown-trigger-value();
+	padding: 0 $dropdown-trigger-padding-right 0 $form-control-padding-hor;
+	width: 100%;
+	line-height: normal; // SELECT ISSUE
+}
+
+// DROPDOWN ITSELF
+.p-dropdown-panel,
+.p-multiselect-panel,
+.p-autocomplete-panel,
+.p-listbox {
+	@include dropdown();
+	@include z-index(dropdown, $important: true);
+	position: absolute;
+	width: auto;
+	height: auto;
+}
+
+// FOR LISTBOX THAT ALWAYS OPEN
+.p-listbox-unbar {
+	.p-listbox {
+		position: relative;
+		display: block;
+		z-index: auto !important;
+	}
+
+	.p-listbox-empty-message {
+		display: none;
+	}
+}
+
+// SEARCH FIELD FOR DROPDOWN
+.p-dropdown-panel {
+	.p-dropdown-filter-container {
+		position: relative;
+		border-bottom: $dropdown-bd;
+
+		&::before {
+			@include icon($icon-search, $copy-color-primary);
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+		}
+
+		input {
+			padding-left: 45px;
+			border: none;
+		}
+	}
+
+	// EMPTY MESSAGE
+	.p-dropdown-empty-message {
+		@include dropdown-option();
+	}
+}
+
+.p-dropdown-open .p-dropdown-panel,
+.p-multiselect-open .p-multiselect-panel {
+	width: 100%;
+}
+
+// DROPDOWN OPTION LIST RESET
+.p-dropdown-items,
+.p-multiselect-items {
+	margin: 0;
+}
+
+// DROPDOWN OPTION LIST ITEM
+p-dropdownitem,
+p-multiselectitem {
+	@include ellipsis();
+
+	&:last-child {
+		.p-dropdown-item {
+			border-bottom: none;
+		}
+	}
+
+	cdk-virtual-scroll-viewport & {
+		display: block;
+	}
+}
+
+// DROPDOWN SINGLE OPTION
+dropdown-wrapper,
+multi-select-wrapper,
+qts-multi-select-wrapper {
+	single-option .value {
+		@include value-pushed();
+	}
+}
+
+// TODO : AWUFUL THING
+// CANNOT DO IN ANOTHER WAY BECAUSE OF DEV'S RESTRICTIONS
+
+// CLEAR MULTISELECT CHOSEN VALUES
+multi-select-wrapper,
+qts-multi-select-wrapper,
+calendar-wrapper,
+qts-calendar-wrapper {
+	@include form-control-clear();
+	position: relative;
+	display: block;
+}
+
+multi-select-wrapper .btn-wrapper + p-multiselect .p-multiselect,
+qts-multi-select-wrapper .btn-wrapper + p-multiselect .p-multiselect,
+calendar-wrapper .btn-wrapper + p-calendar .p-calendar,
+qts-calendar-wrapper .btn-wrapper + p-calendar .p-calendar {
+	width: calc(100% - #{$form-control-clear-width});
+}
+
+// ------------------------------------------------------------------------- //
+// 02 SELECT - SPECIALS
+// required for dropdowns in modal window SWITCH USER
+// ------------------------------------------------------------------------- //
+
+// TRIGGER FOCUS
+.p-dropdown {
+	&.p-dropdown-open {
+		border: 1px solid $form-control-bd-color-focus;
+
+		.p-dropdown-trigger {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+}
+
+dropdown-wrapper {
+	&.error,
+	&.ng-invalid.ng-dirty,
+	&.ng-invalid.ng-touched {
+
+		.p-dropdown {
+			border-color: $error-color;
+		}
+	}
+}
+
+// DROPDOWN OPTION
+.p-dropdown-item {
+	@include dropdown-option();
+
+	&:last-child {border-bottom: $dropdown-bd;}
+
+	&.p-highlight {
+		@include dropdown-option-active();
+	}
+
+	// TODO: QUICK FIX FOR RELEASE 9.12. MUST BE REWORKED
+	.wrapped & {
+		margin: 0 10px 0 0;
+		padding: 0;
+
+		&:hover,
+		&.p-highlight {
+			box-shadow: 0 0 0 0 $dropdown-option-bg-color-hover, 10px 0 0 0 $dropdown-option-bg-color-hover;
+		}
+
+		.child-element {
+			margin: 0 10px;
+			padding: 12px 0 10px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+// SELECT MASTER
+.select-master {
+	.p-dropdown {
+		@include select-master-dropdown-trigger();
+	}
+
+	.p-inputtext {
+		@include select-master-trigger-value();
+		padding-left: 0;
+	}
+
+	.p-dropdown-trigger {
+		@include select-master-trigger-arrow();
+	}
+}
+
+.p-carousel-dropdown {
+	width: auto;
+	min-width: 50px;
+	text-align-last: center;
+}
+
+.p-carousel-mobiledropdown {
+	@include icon($icon-keyboard-arrow-down, $dropdown-trigger-arrow-color);
+	display: inline-block;
+	margin: 0 10px;
+	width: 70px;
+	height: 35px;
+	background-repeat: no-repeat;
+	background-position: 85% 50%;
+	background-size: 16px;
+}
+
+// ------------------------------------------------------------------------- //
+// 04 AUTOCOMPLETE
+// ------------------------------------------------------------------------- //
+.p-autocomplete-panel {
+	overflow-y: auto;
+}
+
+.p-autocomplete-items {
+	margin: 0;
+
+	.p-autocomplete-item {
+		@include dropdown-option();
+	}
+}
+
+p-autocomplete {
+	&.error,
+	&.ng-invalid.ng-dirty,
+	&.ng-invalid.ng-touched {
+
+		.p-inputtext {
+			border-color: $error-color;
+		}
+	}
+
+	.p-autocomplete {
+		display: inline;
+		position: static;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 05 MODALS
+// required for modal window SWITCH USER 123
+// ------------------------------------------------------------------------- //
+
+.p-dialog-mask {
+	@include z-index(modal-backdrop);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $mask-bg-color-dark;
+
+	&.p-component-overlay {
+		background-color: $mask-bg-color-dark;
+	}
+}
+
+.p-overflow-hidden {
+	//here
+	overflow: hidden;
+
+	&.mask-on::before {
+		display: none;
+	}
+
+	// ANGULAR MATERIAL OVERLAY DATEPICKER FIX WHEN IN PRIMENG MODAL
+	.cdk-overlay-container {
+		@include z-index(modal, 1);
+
+		.cdk-overlay-connected-position-bounding-box {
+			@include z-index(modal, 2);
+		}
+	}
+
+	// DROPDOWN OVERFLOW FIX WHEN IN PRIMENG MODAL
+	.p-dropdown-panel,
+	.p-multiselect-panel,
+	.p-autocomplete-panel {
+		@include z-index(modal, $important: true);
+	}
+
+	// DATEPICKER OVERFLOW FIX WHEN IN PRIMENG MODAL
+	.p-datepicker {
+		@include z-index(modal, $important: true);
+	}
+}
+
+p-dynamicdialog {
+	@extend %modal;
+	display: flex;
+
+	.p-dialog {
+		@extend %modal-dialog;
+		transform: none !important;
+
+		.p-dialog-content {
+			@extend %modal-content;
+			display: flex;
+			overflow: auto;
+			flex-direction: column;
+
+			.flex-helper {
+				@extend %flex-helper;
+			}
+		}
+
+		// SIZES
+		&.modal-xlarge {
+			max-width: $modal-width-xlarge;
+		}
+
+		&.modal-large {
+			max-width: $modal-width-large;
+		}
+
+		// RESPONSIVE - TABLET LANDSCAPE
+		@include for-size(tablet-landscape-low) {
+			&.modal-large,
+			&.modal-xlarge {
+				width: $modal-width-mobile;
+				min-width: 0;
+				max-width: none;
+			}
+
+			&.modal-sided {
+				margin-left: $global-padding-hor-sm;
+				width: $modal-width-sided;
+			}
+
+			.table-box {
+				min-height: auto;
+
+				&.search-results {
+					min-height: 100px;
+				}
+			}
+		}
+
+		// RESPONSIVE - TABLET PORTRAIT
+		@include for-size(tablet-portrait-low) {
+			width: $modal-width-mobile;
+			min-width: 0;
+			max-width: none;
+		}
+	}
+
+	.p-dialog-header {
+		display: none;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 06 DRAGGABLE DIALOG
+// ------------------------------------------------------------------------- //
+.qts-dialog-draggable {
+	display: flex;
+	background: transparent !important; // TO OVERRIDE INLINE STYLES
+	pointer-events: none;
+
+	&.p-dialog-bottom-right {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	.p-dialog {
+		position: relative;
+		margin: 0 $modal-content-pad-hor $modal-content-pad-hor 0;
+		background: $modal-bg-color;
+		box-shadow: 0 0 10px 6px rgba(0, 0, 0, .1);
+		pointer-events: auto;
+
+		.p-dialog-header {
+			position: relative;
+			padding: $modal-content-pad-ver $modal-content-pad-hor 0;
+
+			.p-dialog-title {
+				margin: 0;
+				line-height: 1;
+				letter-spacing: -1.5px;
+				font-size: em(24);
+			}
+
+			.p-dialog-header-close,
+			.p-dialog-header-icons {
+				position: static !important;
+				width: 0;
+				height: 0;
+				border: none;
+			}
+
+			.p-dialog-header-close-icon {
+				@include icon($icon-cross, $action-color, 18px);
+				position: absolute;
+				top: 18px;
+				right: 18px;
+				cursor: pointer;
+
+				&:hover {
+					@include icon($icon-cross, $action-color-hover, 18px);
+				}
+			}
+		}
+
+		.p-dialog-content {
+			padding: $modal-content-pad-ver $modal-content-pad-hor;
+
+			.video {
+				width: 100%;
+			}
+		}
+
+		.p-resizable-handle {
+			position: absolute;
+			right: 1px;
+			bottom: 1px;
+			width: 10px;
+			height: 10px;
+			cursor: se-resize;
+		}
+	}
+}

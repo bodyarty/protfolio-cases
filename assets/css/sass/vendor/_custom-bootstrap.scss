@@ -1,0 +1,596 @@
+// ------------------------------------------------------------------------- //
+// ANGULAR DIRECTIVES FOR BOOTSTRAP - CUSTOMIZATIONS
+// ANGULAR 1 APPS
+// https://angular-ui.github.io/bootstrap/
+//
+// LIBRARY IS USED FOR PROD : BE CAREFUL!!!
+//
+//
+// TABLE OF CONTENTS
+// 00 VARIABLES
+// 02 MODALS
+// 03 DATEPICKER
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 00 VARIABLES
+// ------------------------------------------------------------------------- //
+$carousel-controls-color            : $black;
+
+// ------------------------------------------------------------------------- //
+// 01 CAROUSEL
+// ------------------------------------------------------------------------- //
+
+// TODO : need to share styles witn ngprime carousel
+
+.carousel {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	white-space: nowrap;
+	z-index: 99;
+
+	.carousel-inner {
+		padding: 0 0 20px;
+	}
+
+	.carousel-indicators {
+		bottom: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		width: 100%;
+		text-align: left;
+		line-height: 1;
+
+		li {
+			@include box-sizing();
+			display: inline-block;
+			margin: 0 3px;
+			width: 8px;
+			height: 8px;
+			border: 1px solid $carousel-controls-color;
+			border-radius: 50%;
+			text-decoration: none;
+			cursor: pointer;
+
+			&.active {
+				background: $carousel-controls-color;
+			}
+		}
+	}
+
+	.left.carousel-control,
+	.right.carousel-control {display: none;}
+}
+
+// ------------------------------------------------------------------------- //
+// 02 MODALS
+// ------------------------------------------------------------------------- //
+.modal-open {
+	overflow: hidden;
+
+	.modal {
+		@include z-index(modal, $important: true); // to override bootrstrap styles
+		display: flex !important; // to override bootrstrap styles
+	}
+
+	.modal-backdrop {
+		@include z-index(modal-backdrop, $important: true); // to override bootrstrap styles
+	}
+}
+
+.modal {
+	@extend %modal;
+
+	.modal-content {
+		display: flex;
+
+		overflow: hidden;
+		flex-direction: column;
+		padding: 0;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+// SIZES
+.modal-dialog {
+	&.modal-lg {
+		max-width: $modal-width-xlarge;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 03 TOOLTIP
+// ------------------------------------------------------------------------- //
+.tooltip {
+	@include z-index(tooltip);
+	padding: 0;
+	background: transparent;
+	line-height: 1;
+	font-size: em(14);
+
+	.tooltip-inner {
+		@extend %tooltip-value;
+		@extend %tooltip-value-inners;
+		text-align: left;
+		font-size: em(12);
+	}
+
+	&.in {
+		opacity: 1;
+	}
+
+	&.popover-wrapper {
+		width: $popover-wrapper-width;
+		max-width: none;
+
+		.tooltip-inner {
+			padding: 0;
+			font-size: em(14);
+
+			.tooltip-inner {
+				@extend %tooltip-value;
+				@extend %tooltip-value-inners;
+				min-width: 200px;
+
+				.tooltip-arrow {
+					display: none;
+				}
+			}
+		}
+
+		// TO MAKE THE DISABLED ACTION INSIDE POPOVER MORE VISIBLE
+		.action {
+			&.disabled {
+				opacity: .6;
+			}
+		}
+
+		// RESPONSIVE - TABLET PORTRAIT
+		@include for-size(tablet-portrait-low) {
+			width: $popover-wrapper-width-tablet;
+		}
+
+		// RESPONSIVE - PHONE
+		@include for-size(phone-low) {
+			left: 0 !important; // TO OVERWRITE INLINE STYLES
+			width: 100%;
+		}
+	}
+
+	&.popover-wrapper-middle {
+		width: $popover-wrapper-middle-width;
+
+		// RESPONSIVE - PHONE
+		@include for-size(phone-low) {
+			left: 0 !important; // TO OVERWRITE INLINE STYLES
+			width: 100%;
+		}
+	}
+
+	.tooltip-close {
+		@extend %tooltip-close;
+	}
+
+	&.top {
+		margin-top: -$tooltip-arrow-size;
+		padding: $tooltip-arrow-size 0;
+
+		.tooltip-close {
+			top: 10px;
+		}
+	}
+
+	&.right {
+		margin-left: $tooltip-arrow-size;
+		padding: 0 $tooltip-arrow-size;
+
+		.tooltip-close {
+			right: 10px;
+		}
+	}
+
+	&.bottom {
+		margin-top: $tooltip-arrow-size;
+		padding: $tooltip-arrow-size 0;
+
+		.tooltip-close {
+			top: 10px;
+		}
+	}
+
+	&.left {
+		margin-left: -$tooltip-arrow-size;
+		padding: 0 $tooltip-arrow-size;
+
+		.tooltip-close {
+			right: 10px;
+		}
+	}
+
+	&.top .tooltip-arrow {
+		margin-left: -$tooltip-arrow-size;
+		border-width: $tooltip-arrow-size $tooltip-arrow-size 0;
+		border-top-color: $tooltip-bg;
+	}
+
+	&.top-left .tooltip-arrow {
+		right: $tooltip-arrow-size;
+		margin-bottom: -$tooltip-arrow-size;
+		border-width: $tooltip-arrow-size $tooltip-arrow-size 0;
+		border-top-color: $tooltip-bg;
+	}
+
+	&.top-right .tooltip-arrow {
+		right: 0;
+		left: auto;
+		margin-bottom: 0;
+		border-width: $tooltip-arrow-size $tooltip-arrow-size 0;
+		border-top-color: $tooltip-bg;
+	}
+
+	&.right .tooltip-arrow {
+		margin-top: -$tooltip-arrow-size;
+		border-width: $tooltip-arrow-size $tooltip-arrow-size $tooltip-arrow-size 0;
+		border-right-color: $tooltip-bg;
+	}
+
+	&.left .tooltip-arrow {
+		margin-top: -$tooltip-arrow-size;
+		border-width: $tooltip-arrow-size 0 $tooltip-arrow-size $tooltip-arrow-size;
+		border-left-color: $tooltip-bg;
+	}
+
+	&.bottom .tooltip-arrow {
+		margin-left: -$tooltip-arrow-size;
+		border-width: 0 $tooltip-arrow-size $tooltip-arrow-size;
+		border-bottom-color: $tooltip-bg;
+	}
+
+	&.bottom-left .tooltip-arrow {
+		right: $tooltip-arrow-size;
+		margin-top: -$tooltip-arrow-size;
+		margin-left: 0;
+		border-width: $tooltip-arrow-size $tooltip-arrow-size $tooltip-arrow-size;
+		border-bottom-color: $tooltip-bg;
+	}
+
+	&.bottom-right .tooltip-arrow {
+		right: 0;
+		left: auto;
+		margin-top: 0;
+		border-width: 0 $tooltip-arrow-size $tooltip-arrow-size;
+		border-bottom-color: $tooltip-bg;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 03 DATEPICKER
+// ------------------------------------------------------------------------- //
+.datepicker {
+	@include form-control-clear();
+	position: relative;
+
+	input {
+		padding-right: $dropdown-trigger-padding-right;
+	}
+
+	&.datepicker-fast-clear input {
+		width: calc(100% - #{$form-control-clear-width});
+	}
+
+	.datepicker-trigger {
+		position: absolute;
+		top: 50%;
+		right: $form-control-clear-width;
+		width: $datepicker-trigger-width;
+		height: $datepicker-trigger-width;
+		border: none;
+		background: none;
+		transform: translateY(-50%);
+		cursor: pointer;
+
+		&::before {
+			@include icon($icon-calendar, $action-color);
+			content: '';
+		}
+	}
+}
+
+.uib-datepicker-popup {
+
+	&.dropdown-menu {
+		@include box-sizing();
+		@include z-index(datepicker);
+		display: block;
+		padding: $datepicker-padding;
+		width: $datepicker-width;
+		border: 1px solid $hairline-color-light;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	// THEAD
+	thead {
+
+		tr:first-child {
+			th {
+				margin: 0;
+				padding: 0 0 15px;
+			}
+
+			th:first-child,
+			th:last-child {
+
+				.btn {
+					position: relative;
+					top: 6px;
+				}
+			}
+
+			.btn {
+				margin: 0;
+				border: none;
+				text-align: center;
+			}
+
+
+			th:first-child .btn {
+				text-align: left;
+			}
+
+			th:last-child .btn {
+				text-align: right;
+			}
+		}
+
+		.btn {
+			display: inline-block;
+			float: none;
+			width: 100%;
+			height: auto;
+			min-height: 0;
+			font-family: $font-primary-regular;
+			font-size: em(22);
+
+			&.btn-default:not(:disabled):hover {
+				border-radius:0;
+				background-color: transparent;
+				color: $action-color-hover;
+			}
+		}
+
+		.glyphicon {
+			display: inline-block;
+
+			&.glyphicon-chevron-left {
+				&::before {
+					@include icon($icon-keyboard-arrow-left, $action-color);
+					content: '';
+				}
+
+				&:hover::before {
+					@include icon($icon-keyboard-arrow-left, $action-color-hover);
+				}
+			}
+
+			&.glyphicon-chevron-right {
+				&::before {
+					@include icon($icon-keyboard-arrow-right, $action-color);
+					content: '';
+				}
+
+				&:hover::before {
+					@include icon($icon-keyboard-arrow-right, $action-color-hover);
+				}
+			}
+		}
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		th, td {
+			padding: $datepicker-calendar-cell-padding;
+			text-align: center;
+			text-transform: capitalize;
+			font-family: $font-primary-medium;
+			font-weight: normal;
+		}
+
+		th small {
+			font-size: em(14);
+			cursor: default;
+		}
+	}
+
+	thead tr:nth-child(2) th:first-child,
+	tbody tr td:first-child {
+		padding-left: $datepicker-calendar-padding-hor;
+	}
+
+	thead tr:nth-child(2) th:last-child,
+	tbody tr td:last-child {
+		padding-right: $datepicker-calendar-padding-hor;
+	}
+
+	thead tr:nth-child(2) th {
+		padding-top: $datepicker-calendar-head-padding-ver;
+		padding-bottom: $datepicker-calendar-head-padding-ver;
+		border-bottom: 1px solid $hairline-color-dark;
+	}
+
+	tbody tr:last-child td {
+		padding-bottom: $datepicker-calendar-padding-bottom;
+	}
+
+	thead tr:nth-child(2) th,
+	tbody {
+		background: $datepicker-calendar-bg-color;
+	}
+
+	td {
+		border-bottom: none !important;
+		vertical-align: middle !important;
+		text-align: center;
+	}
+
+	.uib-weeks {
+		cursor: default;
+	}
+
+	.btn {
+		@include box-sizing();
+		margin: 0;
+		padding: 0;
+		width: $datepicker-calendar-cell-size;
+		min-width: $datepicker-calendar-cell-size;
+		height: $datepicker-calendar-cell-size;
+		min-height: $datepicker-calendar-cell-size;
+		border: none;
+		border-radius: 0;
+		background: transparent;
+		vertical-align: middle;
+		text-align: center;
+		line-height: 1;
+		white-space: nowrap;
+		font-family: $font-primary-medium;
+		font-size: em(14);
+		font-weight: normal;
+		color: $copy-color-primary;
+		box-shadow: none;
+
+		> strong {
+			font-family: $font-primary-regular;
+			font-weight: normal;
+		}
+
+		&:focus {outline: 0;}
+	}
+
+	.btn-group {
+		margin: 0;
+		padding: 0;
+	}
+
+	.text-info {font-weight: normal;}
+
+	.btn.disabled,
+	.btn[disabled],
+	fieldset[disabled] .btn {
+		color: $copy-color-secondary;
+	}
+
+	.btn-default:disabled,
+	.btn-default:disabled:hover {
+		border-radius: 0;
+		background-color: transparent;
+		cursor: default;
+	}
+}
+
+
+.uib-button-bar {
+	overflow: hidden;
+	margin: 15px 0 0;
+	padding: 0;
+
+	.btn {
+		margin: 0 15px 0 0;
+		padding: 4px 0;
+		width: auto;
+		min-width: 58px;
+		height: auto;
+		min-height: 0;
+		border: none;
+		border-radius: 2px;
+		text-align: center;
+		text-transform: none;
+		line-height: 1;
+		font-family: $font-primary-medium;
+		font-size: em(14);
+		font-weight: normal;
+		color: $link-color;
+
+		&:hover {
+			border-color: none;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		&:last-child {margin-right: 0;}
+	}
+
+	.btn-group.pull-left {
+		.btn {
+			margin: 0 15px 0 0;
+			width: auto;
+			min-width: auto;
+			text-align: left;
+		}
+	}
+
+	.uib-close {
+		display: none;
+	}
+}
+
+.uib-daypicker {
+	td > em {
+		display:inline-block;
+		line-height:em(14);
+		font-family: $font-primary-medium;
+		font-style:normal;
+		color: $copy-color-mute;
+	}
+
+	.btn-default:not(:disabled):hover {
+		border-radius: 50%;
+		background-color: $black;
+		color: $white;
+	}
+
+	.btn-info:active,
+	.btn-info.active,
+	.open > .dropdown-toggle.btn-info,
+	.btn-info:active:hover,
+	.btn-info.active:hover,
+	.open > .dropdown-toggle.btn-info:hover {
+		border-radius: 50%;
+		background-color: $datepicker-state-active-bg-color;
+		color: $white;
+	}
+}
+
+.uib-month,
+.uib-yearpicker {
+	.btn {
+		display: inline-block;
+		float: none;
+		width: 100%;
+	}
+
+	.btn-info:active,
+	.btn-info.active,
+	.open > .dropdown-toggle.btn-info,
+	.btn-default.active {
+		// border-radius: $radius-middle;
+		// background-color: $datepicker-bg-color-active;
+		font-family: $font-primary-medium;
+		color: $action-color-hover;
+	}
+
+	.btn-default:not(:disabled):hover {
+		// border-radius:$radius-middle;
+		// background-color:$datepicker-bg-color-hover;
+		color: $action-color-hover;
+	}
+}

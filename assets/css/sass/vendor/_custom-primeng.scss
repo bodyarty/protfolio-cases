@@ -1,0 +1,1335 @@
+// ------------------------------------------------------------------------- //
+// NG PRIME CUSTOMIZATIONS
+// ANGULAR 2 APPS
+// https://www.primefaces.org/primeng/#/
+//
+// LIBRARY IS USED FOR PROD : BE CAREFUL!!!
+//
+// TABLE OF CONTENTS
+// 00 VARIABLES
+// 01 MULTISELECT - SPECIALS
+// 02 TOOLTIP
+// 03 TABLE RESIZABLE
+// 04 CAROUSEL
+// 05 DATEPICKER
+// 06 TREE TABLE
+// 07 TREE
+// 99 ADDITIONS
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 00 VARIABLES
+// ------------------------------------------------------------------------- //
+$ui-tooltip-zindex           : 2005;
+$ui-carousel-bullet-bg       : $black;
+$ui-carousel-margin-hor      : 10px;
+
+$ui-tree-item-bg-selected    : $blue;
+$ui-tree-item-color-selected : $white;
+$ui-tree-item-bg-hover       : $blue;
+$tree-bg-color               : $white;
+
+$slider-axis-color           : $white;
+$slider-tick-legend-color    : rgba($slider-axis-color, .8);
+
+$slider-pointer-color        : $solidago;
+$slider-pointer-active-color : $curry;
+
+// ------------------------------------------------------------------------- //
+// 01 MULTISELECT - SPECIALS
+// ------------------------------------------------------------------------- //
+.ui-multiselect,
+.ui-listbox {
+	// TRIGGER FOCUS
+	&.ui-multiselect-open {
+		border: 1px solid $form-control-bd-color-focus;
+
+		.ui-multiselect-trigger {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+
+	// CLEAR SEARCH FIELD
+	.ui-widget-header {
+		position: relative;
+		border-bottom: $dropdown-bd;
+
+		.ui-chkbox {
+			right: 20px;
+			display: none;
+		}
+
+		.ui-multiselect-close {
+			@include icon($icon-cross-sm, $action-color);
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			display: none;
+			transform: translateY(-50%);
+			z-index: 1;
+
+			&:hover {
+				@include icon($icon-cross-sm, $action-color-hover);
+			}
+		}
+
+		&.ui-listbox-header {
+			.ui-chkbox {
+				right: 10px;
+				display: block;
+			}
+		}
+	}
+
+	// SEARCH FIELD
+	.ui-multiselect-filter-container,
+	.ui-listbox-filter-container {
+		position: relative;
+
+		&::before {
+			@include icon($icon-search, $copy-color-primary);
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+		}
+
+		input {
+			padding-left: 45px;
+			border: none;
+		}
+	}
+
+	.ui-chkbox {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: $check-size;
+		height: $check-size;
+		transform: translateY(-50%);
+		z-index: 1;
+
+		.ui-chkbox-box {
+			width: $check-size;
+			height: $check-size;
+			border: $check-bd-width solid $hairline-color-dark;
+			background: $check-bg-color-off;
+
+			&.ui-state-active {
+				border: $check-bd-width solid $check-bd-color-on;
+				background: $check-bg-color-on;
+
+				&::after {
+					@include icon($icon-check, $check-i-color-edit-on, 18px);
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -1px;
+				}
+			}
+		}
+	}
+
+	.ui-listbox-list-wrapper {
+		max-height: 184px;
+		overflow-y: auto;
+
+		.ui-listbox-list {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// QUICK AWFUL FIXES FOR MINOR RELEASE
+.ui-multiselect-panel {
+	// CLEAR SEARCH FIELD
+	.ui-widget-header {
+		position: relative;
+		border-bottom: $dropdown-bd;
+
+		.ui-chkbox {
+			right: 20px;
+			display: none;
+		}
+
+		.ui-multiselect-close {
+			@include icon($icon-cross-sm, $action-color);
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			display: none;
+			transform: translateY(-50%);
+			z-index: 1;
+
+			&:hover {
+				@include icon($icon-cross-sm, $action-color-hover);
+			}
+		}
+
+		&.ui-listbox-header {
+			.ui-chkbox {
+				right: 10px;
+				display: block;
+			}
+		}
+	}
+
+	// SEARCH FIELD
+	.ui-multiselect-filter-container,
+	.ui-listbox-filter-container {
+		position: relative;
+
+		&::before {
+			@include icon($icon-search, $copy-color-primary);
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+		}
+
+		input {
+			padding-left: 45px;
+			border: none;
+		}
+	}
+
+	.ui-chkbox {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: $check-size;
+		height: $check-size;
+		transform: translateY(-50%);
+		z-index: 1;
+
+		.ui-chkbox-box {
+			width: $check-size;
+			height: $check-size;
+			border: $check-bd-width solid $hairline-color-dark;
+			background: $check-bg-color-off;
+
+			&.ui-state-active {
+				border: $check-bd-width solid $check-bd-color-on;
+				background: $check-bg-color-on;
+
+				&::after {
+					@include icon($icon-check, $check-i-color-edit-on, 18px);
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -1px;
+				}
+			}
+		}
+	}
+
+	.ui-listbox-list-wrapper {
+		max-height: 184px;
+		overflow-y: auto;
+
+		.ui-listbox-list {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// DROPDOWN OPTION
+.ui-multiselect-item,
+.ui-listbox-item {
+	@include dropdown-option();
+	padding-right: 20px;
+
+	&:last-child {border-bottom: $dropdown-bd;}
+}
+
+// ------------------------------------------------------------------------- //
+// 02 TOOLTIP
+// ------------------------------------------------------------------------- //
+.ui-tooltip {
+	@extend %tooltip;
+	@include z-index(ui-tooltip, $important: true);
+
+	&.tooltip {
+		background: transparent;
+	}
+
+	.ui-tooltip-text {
+		@extend %tooltip-value;
+		@extend %tooltip-value-inners;
+	}
+
+	&.ui-tooltip-top,
+	&.ui-tooltip-bottom {
+		padding: $tooltip-arrow-size 0;
+
+		.ui-tooltip-arrow {
+			@extend %tooltip-arrow;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&.ui-tooltip-left,
+	&.ui-tooltip-right {
+		padding: 0 $tooltip-arrow-size;
+
+		.ui-tooltip-arrow {
+			@extend %tooltip-arrow;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&.ui-tooltip-top {
+		margin-top: -10px;
+
+		// ARROW TO BOTTOM
+		.ui-tooltip-arrow {
+			bottom: 0;
+			border-top: $tooltip-arrow-size solid $tooltip-bg;
+			border-right: $tooltip-arrow-size solid transparent;
+			border-left: $tooltip-arrow-size solid transparent;
+		}
+	}
+
+	&.ui-tooltip-bottom {
+
+		// ARROW TO TOP
+		.ui-tooltip-arrow {
+			top: 0;
+			border-right: $tooltip-arrow-size solid transparent;
+			border-bottom: $tooltip-arrow-size solid $tooltip-bg;
+			border-left: $tooltip-arrow-size solid transparent;
+		}
+	}
+
+	&.ui-tooltip-left {
+
+		// ARROW TO RIGHT
+		.ui-tooltip-arrow {
+			right: 0;
+			border-top: $tooltip-arrow-size solid transparent;
+			border-bottom: $tooltip-arrow-size solid transparent;
+			border-left: $tooltip-arrow-size solid  $tooltip-bg;
+		}
+	}
+
+	&.ui-tooltip-right {
+
+		// ARROW TO LEFT
+		.ui-tooltip-arrow {
+			left: 0;
+			border-top: $tooltip-arrow-size solid transparent;
+			border-right: $tooltip-arrow-size solid $tooltip-bg;
+			border-bottom: $tooltip-arrow-size solid transparent;
+		}
+	}
+}
+
+.tooltip-title {
+	margin: 0 0 10px;
+	font-family: $font-primary-medium;
+	font-size: em(14, 12);
+	color: $tooltip-color;
+}
+
+// ------------------------------------------------------------------------- //
+// 03 TABLE RESIZABLE
+// ------------------------------------------------------------------------- //
+.ui-table {
+	.ui-table-wrapper,
+	.ui-table-scrollable-wrapper {
+		// dont set overflow hidden, because .tr-label woudl not be visible
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			table-layout: fixed;
+		}
+
+		th {
+			position: relative;
+
+			&:last-child {
+				.ui-column-resizer {
+					display: none !important; // !important - to override js inline styles
+				}
+			}
+		}
+
+		.ui-column-resizer {
+			position: absolute;
+			top: 0;
+			right: -#{$td-padding-hor - 1px};
+			display: none;
+			justify-content: center;
+			width: $td-padding-hor * 2;
+			height: 100%;
+			cursor: col-resize;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				display: block;
+				width: 1px;
+				height: $td-height;
+				background: $hairline-color-light;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	&.ui-unselectable-text,
+	thead tr:hover {
+		.ui-column-resizer {
+			display: flex;
+		}
+	}
+
+	.ui-column-resizer-helper {
+		position: absolute;
+		display: block;
+		width: 1px;
+		background: $hairline-color-dark;
+		z-index: 10;
+	}
+
+	// RESPONSIVE - TABLET LANDSCAPE
+	@include for-size(tablet-landscapescape-low) {
+		&.ui-unselectable-text,
+		thead tr:hover {
+			.ui-column-resizer {
+				display: none;
+			}
+		}
+	}
+}
+
+// default style addition
+.ui-widget,
+.ui-widget * {
+	@include box-sizing();
+
+	// AN EXCEPTION TO PROVIDE CORRECT WIDTH IN MODAL FOR NOTICE
+	.notice-container {
+		@include box-sizing(content-box);
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 04 CAROUSEL
+// ------------------------------------------------------------------------- //
+
+// TODO : need to share styles witn material js carousel
+
+.ui-carousel {
+	position: relative;
+	padding: 0 0 40px;
+
+	.ui-carousel-viewport {
+		position: relative;
+		overflow: hidden;
+		margin: 0 -#{$ui-carousel-margin-hor};
+		border: 0;
+
+		.ui-carousel-items {
+			position: relative;
+			left: 0;
+			display: flex;
+			margin: 0;
+			padding: 0;
+			width: 32000px;
+			list-style: none outside none;
+
+			.ui-carousel-item {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				flex: 0 0 auto;
+				margin: 0 $ui-carousel-margin-hor;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	.ui-carousel-header {
+		position: absolute;
+		bottom: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.ui-carousel-button {
+		display: none;
+	}
+
+	.ui-carousel-page-link {
+		display: inline-block;
+		margin: 0 3px;
+		width: 8px;
+		height: 8px;
+		border: 1px solid $ui-carousel-bullet-bg;
+		border-radius: 50%;
+		text-decoration: none;
+		cursor: pointer;
+
+		&.pi-circle-on {
+			background: $ui-carousel-bullet-bg;
+		}
+	}
+
+	.ui-widget-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.ui-carousel-page-links {
+			display: flex;
+			align-items: center;
+			margin: 0 10px;
+			order: 1;
+			text-align: center;
+		}
+
+		.ui-carousel-next-button {
+			@include icon($icon-keyboard-arrow-right-sm, $action-color);
+			order: 2;
+			cursor: pointer;
+
+			&:hover {
+				@include icon($icon-keyboard-arrow-right-sm, $action-color-hover);
+			}
+
+			&.ui-state-disabled:hover {
+				@include icon($icon-keyboard-arrow-right-sm, $action-color);
+			}
+		}
+
+		.ui-carousel-prev-button {
+			@include icon($icon-keyboard-arrow-left-sm, $action-color);
+			order: 0;
+			cursor: pointer;
+
+			&:hover {
+				@include icon($icon-keyboard-arrow-left-sm, $action-color-hover);
+			}
+
+			&.ui-state-disabled:hover {
+				@include icon($icon-keyboard-arrow-left-sm, $action-color);
+			}
+		}
+
+		.ui-carousel-button.ui-state-disabled {
+			cursor: default;
+			opacity: $disabled-opacity;
+		}
+	}
+}
+
+// CAROUSEL LIST CUT ISSUE
+.carousel-list-helper {
+	margin: -$panel-body-padding-ver 0 0;
+
+	.ui-carousel {
+		.ui-carousel-viewport {
+			margin: 0 -#{$panel-body-padding-hor};
+			padding: $panel-body-padding-ver 0 0;
+
+			.ui-carousel-item {
+				margin: 0 $panel-body-padding-hor;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 05 DATEPICKER
+// ------------------------------------------------------------------------- //
+calendar-wrapper {
+	&.error,
+	&.ng-invalid.ng-dirty,
+	&.ng-invalid.ng-touched {
+
+		.ui-inputtext {
+			border-color: $error-color;
+		}
+	}
+}
+
+.ui-calendar {
+	position: relative;
+	display: block;
+
+	.ui-inputtext {
+		position: relative;
+		padding: 0 $dropdown-trigger-padding-right 0 $form-control-padding-hor;
+		height: calc(#{$form-control-height} - #{$form-control-bd-width}*2);
+		border: none;
+	}
+
+	.ui-calendar-button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: $datepicker-trigger-width;
+		height: calc(#{$form-control-height} - #{$form-control-bd-width}*2);
+		border: none;
+		background: none;
+		cursor: pointer;
+
+		.pi-calendar {
+			@include icon($icon-calendar, $action-color);
+
+			&:hover {
+				@include icon($icon-calendar, $action-color-hover);
+			}
+		}
+
+		.pi-time {
+			@include icon($icon-clock-outline, $action-color);
+
+			&:hover {
+				@include icon($icon-clock-outline, $action-color-hover);
+			}
+		}
+
+		.ui-button-text {
+			display: none;
+		}
+	}
+}
+
+// CALENDAR ITSELF
+.ui-datepicker {
+	@include z-index(datepicker, $important: true);
+	position: absolute;
+	padding: $datepicker-padding;
+	width: $datepicker-width;
+	height: auto;
+	border: 1px solid $hairline-color-light;
+	background-color: $datepicker-bg-color;
+
+	// TO DO THINK ABOUT IMPLEMENTATION OF THIS CLASS ON MOBILE
+	&.ui-datepicker-touch-ui {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+	}
+
+	&.ui-datepicker-range-two-months {
+		display: flex;
+		width: $datepicker-two-months-width;
+
+		.ui-datepicker-group {
+			flex: 1 0 auto;
+			margin: 0 0 0 $datepicker-group-margin-hor;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		// RESPONSIVE - PHONE AND LOWER
+		@include for-size(phone-low) {
+			display: block;
+			width: $datepicker-width;
+
+			.ui-datepicker-group {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.ui-datepicker-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 10px;
+
+		.ui-datepicker-title {
+			position: relative;
+			top: -1px;
+			margin: 0 10px;
+			order: 1;
+			text-align: center;
+			font-family: $font-primary-regular;
+			font-size: em(22);
+			cursor: default;
+
+			.ui-datepicker-month {
+				margin: 0 10px 0 0;
+			}
+		}
+
+		.ui-corner-all {
+			cursor: pointer;
+		}
+
+		.ui-datepicker-prev {
+			@include icon($icon-keyboard-arrow-left, $action-color);
+			order: 0;
+
+			&:hover {
+				@include icon($icon-keyboard-arrow-left, $action-color-hover);
+			}
+		}
+
+		.ui-datepicker-next {
+			@include icon($icon-keyboard-arrow-right, $action-color);
+			order: 2;
+
+			&:hover {
+				@include icon($icon-keyboard-arrow-right, $action-color-hover);
+			}
+		}
+	}
+
+	.ui-datepicker-calendar-container {
+		background-color: $datepicker-calendar-bg-color;
+	}
+
+	.ui-datepicker-calendar {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+
+		thead,
+		tbody {
+			border-collapse: collapse;
+
+			th, td {
+				padding: $datepicker-calendar-cell-padding;
+				text-align: center;
+				font-family: $font-primary-medium;
+				font-weight: normal;
+			}
+		}
+
+		thead th {
+			padding-top: $datepicker-calendar-head-padding-ver;
+			padding-bottom: $datepicker-calendar-head-padding-ver;
+			border-bottom: 1px solid $hairline-color-dark;
+			cursor: default;
+		}
+
+		thead th:first-child,
+		tbody td:first-child {
+			padding-left: $datepicker-calendar-padding-hor;
+		}
+
+		thead th:last-child,
+		tbody td:last-child {
+			padding-right: $datepicker-calendar-padding-hor;
+		}
+
+		tbody tr:last-child td {
+			padding-bottom: $datepicker-calendar-padding-bottom;
+		}
+
+		.ui-state-default {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			width: $datepicker-calendar-cell-size;
+			height: $datepicker-calendar-cell-size;
+			border-radius: 50%;
+			text-decoration: none;
+			line-height: 1;
+			font-size: em(14);
+			color: $copy-color-primary;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $datepicker-state-active-bg-color;
+				color: $copy-color-reverse;
+			}
+		}
+
+		.ui-state-disabled {
+			cursor: default;
+			opacity: .5;
+
+			&:hover {
+				background-color: transparent;
+				color: $copy-color-primary;
+			}
+		}
+
+		.ui-state-active {
+			background-color: $datepicker-state-active-bg-color;
+			color: $copy-color-reverse;
+		}
+	}
+
+	.ui-datepicker-other-month {
+		cursor: default;
+		opacity: .5;
+
+		.ui-state-disabled:hover {
+			background-color: transparent;
+			color: $copy-color-primary;
+		}
+
+		.ui-state-active:hover {
+			background-color: $datepicker-state-active-bg-color;
+			color: $copy-color-reverse;
+		}
+	}
+
+	.ui-monthpicker {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 20px 0 0;
+		background-color: $datepicker-calendar-bg-color;
+
+		.ui-monthpicker-month {
+			position: relative;
+			display: flex;
+			flex: 1 0 auto;
+			justify-content: center;
+			align-items: center;
+			margin: 0 calc((100% - (#{$datepicker-calendar-cell-mounth-size} * 3)) / 6) 20px;
+			width: $datepicker-calendar-cell-mounth-size;
+			height: $datepicker-calendar-cell-mounth-size;
+			border-radius: 50%;
+			text-decoration: none;
+			line-height: 1;
+			font-size: em(14);
+			color: $copy-color-primary;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $datepicker-state-active-bg-color;
+				color: $copy-color-reverse;
+			}
+		}
+	}
+
+	.ui-timepicker {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0 0;
+
+		.ui-separator {
+			display: flex;
+			align-items: center;
+			margin: 0 5px;
+			width: 4px;
+
+			span {
+				line-height: 1;
+			}
+		}
+
+		.ui-hour-picker,
+		.ui-minute-picker,
+		.ui-ampm-picker {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			padding: 20px 0;
+			width: 20px;
+			font-family: $font-primary-medium;
+			font-size: em(16);
+
+			.pi-chevron-up {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+				@include icon($icon-keyboard-arrow-up-sm, $action-color);
+
+				&:hover {
+					@include icon($icon-keyboard-arrow-up-sm, $action-color-hover);
+				}
+			}
+
+			.pi-chevron-down {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+
+				@include icon($icon-keyboard-arrow-down-sm, $action-color);
+
+				&:hover {
+					@include icon($icon-keyboard-arrow-down-sm, $action-color-hover);
+				}
+			}
+		}
+
+		.ui-ampm-picker {
+			margin: 0 0 0 14px;
+		}
+	}
+
+	.ui-datepicker-buttonbar {
+		margin: 15px 0 0;
+
+		.ui-g {
+			display: flex;
+		}
+
+		.ui-g-6 {
+			margin: 0 15px 0 0;
+
+			&:last-child {margin-right: 0;}
+		}
+
+		.ui-button {
+			display: inline-block;
+			border: none;
+			background: none;
+			text-align: center;
+			line-height: 1;
+			font-family: $font-primary-medium;
+			font-size: em(14);
+			font-weight: normal;
+			color: $link-color;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	p-footer .icon-close {
+		position: absolute;
+		top: $datepicker-padding / 4;
+		right: $datepicker-padding / 4;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 06 TREE TABLE
+// ------------------------------------------------------------------------- //
+.ui-treetable-wrapper,
+.ui-treetable-scrollable-wrapper {
+	p-treetabletoggler {
+		width: $icon-size-sm;
+		height: $icon-size-sm;
+
+		.ui-treetable-toggler {
+			margin-left: 0 !important; // to override inline styles
+			width: $icon-size-sm;
+			height: $icon-size-sm;
+		}
+
+		.pi.pi-fw {
+			display: inline-block;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+
+			&.pi-chevron-down {
+				@include icon($icon-keyboard-arrow-up-sm, $link-icon-color-secondary);
+			}
+
+			// not possible to change ng-prime class from right to uo
+			&.pi-chevron-right {
+				@include icon($icon-keyboard-arrow-down-sm, $link-icon-color-secondary);
+			}
+		}
+
+		+ .loading-inline {
+			margin-left: -22px;
+			background-color: $spinner-bg-color;
+		}
+	}
+
+	p-treetabletoggler,
+	.loading-inline {
+		display: inline-block;
+		margin-top: 1px;
+		margin-right: 4px;
+		vertical-align: top;
+	}
+
+	.tree-element-no-nesting {
+		padding: 0 0 0 $link-icon-pad-hor;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 07 TREE
+// ------------------------------------------------------------------------- //
+.tree {
+	padding: 10px;
+	border: 1px solid $hairline-color-light;
+	background: $tree-bg-color;
+
+	&.tree-scrollable {
+		max-height: 300px;
+		overflow-y: auto;
+	}
+}
+
+.ui-tree {
+	position: relative;
+	width: 100%;
+	min-height: 150px;
+
+	// DUMMY
+	.ui-tree-empty-message {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: $copy-color-mute;
+		transform: translate(-50%, -50%);
+	}
+
+	// WRAPPERS
+	.ui-tree-container,
+	.ui-treenode {
+		margin: 0;
+		padding: 0;
+	}
+
+	.ui-treenode {
+		line-height: 1;
+
+		// HIDDEN ARROW, TO SET LEFT INDENT FOR A LEVEL
+		&.ui-treenode-leaf > .ui-treenode-content > .ui-tree-toggler {
+			visibility: hidden;
+		}
+	}
+
+	// PARENT LEVEL
+	.ui-treenode-content {
+		display: flex;
+		align-items: flex-start;
+		margin: 0 0 8px;
+
+		&.ui-treenode-selectable {
+			cursor: pointer;
+		}
+
+		.ui-tree-toggler,
+		.ui-treenode-label,
+		.ui-treenode-icon {
+			display: inline-block;
+		}
+
+		// ICON ARROW
+		.ui-tree-toggler {
+			flex: 0 0 auto;
+			margin: 2px 2px 0 0;
+			cursor: pointer;
+		}
+
+		// ICON FOLDER OR RACK
+		.ui-treenode-icon {
+			flex: 0 0 auto;
+			margin: 2px 5px 0 0;
+		}
+
+		// FOLDER OR RACK NAME
+		.ui-treenode-label {
+			flex: 0 1 auto;
+			padding: 0 4px;
+			line-height: em(22, 14);
+			white-space: normal;
+
+			&.ui-state-hover {
+				background: $ui-tree-item-bg-hover;
+			}
+
+			&.ui-state-highlight {
+				background: $ui-tree-item-bg-selected;
+				color: $ui-tree-item-color-selected;
+			}
+		}
+	}
+
+	// CHILD LEVEL
+	.ui-treenode-children {
+		margin: 0;
+		padding: 0 0 0 15px;
+	}
+
+	// ICONS
+	.pi-caret-down,
+	.pi-caret-right,
+	.pi-folder,
+	.pi-folder-open,
+	.icon-rack {
+		&::before {
+			content: '';
+		}
+	}
+
+	.pi-folder::before {
+		@include icon($icon-folder);
+	}
+
+	.pi-folder-open::before {
+		@include icon($icon-folder-open);
+	}
+
+	.pi-caret-down {
+		&::before {
+			@include icon($icon-arrow-drop-down, $action-color);
+		}
+
+		&:hover::before {
+			@include icon($icon-arrow-drop-down, $action-color-hover);
+		}
+	}
+
+	.pi-caret-right {
+		&::before {
+			@include icon($icon-arrow-drop-right, $action-color);
+		}
+
+		&:hover::before {
+			@include icon($icon-arrow-drop-right, $action-color-hover);
+		}
+	}
+
+	.icon-rack::before {
+		@include icon($icon-rack);
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 08 ACCORDION
+// ------------------------------------------------------------------------- //
+.slide-box {
+	p-accordion {
+		width: 100%; // TO MAKE ACCORION TAKE ALL THE WIDTH OF SLIDEBOX
+	}
+}
+
+.data-header-collapsible,
+.ui-accordion-header {
+	position: relative;
+	background: $data-header-collapsible-bg;
+
+	.ui-accordion-header-text {
+		position: relative;
+		display: block;
+		padding: 10px 35px 10px 14px;
+		text-transform: uppercase;
+		font-family: $font-primary-regular;
+		color: $copy-color-primary;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 14px;
+			transform: translateY(-50%);
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.collapsed,
+	&.ui-state-default {
+		margin-bottom: 1px;
+
+		.ui-accordion-header-text {
+			&::after {
+				@include icon($icon-keyboard-arrow-right-sm, $action-color);
+			}
+
+			&:hover {
+				&::after {
+					@include icon($icon-keyboard-arrow-right-sm, $action-color-hover);
+				}
+			}
+		}
+	}
+
+	&.expanded,
+	&.ui-state-active {
+		margin-bottom: 0;
+
+		.ui-accordion-header-text {
+			&::after {
+				@include icon($icon-keyboard-arrow-down-sm, $action-color-accent);
+			}
+
+			&:hover {
+				&::after {
+					@include icon($icon-keyboard-arrow-down-sm, $action-color-hover);
+				}
+			}
+		}
+	}
+
+	&.cabled {
+		.ui-accordion-header-text {
+			&::after {
+				@include icon($icon-cabled, $title-collapse-icon-color);
+			}
+
+			&:hover {
+				&::after {
+					@include icon($icon-cabled, $title-collapse-icon-color);
+				}
+			}
+		}
+	}
+}
+
+.data-body-collapse,
+.ui-accordion-content-wrapper {
+	background: $data-body-collapse-bg;
+
+	.ui-accordion-content {
+		padding: $data-body-collapse-ver $data-body-collapse-hor;
+	}
+
+	&.ui-accordion-content-wrapper-overflown {
+		overflow: hidden;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 09 TABLE SCROLL
+// ------------------------------------------------------------------------- //
+.ui-table-scrollable-wrapper,
+.ui-treetable-scrollable-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	.ui-table-scrollable-body,
+	.ui-treetable-scrollable-body {
+		position: relative;
+		overflow: auto;
+	}
+
+	.ui-table-frozen-view,
+	.ui-treetable-frozen-view {
+		@include frozen;
+
+		.ui-table-scrollable-body,
+		.ui-treetable-scrollable-body {
+			overflow: hidden;
+		}
+	}
+
+	.ui-table-unfrozen-view,
+	.ui-treetable-unfrozen-view {
+		@include scrollable;
+
+		.ui-table-scrollable-header-table,
+		.ui-table-scrollable-body-table {
+			table-layout: auto;
+		}
+	}
+
+	.ui-table-scrollable-header,
+	.ui-treetable-scrollable-header {
+		overflow: hidden;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 10 SLIDER
+// ------------------------------------------------------------------------- //
+.heatmap-timeline {
+	.ng5-slider {
+		margin: 0;
+		padding: 0 0 22px;
+
+		.ng5-slider-bar-wrapper {
+			margin: 0;
+			padding: 0;
+
+			.ng5-slider-bar {
+				height: 1px;
+				background: $slider-axis-color;
+			}
+		}
+
+		.ng5-slider-ticks {
+			top: -1px;
+			background: $slider-axis-color;
+			transform: translateY(-50%);
+		}
+
+		.ng5-slider-tick {
+			margin-left: 0;
+			width: 1px;
+			height: 3px;
+
+			.ng5-slider-tick-legend {
+				top: 6px;
+				font-family: $font-primary-medium;
+				color: $slider-tick-legend-color;
+			}
+
+			&:first-child {
+				.ng5-slider-tick-legend {
+					transform: translateX(0%);
+				}
+			}
+
+			&:last-child {
+				.ng5-slider-tick-legend {
+					transform: translateX(-100%);
+				}
+			}
+		}
+
+		.ng5-slider-pointer {
+			top: 0;
+			width: 0;
+			height: 0;
+
+			&::after {
+				top: 0;
+				left: 0;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: $slider-pointer-color;
+				transform: translate(-50%, -50%);
+			}
+
+			&:hover {
+				&::after {
+					background: $slider-pointer-active-color;
+				}
+			}
+
+			&.ng5-slider-active {
+				&::after {
+					background: $slider-pointer-active-color;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 99 ADDITIONS
+// ------------------------------------------------------------------------- //
+
+// Avoid UNwrapping of long text in dropdown options
+.cdk-virtual-scroll-content-wrapper {
+	position: static !important; // to override inline styles
+	top: auto !important; // to override inline styles;
+	left: auto !important; // to override inline styles
+}

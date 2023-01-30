@@ -1,0 +1,327 @@
+// ------------------------------------------------------------------------- //
+// ANGULAR MATERIAL JS CUSTOMIZATIONS
+// ANGULAR 1 APPS
+// https://material.angularjs.org/latest/
+//
+// LIBRARY IS USED FOR PROD : BE CAREFUL!!!
+//
+// TABLE OF CONTENTS
+// 00 VARIABLES
+// 01 RESETS
+// 02 SELECT
+// 03 AUTOCOMPLETE
+// ------------------------------------------------------------------------- //
+
+// ------------------------------------------------------------------------- //
+// 00 VARIABLES
+// ------------------------------------------------------------------------- //
+$dropdown-option-bg-highlight-color       : $curry;
+
+// ------------------------------------------------------------------------- //
+// 01 RESETS
+// ------------------------------------------------------------------------- //
+html {
+	background-color: transparent;
+}
+
+// ------------------------------------------------------------------------- //
+// 02 SELECT
+// ------------------------------------------------------------------------- //
+md-select {
+	display: block;
+	margin: 0;
+
+	&[aria-expanded="true"] {
+		.md-select-value {
+			border: 1px solid $form-control-bd-color-focus;
+		}
+
+		.md-select-icon {
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+
+	&:not([disabled]):focus .md-select-value {
+		border: $form-control-bd !important;
+	}
+
+	&[disabled] .md-select-value {
+		border-color: $hairline-color-dark !important;
+		background-color: $form-control-bg-color-disabled !important;
+		background-image: none !important;
+		color: $disabled-color;
+		cursor: default;
+		opacity: .8;
+
+		.md-text {
+			color: $disabled-color;
+			-webkit-text-fill-color: $disabled-color;
+		}
+	}
+}
+
+.md-select-value {
+	@include dropdown-trigger();
+
+	.md-select-icon {
+		@include dropdown-trigger-arrow();
+		margin: 0;
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.md-text {
+		@include dropdown-trigger-value();
+		line-height: normal;
+	}
+
+	&.md-select-placeholder {
+		@include dropdown-trigger();
+
+		span {
+			color: $copy-color-primary;
+		}
+	}
+
+	&[disabled] {
+		.md-text {
+			@include dropdown-trigger-disabled();
+		}
+	}
+}
+
+md-select-menu {
+	@include dropdown();
+
+	md-option {
+		@include dropdown-option();
+		display: block;
+		height: auto;
+		transition: none;
+
+		// HIGHLIGHT OPTIONS
+		&.highlight {
+			margin: 0;
+			padding: $dropdown-option-highlight-pad !important;
+			background: $dropdown-option-bg-highlight-color;
+
+			&.highlight:not([disabled]):focus {
+				background: $dropdown-option-bg-highlight-color !important;
+			}
+
+			&[selected] {
+				background: $dropdown-option-bg-highlight-color;
+
+				&::after {
+					right: $dropdown-option-margin-hor;
+				}
+			}
+		}
+
+		&:not([disabled]):focus,
+		&:not([disabled]):hover,
+		&.highlight:not([disabled]):hover {
+			background: $dropdown-option-bg-color-hover !important;
+			color: $form-control-color !important;
+			box-shadow: -$dropdown-option-margin-hor 0 0 0 $dropdown-option-bg-color-hover, $dropdown-option-margin-hor 0 0 0 $dropdown-option-bg-color-hover;
+		}
+
+		&[selected] {
+			@include dropdown-option-active();
+			color: $form-control-color !important;
+		}
+	}
+
+	.md-ripple-container {
+		display: none !important;
+	}
+}
+
+// FIX DROPDOWN WIDTH
+._md {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.md-select-menu-container {
+	position: absolute;
+	-webkit-transition: none !important;
+	transition: none !important;
+	min-width: 0 !important;
+}
+
+.md-select-custom {
+	margin-top: $form-control-height + 1px !important;
+
+	// RESPONSIVE - TABLET LANDSCAPE
+	@include for-size(tablet-landscape-low) {
+		margin-top: $form-control-height + 1px !important;
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 03 AUTOCOMPLETE
+// ------------------------------------------------------------------------- //
+md-autocomplete {
+	min-width: 0;
+	height: auto !important;
+
+	md-autocomplete-wrap {
+		height: auto !important;
+
+		input:not(.md-input) {
+			@include form-control-layout();
+			@include form-control-typo();
+			padding-right: 36px;
+
+			&:focus {
+				border-color: $form-control-bd-color-focus;
+				outline: none;
+			}
+		}
+
+		&.md-show-clear-button {
+			button {
+				@include icon($icon-cross-sm, $action-color);
+				position: absolute;
+				top: 50%;
+				right: $dropdown-trigger-arrow-right;
+				display: block;
+				overflow: hidden;
+				margin: 0;
+				border: none;
+				background-color: transparent;
+				text-indent: -9000px;
+				transform: translateY(-50%);
+				transition: none !important; // disable animation
+				cursor: pointer;
+
+				&:hover {
+					@include icon($icon-cross-sm, $action-color-hover);
+				}
+
+				&::after {
+					display: none; // disable animation
+				}
+
+				md-icon {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+md-progress-linear {
+	display: none; // disable autocomplete progress bar
+}
+
+.md-virtual-repeat-container {
+	@include z-index(dropdown, $important: true);
+
+	&.md-autocomplete-suggestions-container {
+		@include dropdown();
+		width: auto;
+
+		.md-autocomplete-suggestions {
+			li {
+				@include dropdown-option();
+				height: auto;
+				line-height: 1;
+				transition: none;
+
+				// TO OVERRIDE MATERIAL STYLES
+				&#selected_option,
+				&.selected {
+					@include dropdown-option-hover();
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------------------- //
+// 04 c MULTISELECT DROPDOWN
+// ------------------------------------------------------------------------- //
+multiple-select-filter-widget {
+	@include form-control-clear();
+	position: relative;
+	display: block;
+
+	md-select {
+		width: calc(100% - #{$form-control-clear-width});
+	}
+}
+
+md-select-menu[multiple] {
+	md-option {
+
+		&::after {
+			display: none;
+		}
+
+		&.md-checkbox-enabled {
+			padding: 12px 20px 10px 0;
+
+			.md-container {
+				right: 0;
+				left: auto;
+				margin-left: 0;
+				width: $check-size;
+				height: $check-size;
+
+				.md-icon {
+					width: $check-size;
+					height: $check-size;
+					border: $check-bd-width solid $hairline-color-dark;
+					background: $check-bg-color-off;
+				}
+			}
+
+			&[selected] {
+				.md-container {
+
+					.md-icon {
+						width: $check-size;
+						height: $check-size;
+						border: $check-bd-width solid $check-bd-color-on;
+						background: $check-bg-color-on;
+
+						&::after {
+							@include icon($icon-check, $check-i-color-edit-on, 18px);
+							content: '';
+							position: absolute;
+							top: 0;
+							left: -1px;
+							transform: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// SEARCH FIELD
+md-select-header {
+	position: relative;
+	display: block;
+	border-bottom: $dropdown-bd;
+
+	&::before {
+		@include icon($icon-search, $copy-color-primary);
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 15px;
+		transform: translateY(-50%);
+	}
+
+	input[type='search'] {
+		@include box-sizing();
+		padding-left: 45px;
+		border: none;
+	}
+}

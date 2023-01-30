@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------------- //
+// PROD UI - ANGULAR 1
+//
+// used on power, online orderig
+// ------------------------------------------------------------------------- //
+
+// MATERIAL JS
+@import 'sass/vendor/material-js/material-js.css';
+@import 'custom-material-js';
+
+// BOOTSTRAP
+@import 'sass/vendor/bootstrap/bootstrap.css';
+@import 'custom-bootstrap';
+
+// PRIME NG - SOME SHARED FEATURES
+@import 'custom-primeng-v11-shared';
+
+// TABLE COLUMN RESIZER FOR ANGULAR 1
+@import 'custom-table-resizer';
